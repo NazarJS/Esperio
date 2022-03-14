@@ -1,0 +1,26 @@
+.footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-top: 1px solid $colorBlack;
+  &-info {
+    &-title {
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: rem(24px);
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    a {
+      font-family: $ffOpenSans;
+      font-weight: 300;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-container {
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+  }
+}
