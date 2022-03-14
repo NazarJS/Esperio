@@ -35,7 +35,7 @@ body {
   font-family: $ffCormorant;
   font-weight: 400;
   font-size: rem(16px);
-  line-height: 1.5;
+  line-height: 1.42;
   color: $colorBlack;
   // background-color: $colorCyan;
 }
@@ -53,7 +53,7 @@ body {
 #middle {
   -webkit-box-flex: 1;
   flex: 1 0 auto;
-  padding-bottom: 120px;
+  padding-bottom: 45px;
   @media (max-width: 400px) {
     padding-bottom: 60px;
   }
@@ -99,7 +99,6 @@ body {
   background-color: #736f63;
 }
 .catalog {
-  margin-bottom: 120px;
   &-title {
     padding-top: 20px;
     margin-bottom: 30px;
@@ -109,6 +108,7 @@ body {
   &-txt {
     font-family: $ffOpenSans;
     font-weight: 300;
+    margin-bottom: 75px;
   }
   &-item {
     display: flex;
@@ -118,15 +118,17 @@ body {
     margin-bottom: 75px;
 
     &-img {
-      display: block;
+      line-height: 0;
     }
     &-description {
-      display: block;
       font-family: $ffOpenSans;
       font-weight: 300;
+
+      @media (max-width: 768px) {
+        font-size: rem(14);
+      }
     }
     &-price {
-      display: inline-block;
       font-size: rem(32);
       font-family: $ffOpenSans;
       font-weight: 300;
