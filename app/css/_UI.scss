@@ -1,0 +1,194 @@
+$ffCormorant: "Cormorant", serif;
+$ffOpenSans: "Open Sans", sans-serif;
+$colorBlack: #4b3d32;
+// $colorYellow: #e0fe02;
+// $colorBlue: #0e0060;
+// $colorCyan: #007bfd;
+
+// Mixin
+$html-font-size: 16px;
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+// a,p,ul,li,ol,h1-h6,quote,block-quote,cite, - цвета шрифта, line-height, font-size, ff,
+// h1-h6 - margin-top: 22px
+p {
+  margin: 0px 0px 22px;
+}
+
+ul,
+ol {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: $ffCormorant;
+  font-weight: 500;
+  color: #fff;
+  // margin: 22px 0px 18px;
+  text-transform: none;
+}
+
+h1,
+.h1 {
+  font-size: rem(120);
+
+  margin-top: 0;
+  line-height: 1.42;
+}
+
+h2,
+.h2 {
+  font-size: rem(80);
+
+  line-height: 1.42;
+}
+
+h3,
+.h3 {
+  font-size: rem(44);
+
+  line-height: 1.42;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+
+  line-height: 1.42;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  // -webkit-transition: color 0.4s, border 0.4s;
+  // -o-transition: color 0.4s, border 0.4s;
+  // transition: color 0.4s, border 0.4s;
+}
+
+b,
+h1,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $colorBlack;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  // font-family: $ffCoFo;
+}
+
+button {
+  cursor: pointer;
+  // font-family: $ffCoFo;
+}
+input,
+textarea {
+  outline: none;
+}
+
+// Example of Btn
+.ui-btn {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding-right: 29px;
+  padding-left: 29px;
+  font-family: $ffOpenSans;
+  font-weight: 400;
+  font-size: rem(14px);
+  color: $colorBlack;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid $colorBlack;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+.ui-btn-white {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.ui-link {
+  display: flex;
+  font-family: $ffOpenSans;
+  font-weight: 400;
+  font-size: rem(14px);
+  color: $colorBlack;
+
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+  img {
+    margin-left: 4px;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.ui-basket {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding-right: 23.5px;
+  padding-left: 23.5px;
+  font-family: $ffOpenSans;
+  font-weight: 400;
+  font-size: rem(14px);
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  background-color: $colorBlack;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+}

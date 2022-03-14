@@ -1,0 +1,41 @@
+.header {
+  margin-bottom: 80px;
+  padding-top: 20px;
+
+  &-info {
+    display: inline-block;
+    vertical-align: sub;
+
+    &-link {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: rem(18px);
+      margin-right: 50px;
+      font-weight: 500;
+      &:last-child {
+        margin-right: 0;
+      }
+      img {
+        margin-left: 4px;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  &-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &-logo {
+    font-size: rem(24);
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &-btns {
+    // display: inline-block;
+    // vertical-align: top;
+    text-align: right;
+  }
+}
