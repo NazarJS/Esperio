@@ -1,18 +1,3 @@
-$ffCormorant: "Cormorant", serif;
-$ffOpenSans: "Open Sans", sans-serif;
-$colorBlack: #4b3d32;
-// $colorYellow: #e0fe02;
-// $colorBlue: #0e0060;
-// $colorCyan: #007bfd;
-
-// Mixin
-$html-font-size: 16px;
-@function stripUnit($value) {
-  @return $value / ($value * 0 + 1);
-}
-@function rem($pxValue) {
-  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
-}
 // a,p,ul,li,ol,h1-h6,quote,block-quote,cite, - цвета шрифта, line-height, font-size, ff,
 // h1-h6 - margin-top: 22px
 p {

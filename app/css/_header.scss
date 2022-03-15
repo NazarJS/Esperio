@@ -2,6 +2,9 @@
   margin-bottom: 80px;
   padding-top: 20px;
 
+  @media (max-width: 576px) {
+    margin-bottom: 40px;
+  }
   &-info {
     display: inline-block;
     vertical-align: sub;
