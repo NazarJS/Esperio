@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 $(document).ready(function(){
    $('.top-screen-slider').slick({
@@ -17,3 +18,11 @@ $(document).ready(function(){
 //    });
 // }
 // console.log(topScreen)
+=======
+let menu = document.querySelectorAll(".footer-info");
+menu.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.toggle("open");
+  });
+});
+>>>>>>> main
