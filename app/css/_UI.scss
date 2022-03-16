@@ -193,3 +193,43 @@ textarea {
     opacity: 0.5;
   }
 }
+
+// UI arrow 
+
+
+.ui-arrow {
+  &:hover{
+    &::after {
+      left: 12px;
+    }
+  }
+  &::after {
+    content: '';
+    position: relative;
+    left: 8px;
+    top: -2px;
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 1.65px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition: .3s ease;
+  }
+}
+
+.ui-arrow-brown {
+    &::after {
+     border-color: $colorBlack;
+    }
+}
+// Ui-title 
+
+.ui-title {
+    font-size: rem(44);
+    font-weight: 500;
+    color: #4b3d32;
+    @media (max-width:400px){
+      font-size: rem(28);
+    }
+}
