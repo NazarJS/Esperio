@@ -3,6 +3,7 @@ $(document).ready(function(){
    $('.top-screen-slider').slick({
       autuHeight: true,
       infinite: true,
+      dots: true,
       prevArrow: $('.prev'),
       nextArrow: $('.next'),
    });
