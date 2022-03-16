@@ -544,6 +544,8 @@ body {
   font-size: 1rem;
   line-height: 1.42;
   color: #4b3d32;
+  margin: 0;
+  padding: 0;
 }
 
 #wrapper {
@@ -660,19 +662,20 @@ body {
   margin-bottom: 12px;
   width: 100%;
   line-height: 0;
+  overflow: hidden;
 }
 
 .catalog-item-img img {
   width: 100%;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .catalog-item-img img:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .catalog-item-description {
