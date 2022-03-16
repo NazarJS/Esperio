@@ -136,11 +136,14 @@ body {
       margin-bottom: 12px;
       width: 100%;
       line-height: 0;
+      overflow:hidden;
+      
       img {
         width: 100%;
-        transition: 1s;
+        transition: 0.5s;
+        
         &:hover {
-          transform: scale(1.1);
+          transform: scale(1.03);
         }
       }
     }
