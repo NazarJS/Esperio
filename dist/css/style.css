@@ -408,6 +408,7 @@ textarea {
 .header {
   margin-bottom: 80px;
   padding-top: 20px;
+  z-index: 9999;
 }
 
 .header-info {
@@ -493,16 +494,59 @@ textarea {
 }
 
 .top-screen {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  min-height: 100vh;
-  max-height: 1500px;
-  background-color: brown;
+  position: relative;
   margin-bottom: 120px;
+  margin-top: -150px;
+}
+
+.top-screen .container {
+  position: relative;
+}
+
+.top-screen-slide {
+  position: relative;
+  z-index: -1;
+}
+
+.top-screen-slide-content {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 55%;
+  width: 100%;
+}
+
+.top-screen-slide-title {
+  font-size: 7.5rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.top-screen-slide-link {
+  background: transparent;
+}
+
+.top-screen-arrows {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  width: 100%;
+}
+
+.top-screen-arrows .prev {
+  position: absolute;
+  left: 40px;
+}
+
+.top-screen-arrows .next {
+  position: absolute;
+  right: 40px;
 }
 
 .catalog {
@@ -534,12 +578,12 @@ textarea {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  -webkit-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
-.catalog-card-text {
+.catalog-card-bottom {
   position: absolute;
   text-align: center;
   -webkit-transform: translate(-50%, 0%);
