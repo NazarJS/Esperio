@@ -20,22 +20,36 @@
    &-slide {
       position: relative;
       z-index: -1;
-    
+      background-image: url(../images/top-screen.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 700px;
       &-content {
          position: absolute;
          transform: translate(-50%,-50%);
-      top: 50%;
-      left: 55%;
-      width: 100%;
+         top: 50%;
+         left: 55%;
+         width: 100%;
       }
-     &-title {
+      &-title {
         font-size: rem(120);
         font-weight: 500;
         margin-bottom: 40px;
-     }
-     &-link {
+        @media (max-width:992px) {
+           font-size: rem(100);
+        }
+        @media (max-width:768px) {
+         font-size: rem(80);
+         margin-bottom: 20px;
+      }
+      @media (max-width:576px) {
+         font-size: rem(60);
+      }
+      }
+      &-link {
         background: transparent;
-     }
+      }
    }
    &-arrows {
       position: absolute;
@@ -44,6 +58,7 @@
       left: 50%;
       z-index: 9999;
       width: 100%;
+      cursor: pointer;
       .prev {
          position: absolute;
          left: 40px;
@@ -210,6 +225,12 @@
       color: #fff;
       max-width: 525px;
       margin-bottom: 40px;
+      @media (max-width:768px) {
+         font-size: rem(60);
+      }
+      @media (max-width:400px) {
+         font-size: rem(50);
+      }
    }
    &-link {
       background: transparent;
@@ -220,22 +241,36 @@
    padding-left: 8.33%;
    padding-right: 8.33%;
    margin-bottom: 75px;
+   @media (max-width:992px) {
+      padding-left: 0;
+      padding-right: 0;
+  }
    &-img {
-      height: 577px;
-      img {
-         max-height: 577px;
-      }
+     margin-bottom: 40px;
    }
    &-promo {
       padding-left: 52px;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-  
+    @media (max-width:992px) {
+       justify-content: start;
+      padding-left: 20px;
+   }
     &-title {
        font-size: rem(44);
        font-weight: 500;
        margin-bottom: 32px;
+       line-height: 1;
+       @media (max-width:992px) {
+         position: relative;
+         top: -7px;
+         margin-bottom: 15px;
+         font-size: rem(38);
+     }
+     @media (max-width:576px) {
+      font-size: rem(28);
+  }
     }
     &-text {
        font-family: $ffOpenSans;

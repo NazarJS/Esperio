@@ -575,6 +575,11 @@ textarea {
 .top-screen-slide {
   position: relative;
   z-index: -1;
+  background-image: url(../images/top-screen.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 700px;
 }
 
 .top-screen-slide-content {
@@ -606,6 +611,7 @@ textarea {
   left: 50%;
   z-index: 9999;
   width: 100%;
+  cursor: pointer;
 }
 
 .top-screen-arrows .prev {
@@ -798,11 +804,7 @@ textarea {
 }
 
 .description-img {
-  height: 577px;
-}
-
-.description-img img {
-  max-height: 577px;
+  margin-bottom: 40px;
 }
 
 .description-promo {
@@ -821,6 +823,7 @@ textarea {
   font-size: 2.75rem;
   font-weight: 500;
   margin-bottom: 32px;
+  line-height: 1;
 }
 
 .description-promo-text {
@@ -1277,9 +1280,32 @@ body {
     padding-left: 0;
   }
 
+  .top-screen-slide-title {
+    font-size: 6.25rem;
+  }
+
   .aboutus {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .description {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .description-promo {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    padding-left: 20px;
+  }
+
+  .description-promo-title {
+    position: relative;
+    top: -7px;
+    margin-bottom: 15px;
+    font-size: 2.375rem;
   }
 }
 
@@ -1368,8 +1394,17 @@ body {
     max-width: 100%;
   }
 
+  .top-screen-slide-title {
+    font-size: 5rem;
+    margin-bottom: 20px;
+  }
+
   .aboutus-title-text {
     font-size: 2.625rem;
+  }
+
+  .sale-title {
+    font-size: 3.75rem;
   }
 
   .container {
@@ -1467,12 +1502,20 @@ body {
     margin-bottom: 0;
   }
 
+  .top-screen-slide-title {
+    font-size: 3.75rem;
+  }
+
   .aboutus-title-text {
     margin-bottom: 20px;
   }
 
   .collection-title {
     font-size: 3.75rem;
+  }
+
+  .description-promo-title {
+    font-size: 1.75rem;
   }
 
   .catalog-txt {
@@ -1619,6 +1662,10 @@ body {
 
   .bestsellers-link {
     font-size: 0.75rem;
+  }
+
+  .sale-title {
+    font-size: 3.125rem;
   }
 
   #middle {
