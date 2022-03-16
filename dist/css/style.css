@@ -462,10 +462,26 @@ textarea {
   margin-bottom: 40px;
 }
 
+.footer-info-adress {
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.footer-info-time {
+  margin-bottom: 8px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
 .footer-info-title {
   margin-bottom: 20px;
   font-weight: 600;
   font-size: 1.5rem;
+}
+
+.footer-info-link img {
+  margin-top: -3px;
 }
 
 .footer-info-img {
@@ -492,6 +508,20 @@ textarea {
 .footer-container {
   padding-left: 8.33%;
   padding-right: 8.33%;
+}
+
+.footer-inst img {
+  margin-bottom: -2px;
+}
+
+.footer-info.open .title-after::after {
+  -webkit-transform: rotate(180deg) translate(85%, -37%);
+  -ms-transform: rotate(180deg) translate(85%, -37%);
+  transform: rotate(180deg) translate(85%, -37%);
+}
+
+.footer-info.open .footer-info-wrapper {
+  display: block;
 }
 
 * {
@@ -528,7 +558,6 @@ body {
   margin-right: auto;
   position: relative;
   overflow: hidden;
-  min-height: 100%;
   min-width: 100%;
 }
 
@@ -606,13 +635,14 @@ body {
 .catalog-txt {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
+  margin-bottom: 75px;
 }
 
 .catalog-item {
   margin-bottom: 75px;
 }
 
-.catalog-item-txt {
+.catalog-item-title {
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
   -webkit-transition: 0.5s ease;
@@ -621,7 +651,7 @@ body {
   border-bottom: 1px solid rgba(255, 0, 0, 0);
 }
 
-.catalog-item-txt:hover {
+.catalog-item-title:hover {
   border-bottom: 1px solid #111111;
 }
 
@@ -651,6 +681,7 @@ body {
 }
 
 .catalog-item-price {
+  display: inline-block;
   font-size: 2rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -1113,7 +1144,11 @@ body {
   }
 
   .header {
-    margin-bottom: 40px;
+    margin-bottom: 0;
+  }
+
+  .catalog-txt {
+    margin-bottom: 35px;
   }
 
   .catalog-item {
@@ -1208,6 +1243,42 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .footer-info {
+    margin-bottom: 20px;
+  }
+
+  .footer-info-title {
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .footer-info-title .title-after {
+    display: inline-block;
+    position: relative;
+  }
+
+  .footer-info-title .title-after::after {
+    position: absolute;
+    top: 29%;
+    margin-left: 17px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: url("../images/icon/header-arrow.svg");
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-info-wrapper {
+    display: none;
   }
 
   #middle {
