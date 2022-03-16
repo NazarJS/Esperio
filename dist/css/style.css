@@ -601,6 +601,7 @@ textarea {
   display: block;
   overflow: hidden;
   padding-bottom: 152%;
+  margin-bottom: 40px;
 }
 
 .catalog-card:hover img {
@@ -630,11 +631,14 @@ textarea {
   left: 50%;
   bottom: 30px;
   color: #fff;
+  width: 100%;
+  max-width: 175px;
 }
 
 .catalog-card-title {
   font-size: 1.5rem;
   font-weight: 600;
+  line-height: 1;
 }
 
 .catalog-card-link {
