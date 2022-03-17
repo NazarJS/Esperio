@@ -438,6 +438,7 @@ textarea {
 .ui-field {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 28px;
+  padding-right: 17px;
 }
 
 .ui-field label {
@@ -598,7 +599,8 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 700px;
+  min-height: 100vh;
+  max-height: 1500px;
 }
 
 .top-screen-slide-content {

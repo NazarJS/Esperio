@@ -2,6 +2,7 @@
   position: relative;
   margin-bottom: 120px;
   margin-top: -150px;
+
   .container {
     position: relative;
   }
@@ -16,7 +17,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    min-height: 100vh;
+    max-height: 1500px;
     &-content {
       position: absolute;
       transform: translate(-50%, -50%);
