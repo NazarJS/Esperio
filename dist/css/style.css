@@ -435,6 +435,32 @@ textarea {
   color: #4b3d32;
 }
 
+.ui-field {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 28px;
+}
+
+.ui-field label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ui-field input,
+.ui-field select {
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  border: 1px solid #dbd8d6;
+  color: #4b3d32;
+}
+
+.ui-field input:focus-visible,
+.ui-field input :focus,
+.ui-field select:focus-visible,
+.ui-field select :focus {
+  border: 1px solid #4b3d32;
+}
+
 .header {
   margin-bottom: 80px;
   padding-top: 20px;
@@ -859,6 +885,35 @@ textarea {
 
 .description-promo-text p:first-child {
   margin-bottom: 32px;
+}
+
+.checkout .container {
+  max-width: 932px;
+}
+
+.checkout-data {
+  padding: 0 15px 0 12px;
+}
+
+.checkout-info {
+  padding: 0 13px 0 32px;
+}
+
+.checkout-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #4b3d323c;
+  margin-bottom: 28px;
+}
+
+.checkout-form {
+  padding-right: 15px;
+}
+
+.checkout-container {
+  margin-bottom: 40px;
 }
 
 * {
