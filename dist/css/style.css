@@ -486,6 +486,313 @@ textarea {
   padding-right: 8.3%;
 }
 
+.product-page .row {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.product-page .row .col-start {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 22%;
+  flex: 0 0 22%;
+  max-width: 22%;
+}
+
+.product-page .row .col-middle {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 45%;
+  flex: 0 0 45%;
+  max-width: 45%;
+}
+
+.product-page .row .col-end {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33%;
+  flex: 0 0 33%;
+  max-width: 33%;
+}
+
+.product-link {
+  margin-left: 135px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #4B3D32;
+}
+
+.product-link a:hover {
+  opacity: 0.5;
+}
+
+.product-link a img {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.product-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 750px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.product-gallery img {
+  width: 84px;
+  height: 127px;
+  margin-bottom: 17px;
+}
+
+.product-preview {
+  width: 465px;
+  height: 704px;
+  margin-left: 18px;
+}
+
+.product-preview img {
+  width: 465px;
+  height: 704px;
+}
+
+.product-info {
+  margin-left: 16px;
+}
+
+.product-info-text {
+  margin-bottom: 28px;
+  font-family: "Open Sans";
+  color: #4B3D32;
+}
+
+.product-info-text .title {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #4B3D32;
+}
+
+.product-info-text .price {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.product-info-text .price span {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.product-info-color {
+  margin-bottom: 28px;
+  font-family: "Open Sans";
+}
+
+.product-info-color .color-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  height: 20px;
+  margin-bottom: 14px;
+}
+
+.product-info-color .color-section .color {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.375rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.product-info-color .color-section .color input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.product-info-color .color-section .color input:checked ~ .checkmark {
+  border: 1px solid #4B3D32;
+}
+
+.product-info-color .color-section .color input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.product-info-color .color-section .color:hover input ~ .checkmark {
+  border: 1px solid #4B3D32;
+}
+
+.product-info-color .color-section .color:nth-child(2) .checkmark:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3.5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #736F63;
+}
+
+.product-info-color .color-section .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #DBD8D6;
+  border-radius: 50%;
+}
+
+.product-info-color .color-section .checkmark:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3.5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.product-info-color .color-section .chosen-color {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #4B3D32;
+}
+
+.product-info-color .color-section .chosen-color span {
+  font-weight: 300;
+}
+
+.product-info-size {
+  margin-bottom: 28px;
+}
+
+.product-info-size .size-section {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 55px;
+}
+
+.product-info-size .size-section .size {
+  display: block;
+  position: relative;
+  padding-left: 62px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.product-info-size .size-section .size input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.product-info-size .size-section .size input:checked ~ .checkmark {
+  border: 1px solid #4B3D32;
+}
+
+.product-info-size .size-section .size input:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.product-info-size .size-section .size:hover input ~ .checkmark {
+  border: 1px solid #4B3D32;
+}
+
+.product-info-size .size-section .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #DBD8D6;
+  border-radius: 50%;
+  padding: 8px 17px;
+}
+
+.product-info-size .size-section .checkmark:after {
+  top: 9;
+  left: 50;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.product-info-size .size-text {
+  font-family: "Open Sans";
+  color: #4B3D32;
+}
+
+.product-info-size .size-text .desc {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.product-info-size .size-text .desc span {
+  font-weight: 300;
+}
+
+.product-info-size .size-text a {
+  font-weight: 300;
+}
+
+.product-info-btn {
+  margin-bottom: 28px;
+}
+
+.product-info-btn .btn-cart {
+  width: 200px;
+  height: 40px;
+  background: #4B3D32;
+  border: none;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.product-info-btn .btn-cart:hover {
+  background: rgba(75, 61, 50, 0.5);
+}
+
+.product-info-characteristic {
+  font-family: "Open Sans";
+}
+
+.product-info-characteristic .desc {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.product-info-characteristic .desc span {
+  font-weight: 300;
+}
+
 * {
   margin: 0;
   padding: 0;
