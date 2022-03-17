@@ -128,8 +128,7 @@ textarea {
   height: 40px;
   line-height: 40px;
   background: #fff;
-  padding-right: 29px;
-  padding-left: 29px;
+  padding: 0px 36px;
   font-family: $ffOpenSans;
   font-weight: 400;
   font-size: rem(14px);
@@ -194,17 +193,16 @@ textarea {
   }
 }
 
-// UI arrow 
-
+// UI arrow
 
 .ui-arrow {
-  &:hover{
+  &:hover {
     &::after {
       left: 12px;
     }
   }
   &::after {
-    content: '';
+    content: "";
     position: relative;
     left: 8px;
     top: -2px;
@@ -214,22 +212,22 @@ textarea {
     padding: 1.65px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-    transition: .3s ease;
+    transition: 0.3s ease;
   }
 }
 
 .ui-arrow-brown {
-    &::after {
-     border-color: $colorBlack;
-    }
+  &::after {
+    border-color: $colorBlack;
+  }
 }
-// Ui-title 
+// Ui-title
 
 .ui-title {
-    font-size: rem(44);
-    font-weight: 500;
-    color: #4b3d32;
-    @media (max-width:400px){
-      font-size: rem(28);
-    }
+  font-size: rem(44);
+  font-weight: 500;
+  color: #4b3d32;
+  @media (max-width: 400px) {
+    font-size: rem(28);
+  }
 }

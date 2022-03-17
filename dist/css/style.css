@@ -321,8 +321,7 @@ textarea {
   height: 40px;
   line-height: 40px;
   background: #fff;
-  padding-right: 29px;
-  padding-left: 29px;
+  padding: 0px 36px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
@@ -581,7 +580,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  top: 50%;
+  top: 48%;
   left: 55%;
   width: 100%;
 }
@@ -589,7 +588,8 @@ textarea {
 .top-screen-slide-title {
   font-size: 7.5rem;
   font-weight: 500;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  line-height: 1;
 }
 
 .top-screen-slide-link {
@@ -648,7 +648,11 @@ textarea {
 }
 
 .catalog {
-  margin-bottom: 100px;
+  margin-bottom: 75px;
+}
+
+.catalog .ui-title {
+  margin-bottom: 20px;
 }
 
 .catalog-card {
@@ -719,7 +723,7 @@ textarea {
 }
 
 .aboutus {
-  margin-bottom: 120px;
+  margin-bottom: 75px;
   padding-left: 8.33%;
   padding-right: 8.33%;
 }
@@ -757,7 +761,7 @@ textarea {
   background-size: cover;
   text-align: center;
   padding: 160px 0px;
-  margin-bottom: 120px;
+  margin-bottom: 105px;
 }
 
 .collection-title {
@@ -765,7 +769,7 @@ textarea {
   line-height: 1;
   font-weight: 500;
   color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 47px;
 }
 
 .collection-link {
@@ -773,7 +777,7 @@ textarea {
 }
 
 .bestsellers {
-  margin-bottom: 120px;
+  margin-bottom: 35px;
 }
 
 .bestsellers-header {
@@ -802,6 +806,10 @@ textarea {
   margin-bottom: 120px;
 }
 
+.sale-wrapper {
+  padding: 0 8.33%;
+}
+
 .sale-title {
   font-size: 5rem;
   line-height: 1;
@@ -818,7 +826,7 @@ textarea {
 .description {
   padding-left: 8.33%;
   padding-right: 8.33%;
-  margin-bottom: 75px;
+  margin-bottom: 15px;
 }
 
 .description-img {
