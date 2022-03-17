@@ -906,6 +906,136 @@ body {
   transform: rotate(135deg);
 }
 
+.cart .row {
+  margin: 0 -42px;
+}
+
+.cart [class*=col-] {
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.cart-wrapper {
+  padding-right: 20px;
+}
+
+.cart-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.cart-item {
+  position: relative;
+  padding-top: 28px;
+  border-top: 1px solid #DBD8D6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cart-item-img {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.cart-item-description {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cart-item-title {
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.cart-item-price {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.cart-item-price-currency {
+  font-size: 0.75rem;
+}
+
+.cart-item-features {
+  margin-bottom: 10px;
+}
+
+.cart-item-features-span {
+  margin-left: 8px;
+  opacity: 0.5;
+}
+
+.cart-item-features-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  background-color: #736F63;
+  border-radius: 50%;
+}
+
+.cart-item-close {
+  position: absolute;
+  top: 28px;
+  right: 0;
+  cursor: pointer;
+}
+
+.cart-info {
+  padding-top: 28px;
+  border-top: 1px solid #DBD8D6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cart-info-txt {
+  font-weight: 300;
+}
+
+.cart-info-select {
+  margin-bottom: 20px;
+}
+
+.cart-info-select select {
+  padding-left: 5px;
+  height: 40px;
+  border: 1px solid #DBD8D6;
+  width: 100%;
+}
+
+.cart-info-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cart-info-price-span {
+  font-weight: 300;
+}
+
+.cart-info-total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 12px;
+  font-weight: 700;
+  border-top: 1px solid #DBD8D6;
+  margin-bottom: 25px;
+}
+
+.cart-info .ui-basket {
+  width: 100%;
+}
+
 @media (max-width: 1330px) {
   .col-l-1 {
     -ms-flex: 0 0 8.33333%;

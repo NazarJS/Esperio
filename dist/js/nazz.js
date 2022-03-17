@@ -11,7 +11,8 @@ magnifier.onclick = (e) => {
     magnifier.style.display = "none";
     headerBtnsSearch.style.display = "inline-block";
 }
-magnifierInput.onclick = () => {
-    magnifier.style.display = "inline-block";
-    headerBtnsSearch.style.display = "none";
-}
+//hide input
+// magnifierInput.onclick = () => {
+//     magnifier.style.display = "inline-block";
+//     headerBtnsSearch.style.display = "none";
+// }

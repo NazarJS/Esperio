@@ -175,3 +175,106 @@ body {
 .arrow-down {
   transform: rotate(135deg)
 }
+.cart {
+  .row {
+    margin: 0 -42px;
+  }
+  [class*="col-"] {
+    width: 100%;
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+  &-wrapper {
+    padding-right: 20px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: rem(24);
+    margin-bottom: 12px;
+  }
+  &-item {
+    position: relative;
+    padding-top: 28px;
+    border-top: 1px solid #DBD8D6;
+    font-family: $ffOpenSans;
+    &-img {
+      display: inline-block;
+      margin-right: 12px;
+    }
+    &-description {
+      display: inline-block;
+      vertical-align: top;
+    }
+    &-title {
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+    &-price {
+      margin-bottom: 40px;
+      font-weight: 300;
+      font-size: rem(32px);
+      line-height: 1;
+      &-currency { 
+        font-size: rem(12px);
+      }
+    }
+    &-features {
+      margin-bottom: 10px;
+      &-span {
+        margin-left: 8px;
+        opacity: 0.5;
+      }
+      &-circle {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-left: 4px;
+        background-color: #736F63;
+        border-radius: 50%;
+      }
+    }
+   
+    &-close {
+      position: absolute;
+      top: 28px;
+      right: 0;
+      cursor: pointer;
+    }
+  }
+  &-info {
+    padding-top: 28px;
+    border-top: 1px solid #DBD8D6;
+    font-family: $ffOpenSans;
+    &-txt {
+      font-weight: 300;
+    }
+    &-select {
+      margin-bottom: 20px;
+      select {
+        padding-left: 5px;
+        height: 40px;
+        border: 1px solid #DBD8D6;
+        width: 100%;         
+      }
+    }
+    &-price {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      &-span {
+        font-weight: 300;
+      }
+    }
+    &-total {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 12px;
+      font-weight: 700;
+      border-top: 1px solid #DBD8D6;
+      margin-bottom: 25px;
+    }
+    .ui-basket {
+      width: 100%;
+    }
+  }
+}
