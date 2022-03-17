@@ -112,8 +112,7 @@ textarea {
   height: 40px;
   line-height: 40px;
   background: #fff;
-  padding-right: 29px;
-  padding-left: 29px;
+  padding: 0px 36px;
   font-family: $ffOpenSans;
   font-weight: 400;
   font-size: rem(14px);
@@ -175,5 +174,67 @@ textarea {
   transition: 0.3s ease;
   &:hover {
     opacity: 0.5;
+  }
+}
+
+// UI arrow
+
+.ui-arrow {
+  &:hover {
+    &::after {
+      left: 12px;
+    }
+  }
+  &::after {
+    content: "";
+    position: relative;
+    left: 8px;
+    top: -2px;
+    border: solid #fff;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 1.65px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition: 0.3s ease;
+  }
+}
+
+.ui-arrow-brown {
+  &::after {
+    border-color: $colorBlack;
+  }
+}
+// Ui-title
+
+.ui-title {
+  font-size: rem(44);
+  font-weight: 500;
+  color: #4b3d32;
+  @media (max-width: 400px) {
+    font-size: rem(28);
+  }
+}
+
+// UI Field
+
+.ui-field {
+  font-family: $ffOpenSans;
+  margin-bottom: 28px;
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  input,
+  select {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    border: 1px solid #dbd8d6;
+    color: $colorBlack;
+    &:focus-visible,
+    :focus {
+      border: 1px solid $colorBlack;
+    }
   }
 }

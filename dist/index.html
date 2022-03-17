@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Open+Sans:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/_var.scss" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -159,6 +160,8 @@
           </div>
         </div>
       </header>
+
+  
    
 
 
@@ -403,48 +406,48 @@
 </div>
 
 <div class="footer" id="footer">
-  
-    <div class="container">
-      <div class="footer-container">
-        <div class="row">
-          <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
-            <div class="footer-info">
-              <div class="footer-info-title">
-                <span class="title-after">
-                  Каталог
-                </span>
-              </div>
-              <div class="footer-info-wrapper">
-                <ul>
-                  <li><a href="#">Весь каталог</a></li>
-                  <li><a href="#">Категории</a></li>
-                </ul>
-              </div>
+
+  <div class="container">
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              <span class="title-after">
+                Каталог
+              </span>
+            </div>
+            <div class="footer-info-wrapper">
+              <ul>
+                <li><a href="#">Весь каталог</a></li>
+                <li><a href="#">Категории</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
-            <div class="footer-info">
-              <div class="footer-info-title"><span class="title-after">
+        </div>
+        <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
+          <div class="footer-info">
+            <div class="footer-info-title"><span class="title-after">
                 Клиентам
               </span></div>
-              <div class="footer-info-wrapper">
-                <ul>
-                  <li><a href="#">Оформление заказа</a></li>
-                  <li><a href="#">Оплата и доставка</a></li>
-                  <li><a href="#">Возврат и обмен</a></li>
-                  <li><a href="#">Таблица размеров</a></li>
-                  <li><a href="#">Отзывы</a></li>
-                  <li><a href="#">Пользовательское соглашение</a></li>
-                </ul>
-              </div>
+            <div class="footer-info-wrapper">
+              <ul>
+                <li><a href="#">Оформление заказа</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Возврат и обмен</a></li>
+                <li><a href="#">Таблица размеров</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Пользовательское соглашение</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
-            <div class="footer-info">
-              <div class="footer-info-title"><span class="title-after">
+        </div>
+        <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
+          <div class="footer-info">
+            <div class="footer-info-title"><span class="title-after">
                 О нас
               </span></div>
-             <div class="footer-info-wrapper">
+            <div class="footer-info-wrapper">
               <ul>
                 <li><a href="#">История бренда</a></li>
                 <li><a href="#">Команда ESPIREO</a></li>
@@ -452,58 +455,70 @@
                 <li><a href="#">Мы в СМИ</a></li>
                 <li><a href="#">Контакты</a></li>
               </ul>
-             </div>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
-            <div class="footer-info">
-              <div class="footer-info-title"><span class="title-after">Магазин</span></div>
-              <div class="footer-info-wrapper">
-                <div class="footer-info-adress">
-                  ул. Петра Мстиславца 12, <br> магазин 254. <br> г. Минск, Беларусь.
-                </div>
-                <div class="footer-info-time">
-                  ПН — СБ 12.00 - 20.00 <br />
-                      ВС 12.00 - 17.00
-                </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
+          <div class="footer-info">
+            <div class="footer-info-title"><span class="title-after">Магазин</span></div>
+            <div class="footer-info-wrapper">
+              <div class="footer-info-adress">
+                ул. Петра Мстиславца 12, <br> магазин 254. <br> г. Минск, Беларусь.
+              </div>
+              <div class="footer-info-time">
+                ПН — СБ 12.00 - 20.00 <br />
+                ВС 12.00 - 17.00
               </div>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
-            <div class="footer-info">
-              <div class="footer-info-title"><span class="title-after">
+        </div>
+        <div class="col-xl-2 col-lg-4 col-xs-6 col-us-12">
+          <div class="footer-info">
+            <div class="footer-info-title"><span class="title-after">
                 Поддержка
               </span></div>
-              <div class="footer-info-wrapper">
-                <ul>
-                  <li>
-                    <div class="footer-info-link display-flex">
+            <div class="footer-info-wrapper">
+              <ul>
+                <li>
+                  <div class="footer-info-link display-flex">
                     <img src="./images/icon/footer-telefon.svg" alt="alt" />
                     <a href="tel:+375297716422">
-                       +375297716422
+                      +375297716422
                     </a>
-                    </div> 
-                  </li>
-                  <li>
-                    <div class="footer-info-link display-flex footer-inst">
-                      <img src="./images/icon/footer-inst.svg" alt="alt" />
+                  </div>
+                </li>
+                <li>
+                  <div class="footer-info-link display-flex footer-inst">
+                    <img src="./images/icon/footer-inst.svg" alt="alt" />
                     <a href="tel:+375297716422">
                       Istagram
                     </a>
-                    </div> 
-                  </li>
-                  
-                </ul>
-              </div>
+                  </div>
+                </li>
+
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  
+  </div>
+
 </div>
 </div>
+
+<!-- Jquery CDN -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js
+"></script>
+<!-- Slick slider CDN -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src ="js/main.js"></script>
 <script src = "js/nazz.js"></script>
+
 </body>
+
 </html>
