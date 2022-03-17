@@ -40,21 +40,34 @@
     }
   }
 
-  &-images {
+  &-slider {
     display: flex;
   }
-
-  &-gallery {
+  
+  &-items {
     display: flex;
     flex-direction: column;
-    height: 750px;
     overflow-y: auto;
     overflow-x: hidden;
+    
+    .slick {
+      &-track {
+        display: block;
+      }
+
+      &-list {
+        width: 84px;
+        height: 127px;
+      }
+
+      &-slide {
+        margin-bottom: 17px;
+      }
+    }
 
     img {
       width: 84px;
       height: 127px;
-      margin-bottom: 17px;
     }
   }
 
@@ -70,13 +83,15 @@
   }
 
   &-info {
-    margin-left: 16px;
+    margin-bottom: 28px;
+    font-family: 'Open Sans';
+    color: #4B3D32;
+
+    &-block {
+      margin-left: 16px;
+    }
 
     &-text {
-      margin-bottom: 28px;
-      font-family: 'Open Sans';
-      color: #4B3D32;
-
       .title {
         font-family: 'Open Sans';
         font-weight: 400;
@@ -96,9 +111,6 @@
     }
 
     &-color {
-      margin-bottom: 28px;
-      font-family: 'Open Sans';
-
       .color-section {
         display: flex;
         width: 150px;
@@ -142,7 +154,7 @@
               content: "";
               position: absolute;
               top: 3px;
-              left: 3.5px;
+              left: 3px;
               width: 16px;
               height: 16px;
               border-radius: 50%;
@@ -170,23 +182,21 @@
             border-radius: 50%;
             background: #fff;
           }
-        }
-  
-        .chosen-color {
-          font-weight: 400;
-          font-size: rem(16);
-          color: #4B3D32;
-  
-          span {
-            font-weight: 300;
-          }
+        }  
+      }
+
+      .chosen-color {
+        font-weight: 400;
+        font-size: rem(16);
+        color: #4B3D32;
+
+        span {
+          font-weight: 300;
         }
       }
     }
 
     &-size {
-      margin-bottom: 28px;
-
       .size-section {
         margin-bottom: 12px;
         display: flex;
@@ -259,13 +269,15 @@
 
         a {
           font-weight: 300;
+
+          &:hover {
+            opacity: 0.5;
+          }
         }
       }
     }
 
     &-btn {
-      margin-bottom: 28px;
-
       .btn-cart {
         width: 200px;
         height: 40px;
@@ -283,8 +295,6 @@
     }
 
     &-characteristic {
-      font-family: 'Open Sans';
-
       .desc {
         margin-bottom: 16px;
         font-weight: 400;
@@ -297,4 +307,72 @@
     }
   }
 
+  &-middle {
+    margin-top: 80px;
+    
+    .product-clothes {
+      .clothes {
+        &-title {
+          padding-top: 20px;
+          margin-bottom: 30px;
+          font-size: rem(44);
+          font-weight: 500;
+        }
+
+        &-txt {
+          font-family: $ffOpenSans;
+          font-weight: 300;
+        
+        }
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: calc(100% - 75px);
+          margin-bottom: 75px;
+
+          &-img {
+            line-height: 0;
+          }
+
+          &-description {
+            font-family: $ffOpenSans;
+            font-weight: 300;
+
+            @media (max-width: 768px) {
+              font-size: rem(14);
+            }
+          }
+
+          &-price {
+            font-size: rem(32);
+            font-family: $ffOpenSans;
+            font-weight: 300;
+          }
+
+          &-currency {
+            font-size: rem(12px);
+            margin-right: 16px;
+          }
+
+          &-circles {
+            display: inline-block;
+          }
+
+          &-circle {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 1px solid #dbd8d6;
+          }
+        }
+      }
+
+      .clothes-color-grey {
+        background-color: #736f63;
+      }
+    }
+  }
 }

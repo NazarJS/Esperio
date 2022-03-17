@@ -530,13 +530,13 @@ textarea {
   transform: rotate(90deg);
 }
 
-.product-images {
+.product-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.product-gallery {
+.product-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -544,15 +544,26 @@ textarea {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 750px;
   overflow-y: auto;
   overflow-x: hidden;
 }
 
-.product-gallery img {
+.product-items .slick-track {
+  display: block;
+}
+
+.product-items .slick-list {
   width: 84px;
   height: 127px;
+}
+
+.product-items .slick-slide {
   margin-bottom: 17px;
+}
+
+.product-items img {
+  width: 84px;
+  height: 127px;
 }
 
 .product-preview {
@@ -567,13 +578,13 @@ textarea {
 }
 
 .product-info {
-  margin-left: 16px;
-}
-
-.product-info-text {
   margin-bottom: 28px;
   font-family: "Open Sans";
   color: #4B3D32;
+}
+
+.product-info-block {
+  margin-left: 16px;
 }
 
 .product-info-text .title {
@@ -591,11 +602,6 @@ textarea {
 .product-info-text .price span {
   font-weight: 400;
   font-size: 0.75rem;
-}
-
-.product-info-color {
-  margin-bottom: 28px;
-  font-family: "Open Sans";
 }
 
 .product-info-color .color-section {
@@ -642,7 +648,7 @@ textarea {
   content: "";
   position: absolute;
   top: 3px;
-  left: 3.5px;
+  left: 3px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -670,18 +676,14 @@ textarea {
   background: #fff;
 }
 
-.product-info-color .color-section .chosen-color {
+.product-info-color .chosen-color {
   font-weight: 400;
   font-size: 1rem;
   color: #4B3D32;
 }
 
-.product-info-color .color-section .chosen-color span {
+.product-info-color .chosen-color span {
   font-weight: 300;
-}
-
-.product-info-size {
-  margin-bottom: 28px;
 }
 
 .product-info-size .size-section {
@@ -760,8 +762,8 @@ textarea {
   font-weight: 300;
 }
 
-.product-info-btn {
-  margin-bottom: 28px;
+.product-info-size .size-text a:hover {
+  opacity: 0.5;
 }
 
 .product-info-btn .btn-cart {
@@ -779,10 +781,6 @@ textarea {
   background: rgba(75, 61, 50, 0.5);
 }
 
-.product-info-characteristic {
-  font-family: "Open Sans";
-}
-
 .product-info-characteristic .desc {
   margin-bottom: 16px;
   font-weight: 400;
@@ -791,6 +789,73 @@ textarea {
 
 .product-info-characteristic .desc span {
   font-weight: 300;
+}
+
+.product-middle {
+  margin-top: 80px;
+}
+
+.product-middle .product-clothes .clothes-title {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  font-size: 2.75rem;
+  font-weight: 500;
+}
+
+.product-middle .product-clothes .clothes-txt {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.product-middle .product-clothes .clothes-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: calc(100% - 75px);
+  margin-bottom: 75px;
+}
+
+.product-middle .product-clothes .clothes-item-img {
+  line-height: 0;
+}
+
+.product-middle .product-clothes .clothes-item-description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.product-middle .product-clothes .clothes-item-price {
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.product-middle .product-clothes .clothes-item-currency {
+  font-size: 0.75rem;
+  margin-right: 16px;
+}
+
+.product-middle .product-clothes .clothes-item-circles {
+  display: inline-block;
+}
+
+.product-middle .product-clothes .clothes-item-circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #dbd8d6;
+}
+
+.product-middle .product-clothes .clothes-color-grey {
+  background-color: #736f63;
 }
 
 * {
@@ -1301,6 +1366,10 @@ body {
     -webkit-box-flex: 0;
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .product-middle .product-clothes .clothes-item-description {
+    font-size: 0.875rem;
   }
 
   .catalog-item-description {

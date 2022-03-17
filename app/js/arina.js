@@ -12,3 +12,12 @@ for (let i = 0; i < img.length; i++) {
     preview.setAttribute("src", '/images/examples/' + srcPicture + '.png'); 
   }
 }
+
+//slick slider
+$(document).ready(function () {
+  $('.product-items').slick({
+    arrows: false,
+    vertical: true,
+    verticalSwiping: true,
+  }); 
+});
