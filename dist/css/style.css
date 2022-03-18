@@ -450,15 +450,17 @@ textarea {
 .ui-field select {
   width: 100%;
   height: 40px;
-  padding: 0 5px;
+  padding: 0 10px;
   border: 1px solid #dbd8d6;
   color: #4b3d32;
 }
 
 .ui-field input:focus-visible,
 .ui-field input :focus,
+.ui-field input :active,
 .ui-field select:focus-visible,
-.ui-field select :focus {
+.ui-field select :focus,
+.ui-field select :active {
   border: 1px solid #4b3d32;
 }
 
@@ -774,27 +776,46 @@ textarea {
 
 .top-screen .container {
   position: relative;
+  padding-left: 75px;
 }
 
 .top-screen-slide {
   position: relative;
   z-index: -1;
-  background-image: url(../images/top-screen.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   min-height: 100vh;
   max-height: 1500px;
 }
 
-.top-screen-slide-content {
+.top-screen-slide-img {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  top: 48%;
-  left: 55%;
-  width: 100%;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  width: 100vw;
+  min-width: 1360px;
+}
+
+.top-screen-slide-content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 75px;
+}
+
+.top-screen-slide-content .ui-btn {
+  padding: 0 11px;
+  font-size: 0.875rem;
 }
 
 .top-screen-slide-title {
@@ -806,6 +827,7 @@ textarea {
 
 .top-screen-slide-link {
   background: transparent;
+  max-width: 150px;
 }
 
 .top-screen-arrows {
@@ -832,11 +854,10 @@ textarea {
 
 .top-screen .slick-dots {
   position: absolute;
-  -webkit-transform: translate(-50%, 0%);
-  -ms-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
   bottom: 32px;
-  left: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .top-screen .slick-dots .slick-active {
@@ -876,9 +897,13 @@ textarea {
 }
 
 .catalog-card:hover img {
-  -webkit-transform: scale(1.02) translate(-50%, -50%);
-  -ms-transform: scale(1.02) translate(-50%, -50%);
-  transform: scale(1.02) translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1.05);
+  -ms-transform: translate(-50%, -50%) scale(1.05);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.catalog-card:hover .catalog-card-bottom {
+  bottom: 35px;
 }
 
 .catalog-card::after {
@@ -918,9 +943,13 @@ textarea {
   color: #fff;
   width: 100%;
   max-width: 175px;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .catalog-card-title {
+  display: inline-block;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1;
@@ -928,7 +957,6 @@ textarea {
 }
 
 .catalog-card-link {
-  display: inline-block;
   font-size: 0.75rem;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
@@ -994,6 +1022,9 @@ textarea {
 
 .bestsellers-header {
   margin-bottom: 28px;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
 }
 
 .bestsellers-title {
@@ -1002,20 +1033,28 @@ textarea {
 }
 
 .bestsellers-link {
-  position: relative;
-  bottom: -4px;
   font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   padding-right: 20px;
 }
 
 .sale {
-  background-image: url(../images/bg/sale-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   padding: 130px 0px;
   margin-bottom: 120px;
+  overflow: hidden;
+}
+
+.sale-img {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 100vw;
+  min-width: 1360px;
 }
 
 .sale-wrapper {
@@ -1039,10 +1078,6 @@ textarea {
   padding-left: 8.33%;
   padding-right: 8.33%;
   margin-bottom: 15px;
-}
-
-.description-img {
-  margin-bottom: 40px;
 }
 
 .description-promo {
@@ -1928,6 +1963,10 @@ body {
 
   .collection-title {
     font-size: 3.75rem;
+  }
+
+  .description-img {
+    margin-bottom: 40px;
   }
 
   .description-promo-title {
