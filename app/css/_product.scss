@@ -1,29 +1,32 @@
 .product {
   &-page {
     .row {
-      flex-wrap: nowrap;
+      // flex-wrap: nowrap;
 
       .col {
-        &-start {
-          flex: 0 0 22%;
-          max-width: 22%;
-        }
+        // &-start {
+        //   flex: 0 0 22%;
+        //   max-width: 22%;
+        // }
 
-        &-middle {
-          flex: 0 0 45%;
-          max-width: 45%; 
-        }
+        // &-middle {
+        //   flex: 0 0 45%;
+        //   max-width: 45%; 
+        // }
 
-        &-end {
-          flex: 0 0 33%;
-          max-width: 33%;
-        }
+        // &-end {
+        //   flex: 0 0 33%;
+        //   max-width: 33%;
+        // }
       }
     }
   }
 
+  &-box {
+    display: flex;
+  }
+
   &-link {
-    margin-left: 135px;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: rem(14);
@@ -42,13 +45,12 @@
 
   &-slider {
     display: flex;
+    overflow: hidden;
   }
   
   &-items {
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    overflow-x: hidden;
     
     .slick {
       &-track {
@@ -58,17 +60,18 @@
       &-list {
         width: 84px;
         height: 127px;
+        max-height: 127px;
       }
 
-      &-slide {
-        margin-bottom: 17px;
-      }
+      // &-slide {
+      //   margin-bottom: 17px;
+      // }
     }
 
-    img {
-      width: 84px;
-      height: 127px;
-    }
+    // img {
+    //   width: 84px;
+    //   height: 127px;
+    // }
   }
 
   &-preview {
@@ -76,10 +79,10 @@
     height: 704px;
     margin-left: 18px;
 
-    img {
-      width: 465px;
-      height: 704px;
-    }
+    // img {
+    //   width: 465px;
+    //   height: 704px;
+    // }
   }
 
   &-info {
@@ -220,6 +223,8 @@
             
             &:checked ~ .checkmark {
               border: 1px solid #4B3D32;
+              background: #4B3D32;
+              color: #fff;
             }
 
             &:after {
@@ -309,7 +314,8 @@
 
   &-middle {
     margin-top: 80px;
-    
+    margin-bottom: 120px;
+
     .product-clothes {
       .clothes {
         &-title {

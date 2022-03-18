@@ -19,5 +19,6 @@ $(document).ready(function () {
     arrows: false,
     vertical: true,
     verticalSwiping: true,
+    adaptiveHeight: true,
   }); 
 });
