@@ -9,7 +9,7 @@ for (let i = 0; i < img.length; i++) {
 
     console.log(thisPicture.dataset.img)
 
-    preview.setAttribute("src", '/images/examples/' + srcPicture + '.png'); 
+    preview.setAttribute("src", srcPicture); 
   }
 }
 
@@ -19,6 +19,5 @@ $(document).ready(function () {
     arrows: false,
     vertical: true,
     verticalSwiping: true,
-    adaptiveHeight: true,
   }); 
 });
