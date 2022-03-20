@@ -4,7 +4,7 @@
   z-index: 9999;
 
   @media (max-width: 576px) {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
   &-info {
     display: inline-block;
@@ -17,7 +17,7 @@
     ul li {
       display: inline-block;
       margin-right: 50px;
-
+      font-family: $ffCormorant;
       &:last-child {
         margin-right: 0;
       }
@@ -110,17 +110,19 @@
     }
   }
   &-btns {
-    display: flex;
-    justify-content: flex-end;
     position: relative;
     text-align: right;
-    margin-top: -7px;
+    margin-top: 5px;
     &-search {
       display: none;
-      // display: inline-block;
-      // border: 1px solid #DBD8D6;
-      margin-top: 2px;
-      margin-right: 5px;
+      position: absolute;
+      right: 9%;
+      top: -33%;
+    //  left: 34%;
+    //  top: -39%;
+    @media(max-width:992px) {
+      display: none !important;
+    }
       input {
         display: inline-block;
         padding-left: 9px;
@@ -146,6 +148,30 @@
         transform: translate(-50%,-50%);
       }
     }
+    &-shop {
+      position: relative;
+    }
+    &-circle {
+      display: none;
+      position: absolute;
+      left: -2px;
+      bottom: 1px;
+      width: 10px;
+      height: 10px;
+      background-color: $colorBlack;
+      border-radius: 50%;
+      &-active {
+        display: block;
+      }
+    }
+  }
+  &-dropdown {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    text-align: right;
+    margin-top: -7px;
+    
     &-list {
       display: none;
       text-align: left;
@@ -170,6 +196,7 @@
             margin-bottom: 0;
           }
           a {
+            font-family: $ffCormorant;
             transition: 0.5s ease;
             border-bottom: 1px solid rgba(255, 0, 0, 0);
             &:hover {
@@ -188,22 +215,34 @@
     &-previous {
       display: flex;
       margin-bottom: 12px;
+      font-family: $ffCormorant;
       &-img {
         min-width: 24px;
         margin-right: 8px;
       }
       &-link {
           font-size: rem(18);
-          // transition: 0.5s ease;
-          // border-bottom: 1px solid rgba(255, 0, 0, 0);
+          line-height: 1;
           &:hover {
             text-decoration: underline;
-            // border-bottom: 1px solid rgb(17, 17, 17);
+           
           } 
       }
     }
   }
+  &-menu {
+    display: none;
+
+    @media(max-width:992px){
+      display: block;
+    
+    }
+  }
 }
-#magnifier {
-  display: inline;
+
+.header-btns-lupa {
+  margin-right: 30px;
+  @media (max-width:992px) {
+    display: none;
+  }
 }

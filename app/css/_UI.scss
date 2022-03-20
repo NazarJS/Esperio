@@ -1,5 +1,3 @@
-
-
 p {
   margin: 0px 0px 22px;
 }
@@ -109,7 +107,7 @@ textarea {
 // Example of Btn
 .ui-btn {
   display: inline-block;
-  height: 40px;
+  height: 38px;
   line-height: 40px;
   background: #fff;
   padding: 0px 36px;
@@ -211,6 +209,7 @@ textarea {
   font-size: rem(44);
   font-weight: 500;
   color: #4b3d32;
+  font-family: $ffCormorant;
   @media (max-width: 400px) {
     font-size: rem(28);
   }
@@ -221,6 +220,8 @@ textarea {
 .ui-field {
   font-family: $ffOpenSans;
   margin-bottom: 28px;
+  padding-right: 17px;
+  position: relative;
   label {
     display: block;
     margin-bottom: 4px;
@@ -229,11 +230,12 @@ textarea {
   select {
     width: 100%;
     height: 40px;
-    padding: 0 5px;
+    padding: 0 10px;
     border: 1px solid #dbd8d6;
     color: $colorBlack;
     &:focus-visible,
-    :focus {
+    :focus,
+    :active {
       border: 1px solid $colorBlack;
     }
   }
