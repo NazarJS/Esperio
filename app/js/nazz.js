@@ -4,15 +4,15 @@ headerInput.onclick  = function(e) {
 }
     
 wrapper.onclick = () => {
-    // console.log("done")
+    console.log("done")
     inputList.style.display = "none";
 }
-magnifier.onclick = (e) => {
+magnifier.onclick = () => {
     magnifier.style.display = "none";
     headerBtnsSearch.style.display = "inline-block";
 }
 //hide input
-// magnifierInput.onclick = () => {
-//     magnifier.style.display = "inline-block";
-//     headerBtnsSearch.style.display = "none";
-// }
+magnifierInput.onclick = () => {
+    magnifier.style.display = "inline-block";
+    headerBtnsSearch.style.display = "none";
+}
