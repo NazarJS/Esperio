@@ -54,7 +54,9 @@ body {
   -webkit-box-flex: 0;
   flex: 0 0 auto;
 }
-
+#magnifier {
+  cursor: pointer;
+}
 .container {
   width: 100%;
   max-width: 1366px;

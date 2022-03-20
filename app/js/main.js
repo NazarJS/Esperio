@@ -130,19 +130,21 @@ menu.forEach((element) => {
 
 //Change color for Header
 
-let headerLogo = document.getElementById("header_logo");
-let headerShop = document.getElementById("header_shop");
-let headerSearch = document.getElementById("header_search");
+
+// let headerShop = document.getElementById("header_shop");
+// let headerSearch = document.getElementById("header_search");
 let headermenu = document.querySelectorAll(".header-info-link-title");
 let arrow = document.querySelectorAll(".arrow");
 
 let pastName = window.location.pathname === "/main.html";
 
 function changeHeader() {
+  
   headerLogo.src = "./images/icon/ESPIREO-white.svg";
   headerShop.src = "./images/icon/header-shop-white.svg";
-  headerSearch.src = "./images/icon/header-search-white.svg";
+  magnifier.src = "./images/icon/header-search-white.svg";
   headermenu.forEach((el) => {
+    console.log("for")
     el.style.color = "#fff";
   });
   arrow.forEach((el) => {
