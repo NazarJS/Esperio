@@ -2,7 +2,9 @@ $(document).ready(function () {
   // Top-Screen Slider
   $(".top-screen-slider").slick({
     autuHeight: true,
+    adaptiveHeight: true,
     infinite: true,
+    slideperview: 1,
     dots: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
