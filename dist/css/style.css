@@ -980,17 +980,6 @@ textarea {
   margin-bottom: -2px;
 }
 
-<<<<<<< HEAD
-.footer-info.open .title-after::after {
-  -webkit-transform: rotate(180deg) translate(85%, -37%);
-  -ms-transform: rotate(180deg) translate(85%, -37%);
-  transform: rotate(180deg) translate(85%, -37%);
-}
-
-.footer-info.open .footer-info-wrapper {
-  display: block;
-}
-
 .product-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1023,8 +1012,8 @@ textarea {
 
 .product-link a .arrow {
   margin-right: 7px;
-  width: 5px;
-  height: 5px;
+  width: 7px;
+  height: 7px;
 }
 
 .product-link a .arrow-right {
@@ -1292,12 +1281,12 @@ textarea {
 .product-middle .product-clothes .clothes-title {
   padding-top: 20px;
   margin-bottom: 30px;
+  font-family: "Cormorant", serif;
   font-size: 2.75rem;
   font-weight: 500;
 }
 
 .product-middle .product-clothes .clothes-txt {
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -1352,8 +1341,6 @@ textarea {
   background-color: #736f63;
 }
 
-=======
->>>>>>> main
 .top-screen {
   position: relative;
   margin-bottom: 120px;
@@ -2036,19 +2023,8 @@ body {
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 1150px) {
-  .product-link {
-    margin-right: 82px;
-  }
-}
-
-@media (max-width: 992px) {
-  .col-md-1 {
-=======
 @media (min-width: 576px) {
   .col-xs-1 {
->>>>>>> main
     -ms-flex: 0 0 8.33333%;
     -webkit-box-flex: 0;
     flex: 0 0 8.33333%;
@@ -2131,56 +2107,6 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
   }
-<<<<<<< HEAD
-
-  .header-info {
-    display: none;
-  }
-
-  .footer-container {
-    padding-right: 0;
-    padding-left: 0;
-  }
-
-  .product-box {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  .product-link {
-    display: none;
-  }
-
-  .top-screen-slide-title {
-    font-size: 6.25rem;
-  }
-
-  .aboutus {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .description {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .description-promo {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-    padding-left: 20px;
-  }
-
-  .description-promo-title {
-    position: relative;
-    top: -7px;
-    margin-bottom: 15px;
-    font-size: 2.375rem;
-  }
-=======
->>>>>>> main
 }
 
 @media (min-width: 768px) {
@@ -2269,31 +2195,12 @@ body {
   }
 }
 
-<<<<<<< HEAD
-  .product-page {
-    width: 80%;
-    margin: 0px auto;
-  }
-
-  .product-info-block {
-    margin-top: 28px;
-  }
-
-  .product-middle .product-clothes .clothes-item-description {
-    font-size: 0.875rem;
-  }
-
-  .top-screen-slide-title {
-    font-size: 5rem;
-    margin-bottom: 20px;
-=======
 @media (min-width: 992px) {
   .col-md-1 {
     -ms-flex: 0 0 8.33333%;
     -webkit-box-flex: 0;
     flex: 0 0 8.33333%;
     max-width: 8.33333%;
->>>>>>> main
   }
 
   .col-md-2 {
@@ -2374,19 +2281,8 @@ body {
   }
 }
 
-<<<<<<< HEAD
-@media (max-width: 605px) {
-  .product-page {
-    width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .col-xs-1 {
-=======
 @media (min-width: 1170px) {
   .col-lg-1 {
->>>>>>> main
     -ms-flex: 0 0 8.33333%;
     -webkit-box-flex: 0;
     flex: 0 0 8.33333%;
@@ -2627,6 +2523,12 @@ body {
   }
 }
 
+@media (max-width: 1150px) {
+  .product-link {
+    margin-right: 82px;
+  }
+}
+
 @media (max-width: 992px) {
   .cart-wrapper-left {
     padding-left: 0;
@@ -2655,6 +2557,16 @@ body {
   .footer-container {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .product-box {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .product-link {
+    display: none;
   }
 
   .top-screen-slide-title {
@@ -2696,6 +2608,19 @@ body {
     order: 2;
   }
 
+  .product-page {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+  .product-info-block {
+    margin-top: 28px;
+  }
+
+  .product-middle .product-clothes .clothes-item-description {
+    font-size: 0.875rem;
+  }
+
   .top-screen-slide-title {
     font-size: 5rem;
     margin-bottom: 20px;
@@ -2716,6 +2641,12 @@ body {
   .container {
     padding-right: 20px;
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 605px) {
+  .product-page {
+    width: 100%;
   }
 }
 
