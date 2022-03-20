@@ -1,10 +1,12 @@
 .cart {
     padding-bottom: 55px;
+
+    
     &-wrapper {
       
       &-left {
         padding-left: 30px;
-        margin-bottom: 28px;
+        margin-bottom: 15px;
   
         @media(max-width:992px) {
           padding-left: 0;
@@ -12,7 +14,7 @@
       }
       &-right {
         padding-right: 20px;
-        margin-bottom: 28px;
+        margin-bottom: 15px;
   
         @media(max-width:992px) {
           padding-right: 0;
@@ -37,6 +39,10 @@
         flex: 0 0 14.8%;
         min-width: 100px;
         line-height: 0;
+
+        @media(max-width:380px) {
+          min-width: 70px;
+        }
       }
       &-description {
         display: inline-block;
@@ -136,5 +142,6 @@
       .order-2 {
         order: 2;
       }
+      padding-bottom: 0;
     }
   }

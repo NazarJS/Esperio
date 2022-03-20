@@ -152,6 +152,7 @@
       position: relative;
     }
     &-circle {
+      display: none;
       position: absolute;
       left: -2px;
       bottom: 1px;
@@ -159,6 +160,9 @@
       height: 10px;
       background-color: $colorBlack;
       border-radius: 50%;
+      &-active {
+        display: block;
+      }
     }
   }
   &-dropdown {
