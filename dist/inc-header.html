@@ -28,7 +28,7 @@
       <header id="header" class="header">
         <div class="container">
           <div class="row">
-            <div class="col-5 col-sm-5 col-xs-4 col-us-4 ">
+            <div class=" col-us-4 col-ss-3 col-md-5">
               <div class="header-info">
                 <ul>
                   <li>
@@ -115,46 +115,47 @@
                 <img src="./images/icon/header-mobile-menu.svg" alt="alt">
               </div>
             </div>
-            <div class="col-2 col-sm-2  col-xs-4 col-us-4   text-center">
+            <div class=" col-us-4  col-ss-6 col-md-2 text-center">
               <a href="#" class="header-logo">
                 <img src="./images/icon/ESPIREO.svg" alt="alt"/>
               </a>
             </div>
-            <div class="col-5 col-sm-5 col-xs-4 col-us-4  ">
+            <div class=" col-us-4 col-ss-3 col-md-5">
               <div class="header-btns">
-                <a href="#" id ="magnifier">
-                  <img src="./images/icon/header-magnifier.svg" alt="alt"/>
+                <a href="#" >
+                  <img src="./images/icon/header-magnifier.svg" alt="alt" class = "header-btns-lupa" id ="magnifier"/>
+                  <div class="header-btns-search" id ="headerBtnsSearch">
+                    <input type="text" placeholder="Категория, товар или артикул" id = "headerInput">
+                    <div class="header-btns-magnifier" id = "magnifierInput">
+                      <img src="./images/icon/header-magnifier-white.svg" alt="alt"/>
+                    </div>
+                    <div class="header-dropdown-list" id = "inputList">
+                      <div class="header-dropdown-title">Популярные запросы</div>
+                      <ul>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Блузы и рубашки</a></li>
+                        <li><a href="#">Топы, корсеты, футболки</a></li>
+                        <li><a href="#">Юбки</a></li>
+                      </ul>
+                      <div class="header-dropdown-title">
+                        Вы недавно смотрели
+                      </div>
+                      <div class="header-dropdown-previous">
+                        <div class="header-dropdown-previous-img">
+                          <img src="./images/example/header-btns-previous.png" alt="alt">
+                        </div>
+                        <a href="#" class="header-dropdown-previous-link">Платье-мини с расклешённым рукавомs</a>
+                      </div>
+                      <div class="header-dropdown-previous">
+                        <div class="header-dropdown-previous-img">
+                          <img src="./images/example/header-btns-previous_1.png" alt="alt">
+                        </div>
+                        <a href="#" class="header-dropdown-previous-link">Майка в рубчик</a>
+                      </div>
+                    </div>
+                  </div>
                 </a>
-                <div class="header-btns-search" id ="headerBtnsSearch">
-                  <input type="text" placeholder="Категория, товар или артикул" id = "headerInput">
-                  <div class="header-btns-magnifier" id = "magnifierInput">
-                    <img src="./images/icon/header-magnifier-white.svg" alt="alt"/>
-                  </div>
-                  <div class="header-dropdown-list" id = "inputList">
-                    <div class="header-dropdown-title">Популярные запросы</div>
-                    <ul>
-                      <li><a href="#">Платья</a></li>
-                      <li><a href="#">Блузы и рубашки</a></li>
-                      <li><a href="#">Топы, корсеты, футболки</a></li>
-                      <li><a href="#">Юбки</a></li>
-                    </ul>
-                    <div class="header-dropdown-title">
-                      Вы недавно смотрели
-                    </div>
-                    <div class="header-dropdown-previous">
-                      <div class="header-dropdown-previous-img">
-                        <img src="./images/example/header-btns-previous.png" alt="alt">
-                      </div>
-                      <a href="#" class="header-dropdown-previous-link">Платье-мини с расклешённым рукавомs</a>
-                    </div>
-                    <div class="header-dropdown-previous">
-                      <div class="header-dropdown-previous-img">
-                        <img src="./images/example/header-btns-previous_1.png" alt="alt">
-                      </div>
-                      <a href="#" class="header-dropdown-previous-link">Майка в рубчик</a>
-                    </div>
-                  </div>
-                </div>
+                
                 <a href="#">
                   <img src="./images/icon/header-shop.svg" alt="alt"/>
                 </a>
