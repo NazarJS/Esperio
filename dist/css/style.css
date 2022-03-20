@@ -1081,13 +1081,13 @@ textarea {
 .top-screen-slide-title {
   font-size: 7.5rem;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   line-height: 1;
 }
 
 .top-screen-slide-link {
   background: transparent;
-  max-width: 150px;
+  max-width: 200px;
 }
 
 .top-screen-arrows {
