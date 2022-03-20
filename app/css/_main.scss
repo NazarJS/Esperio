@@ -47,6 +47,7 @@
       font-weight: 500;
       margin-bottom: 25px;
       line-height: 1;
+      font-family: $ffCormorant;
       @media (max-width: 992px) {
         font-size: rem(100);
       }
@@ -111,7 +112,6 @@
 }
 
 .main-catalog {
-  text-align: center;
   margin-bottom: 75px;
   .ui-title {
     margin-bottom: 20px;
@@ -168,18 +168,19 @@
       font-weight: 600;
       line-height: 1;
       margin-bottom: 12px;
+      font-family: $ffCormorant;
     }
     &-link {
       font-size: rem(12px);
       font-weight: 300;
-      font-family: $ffOpenSans;
     }
   }
   &-btn {
     display: none;
     width: 200px;
     @media (max-width: 400px) {
-      display: inline-block;
+      display: block;
+      margin: 0 auto;
     }
   }
 }
@@ -192,7 +193,6 @@
     padding-right: 0;
   }
   p {
-    font-family: $ffOpenSans;
     font-weight: 300;
     &:first-child {
       margin-bottom: 32px;
@@ -207,6 +207,7 @@
       font-weight: 500;
       line-height: 1;
       margin-bottom: 50px;
+      font-family: $ffCormorant;
       @media (max-width: 768px) {
         font-size: rem(42);
       }
@@ -216,7 +217,6 @@
     }
     &-link {
       font-size: rem(14);
-      font-family: $ffOpenSans;
     }
   }
 }
@@ -234,6 +234,7 @@
     font-weight: 500;
     color: #fff;
     margin-bottom: 47px;
+    font-family: $ffCormorant;
     @media (max-width: 576px) {
       font-size: rem(60);
     }
@@ -257,7 +258,6 @@
     font-weight: 500;
   }
   &-link {
-    font-family: $ffOpenSans;
     font-size: rem(14);
     padding-right: 20px;
     @media (max-width: 400px) {
@@ -267,10 +267,6 @@
 }
 .sale {
   position: relative;
-  // background-image: url(../images/bg/sale-bg.png);
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
   padding: 130px 0px;
   margin-bottom: 120px;
   overflow: hidden;
@@ -296,6 +292,7 @@
     color: #fff;
     max-width: 525px;
     margin-bottom: 40px;
+    font-family: $ffCormorant;
     @media (max-width: 768px) {
       font-size: rem(60);
     }
@@ -339,18 +336,12 @@
       font-weight: 500;
       margin-bottom: 32px;
       line-height: 1;
-      @media (max-width: 992px) {
-        position: relative;
-        top: -7px;
-        margin-bottom: 15px;
-        font-size: rem(38);
-      }
+      font-family: $ffCormorant;
       @media (max-width: 576px) {
-        font-size: rem(28);
+        margin-bottom: 20px;
       }
     }
     &-text {
-      font-family: $ffOpenSans;
       font-weight: 300;
       p:first-child {
         margin-bottom: 32px;

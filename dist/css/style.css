@@ -600,6 +600,7 @@ textarea {
   font-size: 2.75rem;
   font-weight: 500;
   color: #4b3d32;
+  font-family: "Cormorant", serif;
 }
 
 .ui-field {
@@ -1010,6 +1011,7 @@ textarea {
   font-weight: 500;
   margin-bottom: 25px;
   line-height: 1;
+  font-family: "Cormorant", serif;
 }
 
 .top-screen-slide-link {
@@ -1068,7 +1070,6 @@ textarea {
 }
 
 .main-catalog {
-  text-align: center;
   margin-bottom: 75px;
 }
 
@@ -1143,12 +1144,12 @@ textarea {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 12px;
+  font-family: "Cormorant", serif;
 }
 
 .main-catalog-card-link {
   font-size: 0.75rem;
   font-weight: 300;
-  font-family: "Open Sans", sans-serif;
 }
 
 .main-catalog-btn {
@@ -1163,7 +1164,6 @@ textarea {
 }
 
 .aboutus p {
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -1181,11 +1181,11 @@ textarea {
   font-weight: 500;
   line-height: 1;
   margin-bottom: 50px;
+  font-family: "Cormorant", serif;
 }
 
 .aboutus-title-link {
   font-size: 0.875rem;
-  font-family: "Open Sans", sans-serif;
 }
 
 .collection {
@@ -1204,6 +1204,7 @@ textarea {
   font-weight: 500;
   color: #fff;
   margin-bottom: 47px;
+  font-family: "Cormorant", serif;
 }
 
 .collection-link {
@@ -1227,7 +1228,6 @@ textarea {
 }
 
 .bestsellers-link {
-  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   padding-right: 20px;
 }
@@ -1262,6 +1262,7 @@ textarea {
   color: #fff;
   max-width: 525px;
   margin-bottom: 40px;
+  font-family: "Cormorant", serif;
 }
 
 .sale-link {
@@ -1291,10 +1292,10 @@ textarea {
   font-weight: 500;
   margin-bottom: 32px;
   line-height: 1;
+  font-family: "Cormorant", serif;
 }
 
 .description-promo-text {
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -2061,13 +2062,6 @@ body {
     justify-content: start;
     padding-left: 20px;
   }
-
-  .description-promo-title {
-    position: relative;
-    top: -7px;
-    margin-bottom: 15px;
-    font-size: 2.375rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -2137,7 +2131,7 @@ body {
   }
 
   .description-promo-title {
-    font-size: 1.75rem;
+    margin-bottom: 20px;
   }
 
   .description .col-xs-6:first-child {
@@ -2197,7 +2191,8 @@ body {
   }
 
   .main-catalog-btn {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
   }
 
   .collection-title {
