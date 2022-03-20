@@ -10,18 +10,111 @@ $(document).ready(function () {
     nextArrow: $(".next"),
   });
   // Form validation
+
+  jQuery.validator.addMethod(
+    "lettersonly",
+    function (value, element) {
+      return this.optional(element) || /^[a-zA-ZА-Яа-я,ё\s]+$/i.test(value);
+    },
+    "Incorrect format"
+  );
+
+  jQuery.validator.addMethod(
+    "telephone",
+    function (value, element) {
+      return (
+        this.optional(element) ||
+        /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){6,14}(\s*)?$/i.test(value)
+      );
+    },
+    "Incorrect format"
+  );
+
   $("#commentForm").validate({
-    errorElement: "div",
+    errorElement: "span",
     errorClass: "upload-error",
     rules: {
+      lastname: {
+        lettersonly: true,
+        required: true,
+      },
       name: {
         lettersonly: true,
+        required: true,
+      },
+      secondname: {
+        lettersonly: true,
+        required: true,
+      },
+      email: {
+        email: true,
+        required: true,
+      },
+      tel: {
+        telephone: true,
+        required: true,
+      },
+      country: {
+        lettersonly: true,
+        required: true,
+      },
+      city: {
+        lettersonly: true,
+        required: true,
+      },
+      index: {
+        number: true,
+        required: true,
+      },
+      street: {
+        lettersonly: true,
+        required: true,
+      },
+      house: {
+        number: true,
+        required: true,
       },
     },
     messages: {
+      lastname: {
+        required: "Пожалуйста, введите свою фамилию",
+        lettersonly: "Введите корректную фамилию",
+      },
       name: {
-        required: "Пожалуйста, введите своё имя",
+        required: "Пожалуйста, введите свое имя",
         lettersonly: "Введите корректное имя",
+      },
+      secondname: {
+        required: "Пожалуйста, введите свое отчество",
+        lettersonly: "Введите корректное отчество",
+      },
+      email: {
+        required: "Пожалуйста, введите email",
+        email: "Введите корректный email",
+      },
+      tel: {
+        required: "Пожалуйста, введите свой телефон",
+        telephone: "Введите корректный номер",
+      },
+      country: {
+        required: "Пожалуйста, введите свою страну",
+        lettersonly: "Введите корректное название",
+      },
+      city: {
+        required: "Пожалуйста, введите свой город",
+        lettersonly: "Введите корректное название",
+      },
+      index: {
+        required: "Пожалуйста, введите свой почтоый индекс",
+        number: "Введите корректный индекс",
+      },
+      street: {
+        required: "Пожалуйста, введите свою улицу",
+        lettersonly: "Введите корректное улицу",
+      },
+      house: {
+        required: "Пожалуйста, введите номер дома",
+        number: "Введите корректный номер дома",
       },
     },
   });
@@ -56,8 +149,6 @@ function changeHeader() {
     el.style.borderColor = "#FFF";
   });
 }
-
-console.log(headermenu);
 
 if (pastName == true) {
   changeHeader();

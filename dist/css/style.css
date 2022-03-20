@@ -607,6 +607,7 @@ textarea {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 28px;
   padding-right: 17px;
+  position: relative;
 }
 
 .ui-field label {
@@ -1309,6 +1310,22 @@ textarea {
 
 .checkout-data {
   padding: 0 15px 0 12px;
+  height: 630px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.checkout-data::-webkit-scrollbar {
+  width: 4px;
+}
+
+.checkout-data::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.checkout-data::-webkit-scrollbar-thumb {
+  background: #4b3d32;
+  border-radius: 20px;
 }
 
 .checkout-info {
@@ -1322,6 +1339,7 @@ textarea {
   padding-bottom: 12px;
   border-bottom: 1px solid #4b3d323c;
   margin-bottom: 28px;
+  font-family: "Cormorant", serif;
 }
 
 .checkout-form {
@@ -1330,6 +1348,14 @@ textarea {
 
 .checkout-container {
   margin-bottom: 40px;
+}
+
+span.upload-error {
+  left: 0;
+  bottom: -17px;
+  position: absolute;
+  font-size: 0.75rem;
+  color: #fc6868;
 }
 
 * {
