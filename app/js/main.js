@@ -4,7 +4,6 @@ $(document).ready(function () {
     autuHeight: true,
     adaptiveHeight: true,
     infinite: true,
-    slideperview: 1,
     dots: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
@@ -130,21 +129,15 @@ menu.forEach((element) => {
 
 //Change color for Header
 
-
-// let headerShop = document.getElementById("header_shop");
-// let headerSearch = document.getElementById("header_search");
 let headermenu = document.querySelectorAll(".header-info-link-title");
 let arrow = document.querySelectorAll(".arrow");
-
-let pastName = window.location.pathname === "/main.html";
+// let topScreen = document.querySelector("#top_screen");
 
 function changeHeader() {
-  
   headerLogo.src = "./images/icon/ESPIREO-white.svg";
   headerShop.src = "./images/icon/header-shop-white.svg";
   magnifier.src = "./images/icon/header-search-white.svg";
   headermenu.forEach((el) => {
-    console.log("for")
     el.style.color = "#fff";
   });
   arrow.forEach((el) => {
@@ -152,6 +145,16 @@ function changeHeader() {
   });
 }
 
-if (pastName == true) {
+if (document.querySelector(".top-screen")) {
   changeHeader();
 }
+
+// Button for mobile-catalog
+
+let tocard = document.querySelectorAll(".zxc");
+let opencard = document.querySelector(".main-catalog-btn");
+opencard.onclick = () => {
+  tocard.forEach((el) => {
+    el.style.display = "block";
+  });
+};

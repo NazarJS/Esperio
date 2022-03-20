@@ -1,4 +1,6 @@
 .checkout {
+  padding-top: 20px;
+  margin-bottom: 50px;
   .container {
     max-width: 932px;
   }
@@ -7,6 +9,12 @@
     height: 630px;
     overflow: hidden;
     overflow-y: auto;
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: 400px) {
+      padding-right: 0;
+    }
     &::-webkit-scrollbar {
       width: 4px;
       // background: black;
@@ -24,6 +32,9 @@
     @media (max-width: 768px) {
       padding: 0 15px 0 12px;
     }
+    @media (max-width: 400px) {
+      padding-right: 0;
+    }
   }
   &-title {
     font-size: rem(24);
@@ -36,6 +47,9 @@
   }
   &-form {
     padding-right: 15px;
+    @media (max-width: 400px) {
+      padding-right: 0;
+    }
   }
   &-container {
     margin-bottom: 40px;
