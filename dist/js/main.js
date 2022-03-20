@@ -153,3 +153,42 @@ function changeHeader() {
 if (pastName == true) {
   changeHeader();
 }
+
+// Scroll title
+
+// const animateProgressBar = () => {
+//   let scrollDistance = -section.getBoundingClientRect().top;
+//   let progressWidth =
+//     (scrollDistance /
+//       (section.getBoundingClientRect().height -
+//         document.documentElement.clientHeight)) *
+//     100;
+//   let value = Math.floor(progressWidth);
+//   console.log(scrollDistance);
+//   progressBar.style.width = value + "%";
+
+//   if (value < 0) {
+//     progressBar.style.width = "0%";
+//   }
+// };
+
+// window.addEventListener("scroll", animateProgressBar);
+
+// section.onscroll = function () {
+//   var scrolled = window.pageYOffset;
+//   console.log("Позиция скрола: " + scrolled);
+// };
+let section = document.querySelector(".checkout-data");
+let titleOne = document.querySelector(".titleOne");
+// titleOne.addEventListener("scroll", function () {
+//   console.log("Pozicia titleOne - " + this.getBoundingClientRect());
+// });
+
+section.addEventListener("scroll", function () {
+  console.log(this.scrollTop);
+  if (this.scrollTop >= 623) {
+    titleOne.innerHTML = "Адрес доставки";
+  } else {
+    titleOne.innerHTML = "Данные покупателя";
+  }
+});
