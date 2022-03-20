@@ -148,7 +148,18 @@
         transform: translate(-50%,-50%);
       }
     }
-    
+    &-shop {
+      position: relative;
+    }
+    &-circle {
+      position: absolute;
+      left: -2px;
+      bottom: 1px;
+      width: 10px;
+      height: 10px;
+      background-color: $colorBlack;
+      border-radius: 50%;
+    }
   }
   &-dropdown {
     display: flex;

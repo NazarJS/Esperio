@@ -1,7 +1,5 @@
 .cart {
     padding-bottom: 55px;
-    
-  
     &-wrapper {
       
       &-left {
@@ -128,6 +126,15 @@
       }
       .ui-basket {
         width: 100%;
+      }
+    }
+    
+    @media(max-width:768px) {
+      .order-1 {
+        order: 1;
+      }
+      .order-2 {
+        order: 2;
       }
     }
   }
