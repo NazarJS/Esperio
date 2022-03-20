@@ -4,7 +4,6 @@ headerInput.onclick  = function(e) {
 }
     
 wrapper.onclick = () => {
-    console.log("done")
     inputList.style.display = "none";
 }
 magnifier.onclick = () => {
