@@ -4,7 +4,7 @@
    <div class="checkout">
       <div class="container">
          <div class="row">
-            <div class="col-6">
+            <div class="col-sm-6">
                <div class="checkout-data">
                   <form id="commentForm" class="checkout-form">
                      <div class="checkout-container">
@@ -12,28 +12,28 @@
                            Данные покупателя
                         </div>
                         <div class="ui-field">
-                           <label for="lastdname">Фамилия*</label>
-                           <input type="lastdname">
+                           <label for="lastname">Фамилия*</label>
+                           <input name="lastname" type="text">
                         </div>
                         <div class="ui-field">
                            <label for="name">Имя*</label>
-                           <input type="name">
+                           <input name="name" type="text">
                         </div>
                         <div class="ui-field">
                            <label for="secondname">Отчество*</label>
-                           <input type="secondname">
+                           <input name="secondname" type="text">
                         </div>
                         <div class="ui-field">
-                           <label for="secondname">Эл. адрес*</label>
-                           <input type="secondname">
+                           <label for="email">Эл. адрес*</label>
+                           <input name="email" type="text">
                         </div>
                         <div class="ui-field">
-                           <label for="secondname">Мобильный телефон*</label>
-                           <input type="secondname">
+                           <label for="tel">Мобильный телефон*</label>
+                           <input name="tel" placeholder="+375" type="text">
                         </div>
                         <div class="ui-field">
-                           <label for="secondname">Instagram</label>
-                           <input type="secondname">
+                           <label for="instagram">Instagram</label>
+                           <input name="instagram" type="text">
                         </div>
                      </div>
                      <div class="checkout-container">
@@ -41,34 +41,34 @@
                            Адрес доставки
                         </div>
                         <div class="ui-field">
-                           <label for="lastdname">Страна*</label>
-                           <input type="lastdname">
+                           <label for="country">Страна*</label>
+                           <input name="country" type="text">
                         </div>
                         <div class="ui-field">
-                           <label for="name">Город*</label>
-                           <input type="name">
+                           <label for="city">Город*</label>
+                           <input name="city" type="text">
                         </div>
                         <div class="ui-field">
-                           <label for="secondname">Почтовый индекс*</label>
-                           <input type="secondname">
+                           <label for="index">Почтовый индекс*</label>
+                           <input name="index" type="text">
                         </div>
                         <div class="ui-field">
-                           <label for="secondname">Улица*</label>
-                           <input type="secondname">
+                           <label for="street">Улица*</label>
+                           <input name="street" type="text">
                         </div>
                         <div class="ui-field">
                            <div class="row">
                               <div class="col-4">
-                                 <label for="secondname">Дом*</label>
-                                 <input type="secondname">
+                                 <label for="house">Дом*</label>
+                                 <input name="house" type="text">
                               </div>
                               <div class="col-4">
-                                 <label for="secondname">Подъезд</label>
-                                 <input type="secondname">
+                                 <label for="entrance">Подъезд</label>
+                                 <input name="entrance" type="text">
                               </div>
                               <div class="col-4">
-                                 <label for="secondname">Квартира</label>
-                                 <input type="secondname">
+                                 <label for="appartment">Квартира</label>
+                                 <input name="appartment" type="text">
                               </div>
                            </div>
                         </div>
@@ -90,10 +90,36 @@
                   </form>
                </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                <div class="checkout-info">
                   <div class="checkout-title">
                      Информация о заказе
+                  </div>
+                  <div class="cart-info">
+                     <div class="cart-info-txt">
+                        Способ доставки*
+                     </div>
+                     <div class="cart-info-select">
+                        <select>
+                           <option>Курьерская доставка</option>
+                           <option>Пункт 2</option>
+                           <option>Пункт 1</option>
+                           <option>Пункт 2</option>
+                        </select>
+                     </div>
+                     <div class="cart-info-price">
+                        Стоимость товаров:
+                        <span class="cart-info-price-span">170 BYN</span>
+                     </div>
+                     <div class="cart-info-price">
+                        Доставка:
+                        <span class="cart-info-price-span">170 BYN</span>
+                     </div>
+                     <div class="cart-info-total">
+                        Итого к оплате:
+                        <span class="cart-info-total-span">15 BYN</span>
+                     </div>
+                     <div class="ui-basket">Оформить заказ</div>
                   </div>
                </div>
             </div>
