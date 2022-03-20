@@ -989,7 +989,9 @@ textarea {
 .top-screen-slide {
   position: relative;
   z-index: -1;
-  height: 700px;
+  height: 100vh;
+  max-height: 1500px;
+  overflow: hidden;
 }
 
 .top-screen-slide-img {
@@ -1000,8 +1002,9 @@ textarea {
   left: 50%;
   top: 50%;
   z-index: -1;
-  width: 100vw;
-  min-width: 1360px;
+  min-width: 100%;
+  max-width: none;
+  height: 100%;
 }
 
 .top-screen-slide-content {
@@ -1319,6 +1322,10 @@ textarea {
 
 .description-promo-text p:first-child {
   margin-bottom: 32px;
+}
+
+.zxc {
+  display: none;
 }
 
 .checkout {

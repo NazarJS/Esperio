@@ -4,7 +4,6 @@ $(document).ready(function () {
     autuHeight: true,
     adaptiveHeight: true,
     infinite: true,
-    slideperview: 1,
     dots: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
@@ -130,21 +129,15 @@ menu.forEach((element) => {
 
 //Change color for Header
 
-
-// let headerShop = document.getElementById("header_shop");
-// let headerSearch = document.getElementById("header_search");
 let headermenu = document.querySelectorAll(".header-info-link-title");
 let arrow = document.querySelectorAll(".arrow");
-
-let pastName = window.location.pathname === "/main.html";
+// let topScreen = document.querySelector("#top_screen");
 
 function changeHeader() {
-  
   headerLogo.src = "./images/icon/ESPIREO-white.svg";
   headerShop.src = "./images/icon/header-shop-white.svg";
   magnifier.src = "./images/icon/header-search-white.svg";
   headermenu.forEach((el) => {
-    console.log("for")
     el.style.color = "#fff";
   });
   arrow.forEach((el) => {
@@ -152,45 +145,16 @@ function changeHeader() {
   });
 }
 
-if (pastName == true) {
+if (document.querySelector(".top-screen")) {
   changeHeader();
 }
 
-// Scroll title
+// Button for mobile-catalog
 
-// const animateProgressBar = () => {
-//   let scrollDistance = -section.getBoundingClientRect().top;
-//   let progressWidth =
-//     (scrollDistance /
-//       (section.getBoundingClientRect().height -
-//         document.documentElement.clientHeight)) *
-//     100;
-//   let value = Math.floor(progressWidth);
-//   console.log(scrollDistance);
-//   progressBar.style.width = value + "%";
-
-//   if (value < 0) {
-//     progressBar.style.width = "0%";
-//   }
-// };
-
-// window.addEventListener("scroll", animateProgressBar);
-
-// section.onscroll = function () {
-//   var scrolled = window.pageYOffset;
-//   console.log("Позиция скрола: " + scrolled);
-// };
-let section = document.querySelector(".checkout-data");
-let titleOne = document.querySelector(".titleOne");
-// titleOne.addEventListener("scroll", function () {
-//   console.log("Pozicia titleOne - " + this.getBoundingClientRect());
-// });
-
-section.addEventListener("scroll", function () {
-  console.log(this.scrollTop);
-  if (this.scrollTop >= 623) {
-    titleOne.innerHTML = "Адрес доставки";
-  } else {
-    titleOne.innerHTML = "Данные покупателя";
-  }
-});
+let tocard = document.querySelectorAll(".zxc");
+let opencard = document.querySelector(".main-catalog-btn");
+opencard.onclick = () => {
+  tocard.forEach((el) => {
+    el.style.display = "block";
+  });
+};

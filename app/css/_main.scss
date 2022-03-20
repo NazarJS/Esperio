@@ -14,17 +14,18 @@
   &-slide {
     position: relative;
     z-index: -1;
-    // min-height: 100vh;
-    // max-height: 1500px;
-    height: 700px;
+    height: 100vh;
+    max-height: 1500px;
+    overflow: hidden;
     &-img {
       position: absolute;
       transform: translate(-50%, -50%);
       left: 50%;
       top: 50%;
       z-index: -1;
-      width: 100vw;
-      min-width: 1360px;
+      min-width: 100%;
+      max-width: none;
+      height: 100%;
     }
     &-content {
       height: 100vh;
@@ -353,4 +354,8 @@
       order: 2;
     }
   }
+}
+
+.zxc {
+  display: none;
 }
