@@ -7,6 +7,7 @@ $(document).ready(function () {
     dots: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
+  
   });
   // Form validation
 
@@ -32,6 +33,7 @@ $(document).ready(function () {
   $("#commentForm").validate({
     errorElement: "span",
     errorClass: "upload-error",
+
     rules: {
       lastname: {
         lettersonly: true,
@@ -73,6 +75,9 @@ $(document).ready(function () {
         number: true,
         required: true,
       },
+      payment: {
+        required: true,
+      }
     },
     messages: {
       lastname: {
@@ -116,6 +121,11 @@ $(document).ready(function () {
         number: "Введите корректный номер дома",
       },
     },
+    invalidHandler: function() {
+
+      setTimeout(function() {
+          $('input, select').trigger('refresh');
+      }, 1)}
   });
 });
 
@@ -151,10 +161,17 @@ if (document.querySelector(".top-screen")) {
 
 // Button for mobile-catalog
 
-let tocard = document.querySelectorAll(".zxc");
+let tocard = document.querySelectorAll(".col-hide");
 let opencard = document.querySelector(".main-catalog-btn");
 opencard.onclick = () => {
   tocard.forEach((el) => {
     el.style.display = "block";
   });
 };
+
+// Form styler 
+(function($) {
+  $(function() {
+    $('input, select').styler();
+  });
+  })(jQuery);
