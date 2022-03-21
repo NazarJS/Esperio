@@ -3,12 +3,14 @@
 <div class="middle" id="middle">
    <div class="checkout">
       <div class="container">
-         <div class="row">
-            <div class="col-sm-6">
-               <div class="checkout-data">
-                  <form id="commentForm" class="checkout-form">
+         <form id="commentForm" class="checkout-form">
+            <div class="row">
+               <div class="col-sm-6">
+
+                  <div class="checkout-data">
+
                      <div class="checkout-container">
-                        <div class="checkout-title">
+                        <div class="checkout-title titleOne">
                            Данные покупателя
                         </div>
                         <div class="ui-field">
@@ -37,7 +39,7 @@
                         </div>
                      </div>
                      <div class="checkout-container">
-                        <div class="checkout-title">
+                        <div class="checkout-title ">
                            Адрес доставки
                         </div>
                         <div class="ui-field">
@@ -85,45 +87,48 @@
                               <option>Пункт 1</option>
                               <option>Пункт 2</option>
                            </select>
+
                         </div>
                      </div>
-                  </form>
-               </div>
-            </div>
-            <div class="col-sm-6">
-               <div class="checkout-info">
-                  <div class="checkout-title">
-                     Информация о заказе
-                  </div>
-                  <div class="cart-info">
-                     <div class="cart-info-txt">
-                        Способ доставки*
-                     </div>
-                     <div class="cart-info-select">
-                        <select>
-                           <option>Курьерская доставка</option>
-                           <option>Пункт 2</option>
-                           <option>Пункт 1</option>
-                           <option>Пункт 2</option>
-                        </select>
-                     </div>
-                     <div class="cart-info-price">
-                        Стоимость товаров:
-                        <span class="cart-info-price-span">170 BYN</span>
-                     </div>
-                     <div class="cart-info-price">
-                        Доставка:
-                        <span class="cart-info-price-span">170 BYN</span>
-                     </div>
-                     <div class="cart-info-total">
-                        Итого к оплате:
-                        <span class="cart-info-total-span">15 BYN</span>
-                     </div>
-                     <div class="ui-basket">Оформить заказ</div>
+
                   </div>
                </div>
+               <div class="col-sm-6">
+                  <div class="checkout-info">
+                     <div class="checkout-title">
+                        Информация о заказе
+                     </div>
+                     <div class="cart-info">
+                        <div class="cart-info-txt">
+                           Способ доставки*
+                        </div>
+                        <div class="cart-info-select">
+                           <select required>
+                              <option>Курьерская доставка</option>
+                              <option>Пункт 2</option>
+                              <option>Пункт 1</option>
+                              <option>Пункт 2</option>
+                           </select>
+                        </div>
+
+                        <div class="cart-info-price">
+                           Стоимость товаров:
+                           <span class="cart-info-price-span">170 BYN</span>
+                        </div>
+                        <div class="cart-info-price">
+                           Доставка:
+                           <span class="cart-info-price-span">170 BYN</span>
+                        </div>
+                        <div class="cart-info-total">
+                           Итого к оплате:
+                           <span class="cart-info-total-span">15 BYN</span>
+                        </div>
+                        <input class="styler ui-basket" type="submit" value="Оформить заказ" />
+                     </div>
+                  </div>
+               </div>
             </div>
-         </div>
+         </form>
       </div>
    </div>
 </div>
