@@ -6,6 +6,9 @@
   .container {
     position: relative;
     padding-left: 75px;
+    @media (max-width: 576px) {
+      padding: 0 20px;
+    }
   }
   @media (max-width: 400) {
     margin-bottom: 60px;
@@ -31,9 +34,13 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
-
       justify-content: center;
       padding: 0 75px;
+      @media (max-width:576px){
+        padding: 0;
+        justify-content: end;
+        padding-bottom: 66px;
+      }
       .ui-btn {
         padding: 0 11px;
         font-size: rem(14);
@@ -58,6 +65,7 @@
       }
       @media (max-width: 576px) {
         font-size: rem(60);
+        max-width: 200px;
       }
       @media (max-width: 400px) {
         color: #fff;
@@ -83,6 +91,9 @@
     .next {
       position: absolute;
       right: 40px;
+    }
+    @media (max-width:576px) {
+      display: none;
     }
   }
 
@@ -271,6 +282,10 @@
   padding: 130px 0px;
   margin-bottom: 120px;
   overflow: hidden;
+  @media (max-width: 400px) {
+    padding: 40px 0;
+    margin-bottom: 50px;
+  }
   &-img {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -279,6 +294,9 @@
     z-index: -1;
     width: 100vw;
     min-width: 1360px;
+    @media (max-width:400px) {
+      min-width: 0;
+    }
   }
   &-wrapper {
     padding: 0 8.33%;
@@ -299,6 +317,8 @@
     }
     @media (max-width: 400px) {
       font-size: rem(44);
+      max-width: 200px;
+     
     }
   }
   &-link {
