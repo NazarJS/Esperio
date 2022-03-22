@@ -1,11 +1,3 @@
-let user = {
-  zxc() {
-    console.log(this);
-  },
-};
-
-user.zxc();
-
 $(document).ready(function () {
   // Top-Screen Slider
   $(".top-screen-slider").slick({
