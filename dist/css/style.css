@@ -1660,26 +1660,26 @@ textarea {
   width: 200px;
 }
 
-.aboutus {
+.whywe {
   margin-bottom: 75px;
   padding-left: 8.33%;
   padding-right: 8.33%;
 }
 
-.aboutus p {
+.whywe p {
   font-weight: 300;
 }
 
-.aboutus p:first-child {
+.whywe p:first-child {
   margin-bottom: 32px;
 }
 
-.aboutus-title {
+.whywe-title {
   max-width: 390px;
   margin-bottom: 50px;
 }
 
-.aboutus-title-text {
+.whywe-title-text {
   font-size: 3.625rem;
   font-weight: 500;
   line-height: 1;
@@ -1687,7 +1687,7 @@ textarea {
   font-family: "Cormorant", serif;
 }
 
-.aboutus-title-link {
+.whywe-title-link {
   font-size: 0.875rem;
 }
 
@@ -1806,10 +1806,6 @@ textarea {
   margin-bottom: 32px;
 }
 
-.zxc {
-  display: none;
-}
-
 .checkout {
   padding-top: 20px;
   margin-bottom: 50px;
@@ -1893,6 +1889,208 @@ input[type=reset].styler:not([disabled]):hover,
 input[type=reset].styler:hover {
   opacity: 0.5;
   background: #4b3d32;
+}
+
+.aboutus-header {
+  margin-bottom: 15px;
+}
+
+.aboutus-header h1 {
+  color: #4b3d32;
+  font-size: 2.75rem;
+}
+
+.aboutus-header p {
+  font-weight: 300;
+  padding: 17px 0;
+}
+
+.aboutus-img {
+  text-align: center;
+  margin-bottom: 32px;
+  line-height: 0;
+  height: 464px;
+  width: 100%;
+}
+
+.aboutus-img img {
+  max-height: 464px;
+}
+
+.aboutus-list {
+  font-weight: 300;
+  margin-bottom: 120px;
+}
+
+.aboutus-list-title {
+  margin-bottom: 20px;
+}
+
+.aboutus-list ul {
+  margin-bottom: 16px;
+}
+
+.aboutus-list li {
+  position: relative;
+  padding: 0 24px;
+  margin-bottom: 16px;
+}
+
+.aboutus-list li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  top: 50%;
+  left: 12px;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: #4b3d32;
+}
+
+.aboutus-team {
+  margin-bottom: 120px;
+}
+
+.aboutus-team-card {
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.aboutus-team-card-img {
+  line-height: 0;
+  height: 465px;
+}
+
+.aboutus-team-card-img img {
+  max-height: 465px;
+}
+
+.aboutus-team-card-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.aboutus-team-card-position {
+  opacity: 0.5;
+  margin-bottom: 12px;
+}
+
+.aboutus-team-card-desc {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.aboutus-proj {
+  margin-bottom: 120px;
+}
+
+.aboutus-proj-item {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #dbd8d6;
+}
+
+.aboutus-proj-item:last-child {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border-bottom: 0;
+}
+
+.aboutus-proj h1 {
+  color: #4b3d32;
+  font-size: 2.75rem;
+  margin-bottom: 28px;
+}
+
+.aboutus-proj-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.aboutus-proj-text {
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.aboutus-smi {
+  margin-bottom: 120px;
+}
+
+.aboutus-smi-title {
+  font-family: "Cormorant", serif;
+  font-size: 2.75rem;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.aboutus-smi-item {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #dbd8d6;
+}
+
+.aboutus-smi-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.aboutus-smi-item-img {
+  line-height: 0;
+}
+
+.aboutus-smi-item-content {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.aboutus-smi-item-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+}
+
+.aboutus-smi-item-title:hover {
+  text-decoration: none;
+}
+
+.aboutus-smi-item-link {
+  font-weight: 300;
+}
+
+.aboutus-contact-info {
+  padding-right: 50px;
+  margin-bottom: 40px;
+}
+
+.aboutus-contact-tel-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.aboutus-contact-tel-number {
+  font-weight: 300;
+}
+
+.aboutus-contact-inst-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.aboutus-contact-inst-adress {
+  font-weight: 300;
 }
 
 * {
@@ -2727,7 +2925,7 @@ body {
     font-size: 6.25rem;
   }
 
-  .aboutus {
+  .whywe {
     padding-left: 0;
     padding-right: 0;
   }
@@ -2780,7 +2978,7 @@ body {
     margin-bottom: 20px;
   }
 
-  .aboutus-title-text {
+  .whywe-title-text {
     font-size: 2.625rem;
   }
 
@@ -2851,7 +3049,7 @@ body {
     display: none;
   }
 
-  .aboutus-title-text {
+  .whywe-title-text {
     margin-bottom: 20px;
   }
 
@@ -2991,6 +3189,10 @@ body {
   .sale-title {
     font-size: 2.75rem;
     max-width: 200px;
+  }
+
+  .col-hide {
+    display: none;
   }
 
   .checkout-data {
