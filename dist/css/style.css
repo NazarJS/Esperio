@@ -2,6 +2,11 @@
   background-color: #736f63;
 }
 
+.catalog {
+  padding-top: 35px;
+  margin-bottom: -15px;
+}
+
 .catalog-title {
   padding-top: 20px;
   margin-bottom: 30px;
@@ -96,7 +101,7 @@
 }
 
 .cart {
-  padding-bottom: 55px;
+  padding-bottom: 35px;
 }
 
 .cart-wrapper-left {
@@ -651,7 +656,7 @@ textarea {
 }
 
 .header {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   padding-top: 20px;
   z-index: 9999;
 }
