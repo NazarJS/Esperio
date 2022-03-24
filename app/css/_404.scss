@@ -12,7 +12,23 @@
     }
   }
 
-  .product-middle {
-    margin-top: 120px;
+  .product {
+    &-middle {
+      margin-top: 120px;
+    }
+
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .product-link {
+        margin-right: 30px;
+
+        .arrow-left {
+          transform: rotate(45deg);
+        }
+      }
+    }
   }
 }

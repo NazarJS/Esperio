@@ -1484,6 +1484,54 @@ textarea {
   margin-top: 120px;
 }
 
+.page-404 .product-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.page-404 .product-text .product-link {
+  margin-right: 30px;
+}
+
+.page-404 .product-text .product-link .arrow-left {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.search-page .product-middle {
+  margin-top: 120px;
+}
+
+.search-page .product-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.search-page .product-text .product-link {
+  margin-right: 30px;
+}
+
+.search-page .product-text .product-link .arrow-left {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .search-request {
   margin-bottom: 32px;
   font-family: "Open Sans", sans-serif;
