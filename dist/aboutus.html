@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>ESPIREO</title>
+  <meta name="keywords" content="Esperio" />
+  <meta name="description" content="Esperio" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./css/_var.scss" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <header id="header" class="header">
+        <div class="container">
+          <div class="row" id ="headerDesctop">
+            <div class=" col-us-4 col-ss-3 col-md-5">
+              <div class="header-info">
+                <ul>
+                  <li>
+                    <div  class ="header-info-link">
+                      <a href="#" class="header-info-link-title">
+                        Каталог
+                        <div class="arrow arrow-down"></div>
+                      </a>
+                      <div class="herder-info-link-wrapper">
+                        <ul>
+                          <li><a href="#">Смотреть все</a></li>
+                          <li><a href="#">Платья</a></li>
+                          <li><a href="#">Блузы и рубашки</a></li>
+                          <li><a href="#">Топы, корсеты, футболки</a></li>
+                          <li><a href="#">Юбки</a></li>
+                          <li><a href="#">Брюки и шорты</a></li>
+                          <li><a href="#">Жакеты</a></li>
+                          <li><a href="#">Деним</a></li>
+                          <li><a href="#">Вязаный трикотаж</a></li>
+                          <li><a href="#">Верхняя одежда</a></li>
+                          <li><a href="#">Спортивная коллекция</a></li>
+                          <li><a href="#">Сумки</a></li>
+                          <li><a href="#">Подарочный сертификат</a></li>
+                          <li><a href="#">Распродажа</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div  class ="header-info-link">
+                      <a href="#" class="header-info-link-title">
+                        Клиентам
+                        <div class="arrow arrow-down"></div>
+                      </a>
+                      <div class="herder-info-link-wrapper">
+                        <ul>
+                          <li><a href="#">Смотреть все</a></li>
+                          <li><a href="#">Платья</a></li>
+                          <li><a href="#">Блузы и рубашки</a></li>
+                          <li><a href="#">Топы, корсеты, футболки</a></li>
+                          <li><a href="#">Юбки</a></li>
+                          <li><a href="#">Брюки и шорты</a></li>
+                          <li><a href="#">Жакеты</a></li>
+                          <li><a href="#">Деним</a></li>
+                          <li><a href="#">Вязаный трикотаж</a></li>
+                          <li><a href="#">Верхняя одежда</a></li>
+                          <li><a href="#">Спортивная коллекция</a></li>
+                          <li><a href="#">Сумки</a></li>
+                          <li><a href="#">Подарочный сертификат</a></li>
+                          <li><a href="#">Распродажа</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div  class ="header-info-link">
+                      <a href="#" class="header-info-link-title">
+                        О нас
+                        <div class="arrow arrow-down"></div>
+                      </a>
+                      <div class="herder-info-link-wrapper">
+                        <ul>
+                          <li><a href="#">Смотреть все</a></li>
+                          <li><a href="#">Платья</a></li>
+                          <li><a href="#">Блузы и рубашки</a></li>
+                          <li><a href="#">Топы, корсеты, футболки</a></li>
+                          <li><a href="#">Юбки</a></li>
+                          <li><a href="#">Брюки и шорты</a></li>
+                          <li><a href="#">Жакеты</a></li>
+                          <li><a href="#">Деним</a></li>
+                          <li><a href="#">Вязаный трикотаж</a></li>
+                          <li><a href="#">Верхняя одежда</a></li>
+                          <li><a href="#">Спортивная коллекция</a></li>
+                          <li><a href="#">Сумки</a></li>
+                          <li><a href="#">Подарочный сертификат</a></li>
+                          <li><a href="#">Распродажа</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-menu" id = "burger">
+                <img src="./images/icon/header-mobile-menu.svg" alt="alt">
+              </div>
+            </div>
+            <div class=" col-us-4  col-ss-6 col-md-2 text-center">
+              <a href="#" class="header-logo" >
+                <img src="./images/icon/ESPIREO.svg" id ="headerLogo" alt="alt"/>
+              </a>
+            </div>
+            <div class=" col-us-4 col-ss-3 col-md-5">
+              <div class="header-btns">
+                
+                  <img src="./images/icon/header-magnifier.svg" alt="alt" class = "header-btns-lupa" id ="magnifier" />
+                  <div class="header-btns-search" id ="headerBtnsSearch">
+                    <input type="text" placeholder="Категория, товар или артикул" id = "headerInput">
+                    <div class="header-btns-magnifier" id = "magnifierInput">
+                      <img src="./images/icon/header-search-white.svg" alt="alt"/>
+                    </div>
+                    <div class="header-dropdown-list" id = "inputList">
+                      <div class="header-dropdown-title">Популярные запросы</div>
+                      <ul>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Блузы и рубашки</a></li>
+                        <li><a href="#">Топы, корсеты, футболки</a></li>
+                        <li><a href="#">Юбки</a></li>
+                      </ul>
+                      <div class="header-dropdown-title">
+                        Вы недавно смотрели
+                      </div>
+                      <div class="header-dropdown-previous">
+                        <div class="header-dropdown-previous-img">
+                          <img src="./images/example/header-btns-previous.png" alt="alt">
+                        </div>
+                        <a href="#" class="header-dropdown-previous-link">Платье-мини с расклешённым рукавомs</a>
+                      </div>
+                      <div class="header-dropdown-previous">
+                        <div class="header-dropdown-previous-img">
+                          <img src="./images/example/header-btns-previous_1.png" alt="alt">
+                        </div>
+                        <a href="#" class="header-dropdown-previous-link">Майка в рубчик</a>
+                      </div>
+                    </div>
+                  </div>
+                
+                
+                <a href="#" class ="header-btns-shop">
+                  <img src="./images/icon/header-shop.svg" id = "headerShop" alt="alt"/>
+                  <div class="header-btns-circle header-btns-circle-active"></div>
+                </a>
+              </div>
+              
+           
+          </div>
+          </div>
+          <div class="header-mob " id ="headerMob">
+            <div class="header-mob-title">
+              Меню
+              <img src="./images/icon/header-mob-close.svg" alt="alt" id ="closeHeader">
+            </div>
+            <div class="header-mob-search" >
+              <input type="text" placeholder="Категория, товар или артикул" id = "headerInputMob">
+              <div class="header-mob-magnifier">
+                <img src="./images/icon/header-search-white.svg" alt="alt"/>
+              </div>
+              <div class="header-dropdown-list header-dropdown-list-mob" id = "inputListMob">
+                <div class="header-dropdown-title">Популярные запросы</div>
+                <ul>
+                  <li><a href="#">Платья</a></li>
+                  <li><a href="#">Блузы и рубашки</a></li>
+                  <li><a href="#">Топы, корсеты, футболки</a></li>
+                  <li><a href="#">Юбки</a></li>
+                </ul>
+                <div class="header-dropdown-title">
+                  Вы недавно смотрели
+                </div>
+                <div class="header-dropdown-previous">
+                  <div class="header-dropdown-previous-img">
+                    <img src="./images/example/header-btns-previous.png" alt="alt">
+                  </div>
+                  <a href="#" class="header-dropdown-previous-link">Платье-мини с расклешённым рукавомs</a>
+                </div>
+                <div class="header-dropdown-previous">
+                  <div class="header-dropdown-previous-img">
+                    <img src="./images/example/header-btns-previous_1.png" alt="alt">
+                  </div>
+                  <a href="#" class="header-dropdown-previous-link">Майка в рубчик</a>
+                </div>
+              </div>
+            </div>
+            <div class="header-mob-box">
+              <ul>
+                          <li><a href="#">Весь каталог</a></li>
+                          <li><a href="#">Платья</a></li>
+                          <li><a href="#">Блузы и рубашки</a></li>
+                          <li><a href="#">Топы, корсеты, футболки</a></li>
+                          <li><a href="#">Юбки</a></li>
+                          <li><a href="#">Брюки и шорты</a></li>
+                          <li><a href="#">Жакеты</a></li>
+                          <li><a href="#">Деним</a></li>
+                          <li><a href="#">Вязаный трикотаж</a></li>
+                          <li><a href="#">Верхняя одежда</a></li>
+                          <li><a href="#">Спортивная коллекция</a></li>
+                          <li><a href="#">Сумки</a></li>
+                          <li><a href="#">Подарочный сертификат</a></li>
+                          <li><a href="#">Распродажа</a></li>
+              </ul>
+            </div>
+            <div class="header-mob-box">
+              <ul>
+                          <li><a href="#">Оформление заказа</a></li>
+                          <li><a href="#">Оплата</a></li>
+                          <li><a href="#">Доставка</a></li>
+                          <li><a href="#">Обмен и возврат</a></li>
+                          <li><a href="#">Таблица размеров</a></li>
+                          <li><a href="#">Отзывы</a></li>                
+              </ul>
+            </div>
+            <div class="header-mob-box">
+              <ul>
+                          <li><a href="#">О бренде</a></li>
+                          <li><a href="#">Команда ESPIREO</a></li>
+                          <li><a href="#">Проекты</a></li>
+                          <li><a href="#">Мы в СМИ</a></li>
+                          <li><a href="#">Юбки</a></li>                      
+              </ul>
+            </div>
+            <div class="header-mob-adress">
+              ул. Петра Мстиславца 12, магазин 254. г. Минск, Беларусь.
+            </div>
+            <div class="header-mob-time">
+              ПН — СБ 12.00 - 20.00
+              ВС   12.00 - 17.00
+            </div>
+            <div class="header-mob-contacts">
+              <div class="header-mob-contact">
+                <img src="./images/icon/footer-telefon.svg" alt="alt">
+                <a href="tel:375297716422">+375297716422</a>
+              </div>
+              <div class="header-mob-contact">
+                <img src="./images/icon/footer-inst.svg" alt="alt">
+                <a href="#">Istagram</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </header>
+
+<div class="middle" id="middle">
+   <div class="container">
+      <div class="aboutus">
+         <div class="aboutus-header">
+            <h1>О бренде</h1>
+            <p>ESPIREO, как бренд одежды, появился на белорусском рынке в самое начало пандемии 2020 года, что точно
+               закалило нас и придало силы и стойкости. </p>
+            <p>Название “ESPIREO” родилось из двух английских слов: “aspiration” и “inspiration” (“стремление” и
+               “вдохновение”); с ними появилась и миссия бренда: “Our aspiration is to inspire you” или “Наше стремление
+               вдохновлять тебя”. Мы верим, что даже такая простая и обыденная вещь, как одежда, способна поддерживать
+               нас
+               в самых неожиданных решениях, мечтах и стремлениях. Мы не занимаемся культом одежды: мы хотим, чтобы она
+               была вашим надёжным бэкграундом и опорой на пути к высокому.</p>
+            <p>
+               Бренд ESPIREO изначально создавался усилиями одной девушки - Наталии Тарасевич.
+               Наталия всю жизнь пробовала реализовывать свои бизнес-идеи: от перепродажи жвачек в первом классе школы
+               до
+               построения ивент-агенства после окончания университета. ESPIREO - был одной из таких идей.
+            </p>
+            <p>
+               Наталия начинала и другие проекты под этим названием (даже перепродажу изделий других брендов!). Но уже в
+               апреле 2020 года появилось первое изделие, отшитое под этим лейблом, что и стало отправной точкой
+               ESPIREO,
+               как самостоятельного бренда одежды.</p>
+         </div>
+         <div class="aboutus-img">
+            <img src="./images/about-us-item.png" alt="alt">
+         </div>
+         <div class="aboutus-list">
+            <div class="aboutus-list-title">
+               С момента зарождения бренда мы:
+            </div>
+            <ul>
+               <li>создали комьюнити с 0 до более 30 000 человек;</li>
+               <li>установили высокий уровень сервиса в магазине и Instagram при доступных ценах на изделия;</li>
+               <li>разработали более 70 моделей базовой коллекции;</li>
+               <li>окружили себя командой из абсолютно прекрасных специалистов и, главное, людей;</li>
+               <li>начав с одного маленького рейла в шоуруме и сменив уже несколько магазинов, открыли просторный
+                  магазин,
+                  наполненный светом и эстетикой в каждой детали.</li>
+            </ul>
+            <div class="aboutus-list-text">
+               Наша главная идея - помочь каждой девушке собрать стильный и современный базовый гардероб в одном месте,
+               который поможет комфортно и уверенно чувствовать себя каждый день на пути достижения своих целей.
+               ESPIREO - бренд про высокие стремления, но про самое главное стремление - вдохновлять вас реализовывать
+               свой
+               творческий потенциал!
+            </div>
+         </div>
+         <div class="aboutus-team">
+            <div class="aboutus-header">
+               <h1>Команда ESPIREO</h1>
+               <p>ESPIREO - бренд с большими амбициями и не такой большой, но потрясающей командой. Именно поэтому
+                  каждый
+                  из нас - универсальный боец с десятком ролей и ежедневных задач. </p>
+            </div>
+            <div class="row">
+               <div class="col-sm-6">
+                  <div class="aboutus-team-card">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="aboutus-team-card-img">
+                              <img src="./images/about1.png" srcset="./images/about1@2x.png 2x" alt="alt">
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="aboutus-team-card-text">
+                              <div class="aboutus-team-card-name">
+                                 Наталия
+                              </div>
+                              <div class="aboutus-team-card-position">
+                                 Основатель и руководитель ESPIREO
+                              </div>
+                              <div class="aboutus-team-card-desc">
+                                 Мама бренда, которая управляет всеми процессами: от производственных до творческих.
+                                 Любит
+                                 вдохновляющих людей, эстетику женского тела, писать грандиозные планы, а также
+                                 танцевать и
+                                 улыбаться.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <div class="aboutus-team-card">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="aboutus-team-card-img">
+                              <img src="./images/about2.png" srcset="./images/about2@2x.png 2x" alt="alt">
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="aboutus-team-card-text">
+                              <div class="aboutus-team-card-name">
+                                 Мари
+                              </div>
+                              <div class="aboutus-team-card-position">
+                                 Контент-мейкер, SMM-специалист, консультант ESPIREO
+                              </div>
+                              <div class="aboutus-team-card-desc">
+                                 Генератор самых красивых фото и залипательных сторис! Любит минимализм в одежде, «Секс
+                                 в
+                                 большом городе» и йогу. Мари - менеджер всех портпледов, чемоданов и студий; человек, у
+                                 которого на счету уже 1000 миль в логистической программе «Магазин ESPIREO - фотостудии
+                                 Минска».
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <div class="aboutus-team-card">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="aboutus-team-card-img">
+                              <img src="./images/about3.png" srcset="./images/about3@2x.png 2x" alt="alt">
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+                           <div class="aboutus-team-card-text">
+                              <div class="aboutus-team-card-name">
+                                 Марина
+                              </div>
+                              <div class="aboutus-team-card-position">
+                                 Стилист-консультант и копирайтер ESPIREO
+                              </div>
+                              <div class="aboutus-team-card-desc">
+                                 Автор каждой буквы на нашем сайте и в Instagram, генератор самых гармоничных образов.
+                                 Любит
+                                 писать тексты, читать печатные журналы, винтажные вещи и обладает лучшей коллекцией
+                                 стикеров-котов в Telegram!
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+
+                  </div>
+               </div>
+               <div class="col-sm-6">
+                  <div class="aboutus-team-card">
+                     <div class="row">
+                        <div class="col-sm-6">
+                           <div class="aboutus-team-card-img">
+                              <img src="./images/about4.png" srcset="./images/about4@2x.png 2x" alt="alt">
+                           </div>
+                        </div>
+                        <div class="col-sm-6">
+
+                           <div class="aboutus-team-card-text">
+                              <div class="aboutus-team-card-name">
+                                 Виктория
+                              </div>
+                              <div class="aboutus-team-card-position">
+                                 Специалист по маркетингу и суппорту ESPIREO
+                              </div>
+                              <div class="aboutus-team-card-desc">
+                                 Человек, который не бывает оффлайн и умеет подбирать самые подходящие слова (и лучшие
+                                 гифки
+                                 😅). Любит прогулки со своим псом, спортивные активности и танцы; мечтает поплавать с
+                                 китами.
+                                 Обладатель лучшей базы блоггеров и стилистов Беларуси!
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="aboutus-proj">
+            <h1>Проекты</h1>
+            <div class="aboutus-proj-item">
+               <div class="row">
+                  <div class="col-ss-3">
+                     <div class="aboutus-proj-img">
+                        <img src="./images/examples/about-proj-1.png" alt="alt">
+                     </div>
+
+                  </div>
+                  <div class="col-ss-9">
+                     <div class="aboutus-proj-title">
+                        YOUR WAY
+                     </div>
+                     <div class="aboutus-proj-text">
+                        “Your way” - это проект ESPIREO о жизни, мечтах и стремлениях клиенток бренда. Мы регулярно
+                        рассказываем в Instagram истории простых девушек, которые нас вдохновляют. Это могут быть
+                        личные, профессиональные, спортивные и творческие успехи. Мы хотим, чтобы каждая девушка знала:
+                        она может быть той, кем хочет, и не обязана оправдывать чьи-то ожидания. Растить детей, прыгать
+                        с парашютом, писать картины или делать карьеру - только ты решаешь, кем тебе быть, а ESPIREO
+                        поддержит любое твоё стремление!
+                        Истории героинь проекта “Your way” ты можешь найти в Instagram по хештегу #espireo_heroes
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="aboutus-proj-item">
+               <div class="row">
+                  <div class="col-ss-3">
+                     <div class="aboutus-proj-img">
+                        <img src="./images/examples/about-proj2.png" alt="alt">
+                     </div>
+
+                  </div>
+                  <div class="col-ss-9">
+                     <div class="aboutus-proj-title">
+                        Вторая жизнь
+                     </div>
+                     <div class="aboutus-proj-text">
+                        “Вторая жизнь” - это благотворительный проект ESPIREO по сбору одежды для нуждающихся, значимый
+                        не только для социума, но и для экологии. Мы запустили его, чтобы сделать добрые дела доступными
+                        для каждого и с пользой для самого себя. В магазин бренда каждый желающий может принести
+                        ненужные вещи: мы отвезём их в Красный крест и подарим им вторую жизнь ❤️
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="aboutus-smi">
+            <div class="aboutus-smi-title">Мы в СМИ</div>
+            <!-- !  ЧТО ЗА ФИГНГЯ???? (сделать сылкой) 🔥🔥🔥🔥🔥  -->
+            <div class="aboutus-smi-item">
+               <div class="row">
+                  <div class="col-ss-3">
+                     <div class="aboutus-smi-item-img">
+                        <img src="./images/YouTube.png" alt="alt">
+                     </div>
+                  </div>
+                  <div class="col-ss-9">
+                     <div class="aboutus-smi-item-content flex space-between">
+                        <a href="#" class="aboutus-smi-item-title">
+                           Женское Шоу - О бренде
+                        </a>
+                        <div class="aboutus-smi-item-date">
+                           16 февраля 2022
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="aboutus-smi-item">
+               <div class="row">
+                  <div class="col-ss-3">
+                     <div class="aboutus-smi-item-img">
+                        <img src="./images/citydog.png" alt="alt">
+                     </div>
+                  </div>
+                  <div class="col-ss-9">
+                     <div class="aboutus-smi-item-content flex space-between">
+                        <a href="#" class="aboutus-smi-item-title">
+                           Гардероб предпринимательницы: наряды для «городских забегов бешеной собаки» и любимые ароматы
+                        </a>
+                        <div class="aboutus-smi-item-date">
+                           12 января 2021
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="aboutus-smi-item">
+               <div class="row">
+                  <div class="col-ss-3">
+                     <div class="aboutus-smi-item-img">
+                        <img src="./images/onliner.png" alt="alt">
+                     </div>
+                  </div>
+                  <div class="col-ss-9">
+                     <div class="aboutus-smi-item-content flex space-between">
+                        <a href="#" class="aboutus-smi-item-title">
+                           Формулы осенних луков. Как модно одеться без помощи стилистов
+                        </a>
+                        <div class="aboutus-smi-item-date">
+                           9 октября 2021
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="aboutus-smi-item">
+               <div class="row">
+                  <div class="col-ss-3">
+                     <div class="aboutus-smi-item-img">
+                        <img src="./images/collection.png" alt="alt">
+                     </div>
+                  </div>
+                  <div class="col-ss-9">
+                     <div class="aboutus-smi-item-content flex space-between">
+                        <a href="#" class="aboutus-smi-item-title">
+                           Fashion Collection - О бренде
+                        </a>
+                        <div class="aboutus-smi-item-date">
+                           16 февраля 2022
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="aboutus-smi-item">
+               <div class="row">
+                  <div class="col-ss-3">
+                     <div class="aboutus-smi-item-img">
+                        <img src="./images/shopogoliki.png" alt="alt">
+                     </div>
+                  </div>
+                  <div class="col-ss-9">
+                     <div class="aboutus-smi-item-content flex space-between">
+                        <a href="#" class="aboutus-smi-item-title">
+                           Шопоголики - О бренде
+                        </a>
+                        <div class="aboutus-smi-item-date">
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="aboutus-contact">
+            <div class="zxc">123123123123</div>
+            <div class="row">
+               <div class="col-ss-4">
+                  <div class="aboutus-contact-info flex space-between">
+                     <div class="aboutus-contact-tel">
+                        <div class="aboutus-contact-tel-title">
+                           Телефон
+                        </div>
+                        <div class="aboutus-contact-tel-number">
+                           +375297716422
+                        </div>
+                     </div>
+                     <div class="aboutus-contact-inst">
+                        <div class="aboutus-contact-inst-title">
+                           Инстаграм
+                        </div>
+                        <div class="aboutus-contact-inst-adress">
+                           @espireo_store
+                        </div>
+                     </div>
+                  </div>
+                  <div class="aboutus-contact-adress">
+                     <div class="aboutus-contact-adress-title">
+                        Адрес магазина
+                     </div>
+                     <div class="aboutus-contact-adress-text">г. Минск, ул. Мстиславца 12, 2 этаж </div>
+
+                  </div>
+               </div>
+               <div class="col-ss-8">
+                  <img src="./images/examples/map(delete).png" alt="alt">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</div>
+
+<div class="footer" id="footer">
+  <div class="container">
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              Каталог
+            </div>
+
+            <ul>
+              <li><a href="#">Весь каталог</a></li>
+              <li><a href="#">Категории</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              Клиентам
+            </div>
+
+            <ul>
+              <li><a href="#">Оформление заказа</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Возврат и обмен</a></li>
+              <li><a href="#">Таблица размеров</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              О нас
+            </div>
+
+            <ul>
+              <li><a href="#">История бренда</a></li>
+              <li><a href="#">Команда ESPIREO</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Мы в СМИ</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              Магазин
+            </div>
+
+            <div class="footer-info-adress">
+              ул. Петра Мстиславца 12, <br> магазин 254. <br> г. Минск, Беларусь.
+            </div>
+            <div class="footer-info-time">
+              ПН — СБ 12.00 - 20.00 <br />
+              ВС 12.00 - 17.00
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info ">
+            <div class="footer-info-title">
+              Поддержка
+            </div>
+
+            <ul class="footer-info-mob">
+              <li>
+                <div class="footer-info-link display-flex">
+                  <img src="./images/icon/footer-telefon.svg" alt="alt" />
+                  <a href="tel:+375297716422">
+                    +375297716422
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="footer-info-link display-flex footer-inst">
+                  <img src="./images/icon/footer-inst.svg" alt="alt" />
+                  <a href="tel:+375297716422">
+                    Istagram
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Jquery CDN  -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js
+"></script>
+<!-- Slick slider CDN -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Form styler -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+<script src="js/nazz.js"></script>
+
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/arina.js"></script>
+
+</body>
+
+</html>

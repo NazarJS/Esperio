@@ -7,7 +7,6 @@ $(document).ready(function () {
     dots: true,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
-  
   });
   // Form validation
 
@@ -77,7 +76,7 @@ $(document).ready(function () {
       },
       payment: {
         required: true,
-      }
+      },
     },
     messages: {
       lastname: {
@@ -121,11 +120,11 @@ $(document).ready(function () {
         number: "Введите корректный номер дома",
       },
     },
-    invalidHandler: function() {
-
-      setTimeout(function() {
-          $('input, select').trigger('refresh');
-      }, 1)}
+    invalidHandler: function () {
+      setTimeout(function () {
+        $("input, select").trigger("refresh");
+      }, 1);
+    },
   });
 });
 
@@ -138,15 +137,18 @@ menu.forEach((element) => {
 });
 
 //Change color for Header
-
 let headermenu = document.querySelectorAll(".header-info-link-title");
 let arrow = document.querySelectorAll(".arrow");
-// let topScreen = document.querySelector("#top_screen");
+
+// Button for mobile-catalog
+let tocard = document.querySelectorAll(".col-hide");
+let opencard = document.querySelector(".main-catalog-btn");
 
 function changeHeader() {
   headerLogo.src = "./images/icon/ESPIREO-white.svg";
   headerShop.src = "./images/icon/header-shop-white.svg";
   magnifier.src = "./images/icon/header-search-white.svg";
+  headerMob.style.marginBottom = "150px";
   headermenu.forEach((el) => {
     el.style.color = "#fff";
   });
@@ -157,21 +159,16 @@ function changeHeader() {
 
 if (document.querySelector(".top-screen")) {
   changeHeader();
+  opencard.onclick = () => {
+    tocard.forEach((el) => {
+      el.style.display = "block";
+    });
+  };
 }
 
-// Button for mobile-catalog
-
-let tocard = document.querySelectorAll(".col-hide");
-let opencard = document.querySelector(".main-catalog-btn");
-opencard.onclick = () => {
-  tocard.forEach((el) => {
-    el.style.display = "block";
+// Form styler
+(function ($) {
+  $(function () {
+    $("input, select").styler();
   });
-};
-
-// Form styler 
-(function($) {
-  $(function() {
-    $('input, select').styler();
-  });
-  })(jQuery);
+})(jQuery);
