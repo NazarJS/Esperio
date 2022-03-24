@@ -148,6 +148,7 @@ function changeHeader() {
   headerLogo.src = "./images/icon/ESPIREO-white.svg";
   headerShop.src = "./images/icon/header-shop-white.svg";
   magnifier.src = "./images/icon/header-search-white.svg";
+  headerMob.style.marginBottom = "150px";
   headermenu.forEach((el) => {
     el.style.color = "#fff";
   });
