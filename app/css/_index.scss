@@ -2,7 +2,9 @@
   position: relative;
   margin-bottom: 120px;
   margin-top: -150px;
-
+  @media (max-width: 400px) {
+    margin-bottom: 40px;
+  }
   .container {
     position: relative;
     padding-left: 75px;
@@ -10,10 +12,6 @@
       padding: 0 20px;
     }
   }
-  @media (max-width: 400) {
-    margin-bottom: 60px;
-  }
-
   &-slide {
     position: relative;
     z-index: -1;
@@ -96,7 +94,6 @@
       display: none;
     }
   }
-
   .slick-dots {
     position: absolute;
     bottom: 32px;
@@ -121,10 +118,14 @@
       height: 10px;
     }
   }
+
 }
 
 .main-catalog {
   margin-bottom: 75px;
+   @media (max-width: 400px) {
+     margin-bottom: 65px;
+    }
   .ui-title {
     margin-bottom: 20px;
   }
@@ -204,6 +205,9 @@
     padding-left: 0;
     padding-right: 0;
   }
+   @media (max-width: 400px) {
+     margin-bottom: 40px;
+    }
   p {
     font-weight: 300;
     &:first-child {
@@ -240,6 +244,10 @@
   text-align: center;
   padding: 160px 0px;
   margin-bottom: 105px;
+  @media (max-width:400px) {
+    background-image: url(../images/bg/collection-bg-mobile.png);
+    padding: 52px 0px;
+  }
   &-title {
     font-size: rem(80);
     line-height: 1;
@@ -284,7 +292,7 @@
   overflow: hidden;
   @media (max-width: 400px) {
     padding: 40px 0;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
   &-img {
     position: absolute;
@@ -328,15 +336,16 @@
 .description {
   padding-left: 8.33%;
   padding-right: 8.33%;
-  margin-bottom: 15px;
+  margin-bottom: 75px;
   @media (max-width: 992px) {
     padding-left: 0;
     padding-right: 0;
   }
-  &-img {
-    @media (max-width: 576px) {
-      margin-bottom: 40px;
+   @media (max-width: 400px) {
+     margin-bottom: 50px;
     }
+  &-img {
+   line-height: 0;
   }
   &-promo {
     padding-left: 52px;
