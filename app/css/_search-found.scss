@@ -1,0 +1,15 @@
+.search {
+  &-request {
+    margin-bottom: 32px;
+    font-family: $ffOpenSans;
+    font-weight: 300;
+    font-size: 16px;
+    color: #4B3D32;
+  }
+
+  &-result {
+    .catalog-item {
+      text-align: start;
+    }
+  }
+}

@@ -338,42 +338,58 @@
 
     .product-clothes {
       .clothes {
+        @media (max-width: 576px) {
+          margin-bottom: 0;
+        }
+
         &-title {
           padding-top: 20px;
           margin-bottom: 30px;
-          font-family: $ffCormorant; 
           font-size: rem(44);
           font-weight: 500;
-        }
-
-        &-txt {
-          font-weight: 300;
-        
+          color: $colorBlack;
+          font-family: $ffCormorant;
         }
 
         &-item {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          min-height: calc(100% - 75px);
           margin-bottom: 75px;
-
-          &-img {
-            line-height: 0;
+      
+          @media (max-width: 576px) {
+            margin-bottom: 35px;
           }
 
-          &-description {
-            font-family: $ffOpenSans;
+          &-title {
             font-weight: 300;
+            transition: 0.5s ease;
+            border-bottom: 1px solid rgba(255, 0, 0, 0);
 
-            @media (max-width: 768px) {
-              font-size: rem(14);
+            a {
+              &:hover {
+                border-bottom: 1px solid rgb(17, 17, 17);
+              }
+            }
+          }
+
+          &-img {
+            display: block;
+            margin-bottom: 12px;
+            width: 100%;
+            line-height: 0;
+            overflow: hidden;
+      
+            img {
+              width: 100%;
+              transition: 0.5s;
+      
+              &:hover {
+                transform: scale(1.03);
+              }
             }
           }
 
           &-price {
+            display: inline-block;
             font-size: rem(32);
-            font-family: $ffOpenSans;
             font-weight: 300;
           }
 

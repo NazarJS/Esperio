@@ -1397,42 +1397,52 @@ textarea {
 .product-middle .product-clothes .clothes-title {
   padding-top: 20px;
   margin-bottom: 30px;
-  font-family: "Cormorant", serif;
   font-size: 2.75rem;
   font-weight: 500;
-}
-
-.product-middle .product-clothes .clothes-txt {
-  font-weight: 300;
+  color: #4b3d32;
+  font-family: "Cormorant", serif;
 }
 
 .product-middle .product-clothes .clothes-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: calc(100% - 75px);
   margin-bottom: 75px;
 }
 
-.product-middle .product-clothes .clothes-item-img {
-  line-height: 0;
+.product-middle .product-clothes .clothes-item-title {
+  font-weight: 300;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+  border-bottom: 1px solid rgba(255, 0, 0, 0);
 }
 
-.product-middle .product-clothes .clothes-item-description {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+.product-middle .product-clothes .clothes-item-title a:hover {
+  border-bottom: 1px solid #111111;
+}
+
+.product-middle .product-clothes .clothes-item-img {
+  display: block;
+  margin-bottom: 12px;
+  width: 100%;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.product-middle .product-clothes .clothes-item-img img {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.product-middle .product-clothes .clothes-item-img img:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 .product-middle .product-clothes .clothes-item-price {
+  display: inline-block;
   font-size: 2rem;
-  font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
@@ -1455,6 +1465,56 @@ textarea {
 
 .product-middle .product-clothes .clothes-color-grey {
   background-color: #736f63;
+}
+
+.page-404 .header-404 {
+  margin-top: 37px;
+  text-align: center;
+}
+
+.page-404 .header-404 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4B3D32;
+  margin-bottom: 24px;
+}
+
+.page-404 .product-middle {
+  margin-top: 120px;
+}
+
+.search-request {
+  margin-bottom: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4B3D32;
+}
+
+.search-result .catalog-item {
+  text-align: start;
+}
+
+.search-page .product-middle {
+  margin-top: 200px;
+}
+
+.search-request {
+  margin-bottom: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4B3D32;
+}
+
+.search-result {
+  margin-top: 96px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  color: #4B3D32;
 }
 
 .top-screen {
@@ -2969,10 +3029,6 @@ body {
     margin-top: 28px;
   }
 
-  .product-middle .product-clothes .clothes-item-description {
-    font-size: 0.875rem;
-  }
-
   .top-screen-slide-title {
     font-size: 5rem;
     margin-bottom: 20px;
@@ -3026,6 +3082,14 @@ body {
   .footer {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .product-middle .product-clothes .clothes {
+    margin-bottom: 0;
+  }
+
+  .product-middle .product-clothes .clothes-item {
+    margin-bottom: 35px;
   }
 
   .top-screen .container {
