@@ -36,7 +36,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 75px;
-      @media (max-width:576px){
+      @media (max-width: 576px) {
         padding: 0;
         justify-content: end;
         padding-bottom: 66px;
@@ -92,7 +92,7 @@
       position: absolute;
       right: 40px;
     }
-    @media (max-width:576px) {
+    @media (max-width: 576px) {
       display: none;
     }
   }
@@ -196,7 +196,7 @@
     }
   }
 }
-.aboutus {
+.whywe {
   margin-bottom: 75px;
   padding-left: 8.33%;
   padding-right: 8.33%;
@@ -294,7 +294,7 @@
     z-index: -1;
     width: 100vw;
     min-width: 1360px;
-    @media (max-width:400px) {
+    @media (max-width: 400px) {
       min-width: 0;
     }
   }
@@ -318,7 +318,6 @@
     @media (max-width: 400px) {
       font-size: rem(44);
       max-width: 200px;
-     
     }
   }
   &-link {
@@ -375,7 +374,9 @@
     }
   }
 }
-
-.zxc {
-  display: none;
+// col-hide for hide catalog-card 🌟
+@media (max-width: 400px) {
+  .col-hide {
+    display: none;
+  }
 }
