@@ -1,10 +1,4 @@
 .search {
-  &-page {
-    .product-middle {
-      margin-top: 200px;
-    }
-  }
-  
   &-request {
     margin-bottom: 32px;
     font-family: $ffOpenSans;
@@ -20,5 +14,11 @@
     font-size: 16px;
     text-align: center;
     color: #4B3D32;
+  }
+}
+
+#not-found {
+  .product-middle {
+    margin-top: 200px;
   }
 }

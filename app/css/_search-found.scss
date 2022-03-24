@@ -20,7 +20,11 @@
       }
     }
   }
-  
+
+  &-top {
+    margin: 0;
+  }
+
   &-request {
     margin-bottom: 32px;
     font-family: $ffOpenSans;

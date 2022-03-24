@@ -1532,6 +1532,10 @@ textarea {
   transform: rotate(45deg);
 }
 
+.search-top {
+  margin: 0;
+}
+
 .search-request {
   margin-bottom: 32px;
   font-family: "Open Sans", sans-serif;
@@ -1542,10 +1546,6 @@ textarea {
 
 .search-result .catalog-item {
   text-align: start;
-}
-
-.search-page .product-middle {
-  margin-top: 200px;
 }
 
 .search-request {
@@ -1563,6 +1563,10 @@ textarea {
   font-size: 16px;
   text-align: center;
   color: #4B3D32;
+}
+
+#not-found .product-middle {
+  margin-top: 200px;
 }
 
 .top-screen {
