@@ -1,7 +1,8 @@
-// product slider 
+const product = document.querySelector('.product-info-block');
 const preview = document.querySelector('.product-img');
 const img = document.querySelectorAll('.img-gallery');
 
+// product slider 
 for (let i = 0; i < img.length; i++) {
   img[i].onclick = function(e) {
     const thisPicture = e.target;
@@ -11,7 +12,7 @@ for (let i = 0; i < img.length; i++) {
   }
 }
 
-//slick slider
+// slick slider
 $(document).ready(function () {
   $('.product-items').slick({
     arrows: false,
@@ -19,3 +20,12 @@ $(document).ready(function () {
     verticalSwiping: true,
   }); 
 });
+
+// test
+if(product) {
+  (function ($) {
+    $(function () {
+      $('input').styler('destroy');
+    });
+  })(jQuery);
+}
