@@ -1,8 +1,4 @@
-function invert(array) {
-  return (array = -array);
-  console.log(array);
-}
-invert(8);
+
 
 $(document).ready(function () {
   // Top-Screen Slider
