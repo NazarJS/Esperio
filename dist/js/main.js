@@ -1,38 +1,4 @@
-const baseURL = 'https://api.sampleapis.com/coffee/hot';
-let family = [
-  {member: 'mom', id:1, coffe:'latte'},
-  {member: 'father', id:2, coffe:'espresso'},
-  {member: 'son', id:3, coffe:'capucino'}
-]
 
-const getCofee = (member) => {
-  const coffePromise = fetch('https://api.sampleapis.com/coffee/hot');
-  return coffePromise.then(data => data.json()).then(list => {
-    console.log(list)
-  })
-}
-
-const getFamilyMember = (id) => {
-  return  new Promise((resolve,reject) => {
-    setTimeout(() => {
-      const member = family.find(res => res.id === id);
-     
-      if(member) {
-        resolve(member)
-      }else {
-        reject(Error('Член семьи не найден!'))
-      }
-    },3000)
-  })
-}
-
-getFamilyMember(3).then(data => {
-  getCofee(data)
-  console.log(data)
-})
-
-
-// http https://swapi.dev/api/
 
 $(document).ready(function () {
   // Top-Screen Slider
