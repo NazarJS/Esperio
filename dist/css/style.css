@@ -1895,6 +1895,10 @@ input[type=reset].styler:hover {
   background: #4b3d32;
 }
 
+.aboutus .container {
+  max-width: 1065px;
+}
+
 .aboutus-header {
   margin-bottom: 15px;
 }
