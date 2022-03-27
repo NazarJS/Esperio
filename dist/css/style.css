@@ -1931,7 +1931,11 @@ textarea {
 .description {
   padding-left: 8.33%;
   padding-right: 8.33%;
-  margin-bottom: 15px;
+  margin-bottom: 75px;
+}
+
+.description-img {
+  line-height: 0;
 }
 
 .description-promo {
@@ -2045,6 +2049,10 @@ input[type=reset].styler:not([disabled]):hover,
 input[type=reset].styler:hover {
   opacity: 0.5;
   background: #4b3d32;
+}
+
+.aboutus .container {
+  max-width: 1065px;
 }
 
 .aboutus-header {
@@ -3217,10 +3225,6 @@ body {
     padding: 0;
   }
 
-  .description-img {
-    margin-bottom: 40px;
-  }
-
   .description-promo {
     margin-bottom: 28px;
   }
@@ -3310,6 +3314,10 @@ body {
     margin-right: 40px;
   }
 
+  .top-screen {
+    margin-bottom: 40px;
+  }
+
   .top-screen-slide-content .ui-btn {
     color: #fff;
     border-color: #fff;
@@ -3319,9 +3327,22 @@ body {
     color: #fff;
   }
 
+  .main-catalog {
+    margin-bottom: 65px;
+  }
+
   .main-catalog-btn {
     display: block;
     margin: 0 auto;
+  }
+
+  .whywe {
+    margin-bottom: 40px;
+  }
+
+  .collection {
+    background-image: url(../images/bg/collection-bg-mobile.png);
+    padding: 52px 0px;
   }
 
   .collection-title {
@@ -3335,7 +3356,7 @@ body {
 
   .sale {
     padding: 40px 0;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
   }
 
   .sale-img {
@@ -3345,6 +3366,10 @@ body {
   .sale-title {
     font-size: 2.75rem;
     max-width: 200px;
+  }
+
+  .description {
+    margin-bottom: 50px;
   }
 
   .col-hide {
@@ -3361,12 +3386,6 @@ body {
 
   .checkout-form {
     padding-right: 0;
-  }
-}
-
-@media (max-width: 400) {
-  .top-screen {
-    margin-bottom: 60px;
   }
 }
 
