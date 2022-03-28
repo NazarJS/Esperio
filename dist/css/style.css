@@ -1205,17 +1205,17 @@ select {
   display: block;
 }
 
+.product-items .slick-slide {
+  border: none;
+}
+
 .product-items .slick-list {
   width: 84px;
   min-height: 100%;
 }
 
-.product-items .slick-slider {
-  margin-bottom: 18px;
-}
-
 .product-items img {
-  margin-bottom: 18px;
+  padding-bottom: 18px;
 }
 
 .product-preview {
