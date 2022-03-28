@@ -655,6 +655,47 @@ textarea {
   border: 1px solid #4b3d32;
 }
 
+select {
+  display: none;
+}
+
+.jq-selectbox__select-text {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 1px solid #dbd8d6;
+  color: #4b3d32;
+}
+
+.jq-selectbox__select-text:focus-visible,
+.jq-selectbox__select-text :focus,
+.jq-selectbox__select-text :active {
+  border: 1px solid #4b3d32;
+}
+
+.jq-selectbox__select-text::after {
+  content: "";
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+  -ms-transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.opened .jq-selectbox__select-text::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 .header {
   margin-bottom: 60px;
   padding-top: 20px;
