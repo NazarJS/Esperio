@@ -690,6 +690,19 @@ select {
   border-right: 1px solid #000;
 }
 
+.jq-selectbox {
+  position: relative;
+}
+
+.jq-selectbox__dropdown {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dbd8d6;
+  padding: 0 10px;
+  border-top: none;
+}
+
 .opened .jq-selectbox__select-text::after {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
   -ms-transform: translate(-50%, -50%) rotate(-45deg);

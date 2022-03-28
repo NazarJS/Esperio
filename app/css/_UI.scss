@@ -243,6 +243,7 @@ textarea {
 select {
   display: none;
 }
+// Jquery Form Styler - style 🚩 
 .jq-selectbox__select-text {
   position: relative;
   width: 100%;
@@ -270,6 +271,17 @@ select {
   }
 }
 
+.jq-selectbox {
+  position: relative;
+}
+.jq-selectbox__dropdown {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dbd8d6;
+  padding: 0 10px;
+  border-top: none;
+}
 .opened {
   .jq-selectbox__select-text {
     &::after {
