@@ -21,7 +21,7 @@ $(document).ready(function () {
   }); 
 });
 
-// test
+// off jQuery form styler in product.html
 if(product) {
   (function ($) {
     $(function () {

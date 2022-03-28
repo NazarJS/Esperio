@@ -1189,7 +1189,6 @@ select {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 700px;
 }
 
 .product-items {
@@ -1222,6 +1221,7 @@ select {
 .product-preview {
   width: 465px;
   margin-left: 18px;
+  line-height: 0;
 }
 
 .product-info {
