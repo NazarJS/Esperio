@@ -240,3 +240,40 @@ textarea {
     }
   }
 }
+select {
+  display: none;
+}
+.jq-selectbox__select-text {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 1px solid #dbd8d6;
+  color: $colorBlack;
+  &:focus-visible,
+  :focus,
+  :active {
+    border: 1px solid $colorBlack;
+  }
+  &::after {
+    content: "";
+    transform: translate(-50%,-50%) rotate(135deg);;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #000;
+      border-right: 1px solid #000;
+  }
+}
+
+.opened {
+  .jq-selectbox__select-text {
+    &::after {
+      transform: translate(-50%,-50%) rotate(-45deg);;
+    }
+  }
+}
