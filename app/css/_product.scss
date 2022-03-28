@@ -57,13 +57,11 @@
   &-slider {
     display: flex;
     overflow: hidden;
-    height: 700px;
   }
   
   &-items {
     display: flex;
     flex-direction: column;
-    // height: 700px;
     
     .slick {
       &-track {
@@ -83,21 +81,12 @@
     img {
       margin-bottom: 18px;
     }
-
-    // img {
-    //   width: 84px;
-    //   height: 127px;
-    // }
   }
 
   &-preview {
     width: 465px;
     margin-left: 18px;
-
-    // img {
-    //   width: 465px;
-    //   height: 704px;
-    // }
+    line-height: 0;
   }
 
   &-info {
@@ -108,10 +97,6 @@
     &-block {
       @media (max-width: 768px) {
         margin-top: 28px;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // flex-wrap: wrap;
       }
     }
 
