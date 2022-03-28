@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>ESPIREO</title>
+  <meta name="keywords" content="Esperio" />
+  <meta name="description" content="Esperio" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="./css/_var.scss" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+    <header id="header" class="header">
+      <div class="container">
+        <div class="row" id="headerDesctop">
+          <div class=" col-us-4 col-ss-3 col-md-5">
+            <div class="header-info">
+              <ul>
+                <li>
+                  <div class="header-info-link">
+                    <a href="#" class="header-info-link-title">
+                      Каталог
+                      <div class="arrow arrow-down"></div>
+                    </a>
+                    <div class="herder-info-link-wrapper">
+                      <ul>
+                        <li><a href="#">Смотреть все</a></li>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Блузы и рубашки</a></li>
+                        <li><a href="#">Топы, корсеты, футболки</a></li>
+                        <li><a href="#">Юбки</a></li>
+                        <li><a href="#">Брюки и шорты</a></li>
+                        <li><a href="#">Жакеты</a></li>
+                        <li><a href="#">Деним</a></li>
+                        <li><a href="#">Вязаный трикотаж</a></li>
+                        <li><a href="#">Верхняя одежда</a></li>
+                        <li><a href="#">Спортивная коллекция</a></li>
+                        <li><a href="#">Сумки</a></li>
+                        <li><a href="#">Подарочный сертификат</a></li>
+                        <li><a href="#">Распродажа</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="header-info-link">
+                    <a href="#" class="header-info-link-title">
+                      Клиентам
+                      <div class="arrow arrow-down"></div>
+                    </a>
+                    <div class="herder-info-link-wrapper">
+                      <ul>
+                        <li><a href="#">Смотреть все</a></li>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Блузы и рубашки</a></li>
+                        <li><a href="#">Топы, корсеты, футболки</a></li>
+                        <li><a href="#">Юбки</a></li>
+                        <li><a href="#">Брюки и шорты</a></li>
+                        <li><a href="#">Жакеты</a></li>
+                        <li><a href="#">Деним</a></li>
+                        <li><a href="#">Вязаный трикотаж</a></li>
+                        <li><a href="#">Верхняя одежда</a></li>
+                        <li><a href="#">Спортивная коллекция</a></li>
+                        <li><a href="#">Сумки</a></li>
+                        <li><a href="#">Подарочный сертификат</a></li>
+                        <li><a href="#">Распродажа</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="header-info-link">
+                    <a href="#" class="header-info-link-title">
+                      О нас
+                      <div class="arrow arrow-down"></div>
+                    </a>
+                    <div class="herder-info-link-wrapper">
+                      <ul>
+                        <li><a href="#">Смотреть все</a></li>
+                        <li><a href="#">Платья</a></li>
+                        <li><a href="#">Блузы и рубашки</a></li>
+                        <li><a href="#">Топы, корсеты, футболки</a></li>
+                        <li><a href="#">Юбки</a></li>
+                        <li><a href="#">Брюки и шорты</a></li>
+                        <li><a href="#">Жакеты</a></li>
+                        <li><a href="#">Деним</a></li>
+                        <li><a href="#">Вязаный трикотаж</a></li>
+                        <li><a href="#">Верхняя одежда</a></li>
+                        <li><a href="#">Спортивная коллекция</a></li>
+                        <li><a href="#">Сумки</a></li>
+                        <li><a href="#">Подарочный сертификат</a></li>
+                        <li><a href="#">Распродажа</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="header-menu" id="burger">
+              <img src="./images/icon/header-mobile-menu.svg" alt="alt">
+            </div>
+          </div>
+          <div class=" col-us-4  col-ss-6 col-md-2 text-center">
+            <a href="#" class="header-logo">
+              <img src="./images/icon/ESPIREO.svg" id="headerLogo" alt="alt" />
+            </a>
+          </div>
+          <div class=" col-us-4 col-ss-3 col-md-5">
+            <div class="header-btns">
+
+              <img src="./images/icon/header-magnifier.svg" alt="alt" class="header-btns-lupa" id="magnifier" />
+              <div class="header-btns-search" id="headerBtnsSearch">
+                <input type="text" placeholder="Категория, товар или артикул" id="headerInput">
+                <div class="header-btns-magnifier" id="magnifierInput">
+                  <img src="./images/icon/header-search-white.svg" alt="alt" />
+                </div>
+                <div class="header-dropdown-list" id="inputList">
+                  <div class="header-dropdown-title">Популярные запросы</div>
+                  <ul>
+                    <li><a href="#">Платья</a></li>
+                    <li><a href="#">Блузы и рубашки</a></li>
+                    <li><a href="#">Топы, корсеты, футболки</a></li>
+                    <li><a href="#">Юбки</a></li>
+                  </ul>
+                  <div class="header-dropdown-title">
+                    Вы недавно смотрели
+                  </div>
+                  <div class="header-dropdown-previous">
+                    <div class="header-dropdown-previous-img">
+                      <img src="./images/example/header-btns-previous.png" alt="alt">
+                    </div>
+                    <a href="#" class="header-dropdown-previous-link">Платье-мини с расклешённым рукавомs</a>
+                  </div>
+                  <div class="header-dropdown-previous">
+                    <div class="header-dropdown-previous-img">
+                      <img src="./images/example/header-btns-previous_1.png" alt="alt">
+                    </div>
+                    <a href="#" class="header-dropdown-previous-link">Майка в рубчик</a>
+                  </div>
+                </div>
+              </div>
+
+
+              <a href="#" class="header-btns-shop">
+                <img src="./images/icon/header-shop.svg" id="headerShop" alt="alt" />
+                <div class="header-btns-circle header-btns-circle-active"></div>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="header-mob " id="headerMob">
+          <div class="header-mob-title">
+            Меню
+            <img src="./images/icon/header-mob-close.svg" alt="alt" id="closeHeader">
+          </div>
+          <div class="header-mob-search">
+            <input type="text" placeholder="Категория, товар или артикул" id="headerInputMob">
+            <div class="header-mob-magnifier">
+              <img src="./images/icon/header-search-white.svg" alt="alt" />
+            </div>
+            <div class="header-dropdown-list header-dropdown-list-mob" id="inputListMob">
+              <div class="header-dropdown-title">Популярные запросы</div>
+              <ul>
+                <li><a href="#">Платья</a></li>
+                <li><a href="#">Блузы и рубашки</a></li>
+                <li><a href="#">Топы, корсеты, футболки</a></li>
+                <li><a href="#">Юбки</a></li>
+              </ul>
+              <div class="header-dropdown-title">
+                Вы недавно смотрели
+              </div>
+              <div class="header-dropdown-previous">
+                <div class="header-dropdown-previous-img">
+                  <img src="./images/example/header-btns-previous.png" alt="alt">
+                </div>
+                <a href="#" class="header-dropdown-previous-link">Платье-мини с расклешённым рукавомs</a>
+              </div>
+              <div class="header-dropdown-previous">
+                <div class="header-dropdown-previous-img">
+                  <img src="./images/example/header-btns-previous_1.png" alt="alt">
+                </div>
+                <a href="#" class="header-dropdown-previous-link">Майка в рубчик</a>
+              </div>
+            </div>
+          </div>
+          <div class="header-mob-box">
+            <ul>
+              <li><a href="#">Весь каталог</a></li>
+              <li><a href="#">Платья</a></li>
+              <li><a href="#">Блузы и рубашки</a></li>
+              <li><a href="#">Топы, корсеты, футболки</a></li>
+              <li><a href="#">Юбки</a></li>
+              <li><a href="#">Брюки и шорты</a></li>
+              <li><a href="#">Жакеты</a></li>
+              <li><a href="#">Деним</a></li>
+              <li><a href="#">Вязаный трикотаж</a></li>
+              <li><a href="#">Верхняя одежда</a></li>
+              <li><a href="#">Спортивная коллекция</a></li>
+              <li><a href="#">Сумки</a></li>
+              <li><a href="#">Подарочный сертификат</a></li>
+              <li><a href="#">Распродажа</a></li>
+            </ul>
+          </div>
+          <div class="header-mob-box">
+            <ul>
+              <li><a href="#">Оформление заказа</a></li>
+              <li><a href="#">Оплата</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Обмен и возврат</a></li>
+              <li><a href="#">Таблица размеров</a></li>
+              <li><a href="#">Отзывы</a></li>
+            </ul>
+          </div>
+          <div class="header-mob-box">
+            <ul>
+              <li><a href="#">О бренде</a></li>
+              <li><a href="#">Команда ESPIREO</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Мы в СМИ</a></li>
+              <li><a href="#">Юбки</a></li>
+            </ul>
+          </div>
+          <div class="header-mob-adress">
+            ул. Петра Мстиславца 12, магазин 254. г. Минск, Беларусь.
+          </div>
+          <div class="header-mob-time">
+            ПН — СБ 12.00 - 20.00
+            ВС 12.00 - 17.00
+          </div>
+          <div class="header-mob-contacts">
+            <div class="header-mob-contact">
+              <img src="./images/icon/footer-telefon.svg" alt="alt">
+              <a href="tel:375297716422">+375297716422</a>
+            </div>
+            <div class="header-mob-contact">
+              <img src="./images/icon/footer-inst.svg" alt="alt">
+              <a href="#">Istagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<div class="middle">
+  <div class="container">
+      <div class="search-page" id="found">
+        <div class="search-top">
+          <div class="search-request">
+            Результаты поиска по запросу: <span>“платье”</span>  
+          </div>
+
+          <div class="search-result">
+            <div class="row">
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6  ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/example/catalog-item-img.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-middle">
+          <div class="product-clothes">
+            <div class="product-text">
+              <div class="catalog-title">Вам может понравиться</div>
+              <div class="product-link">
+                <a href="#">
+                  Смотреть все
+                  <div class="arrow arrow-left"></div>
+                </a>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/examples/ex1.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>              
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/examples/ex2.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>              
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/examples/ex3.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>             
+              <div class="col-l-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 ">
+                <div class="catalog-item">
+                  <div class="catalog-item-img">
+                    <a href="#">
+                      <img src="./images/examples/ex4.png" alt="alt" />
+                    </a>
+                  </div>
+                  <div class="catalog-item-title">
+                    <a href="#">Платье-мини с расклешённым рукавом </a>
+                  </div>
+
+                  <div class="catalog-item-price">
+                    170
+                    <span class="catalog-item-currency">BYN</span>
+                  </div>
+                  <div class="catalog-item-circles">
+                    <div class="catalog-item-circle"></div>
+                    <div class="catalog-item-circle --grey"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="footer" id="footer">
+  <div class="container">
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              Каталог
+            </div>
+
+            <ul>
+              <li><a href="#">Весь каталог</a></li>
+              <li><a href="#">Категории</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              Клиентам
+            </div>
+
+            <ul>
+              <li><a href="#">Оформление заказа</a></li>
+              <li><a href="#">Оплата и доставка</a></li>
+              <li><a href="#">Возврат и обмен</a></li>
+              <li><a href="#">Таблица размеров</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Пользовательское соглашение</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              О нас
+            </div>
+
+            <ul>
+              <li><a href="#">История бренда</a></li>
+              <li><a href="#">Команда ESPIREO</a></li>
+              <li><a href="#">Проекты</a></li>
+              <li><a href="#">Мы в СМИ</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info">
+            <div class="footer-info-title">
+              Магазин
+            </div>
+
+            <div class="footer-info-adress">
+              ул. Петра Мстиславца 12, <br> магазин 254. <br> г. Минск, Беларусь.
+            </div>
+            <div class="footer-info-time">
+              ПН — СБ 12.00 - 20.00 <br />
+              ВС 12.00 - 17.00
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-4 col-us-6 col-xl-2">
+          <div class="footer-info ">
+            <div class="footer-info-title">
+              Поддержка
+            </div>
+
+            <ul class="footer-info-mob">
+              <li>
+                <div class="footer-info-link display-flex">
+                  <img src="./images/icon/footer-telefon.svg" alt="alt" />
+                  <a href="tel:+375297716422">
+                    +375297716422
+                  </a>
+                </div>
+              </li>
+              <li>
+                <div class="footer-info-link display-flex footer-inst">
+                  <img src="./images/icon/footer-inst.svg" alt="alt" />
+                  <a href="tel:+375297716422">
+                    Istagram
+                  </a>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Jquery CDN  -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"
+  referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js
+"></script>
+<!-- Slick slider CDN -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Form styler -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js"
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+<script src="js/nazz.js"></script>
+
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/arina.js"></script>
+
+</body>
+
+</html>
