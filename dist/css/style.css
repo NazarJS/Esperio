@@ -1148,6 +1148,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  height: 700px;
 }
 
 .product-items {
@@ -1397,75 +1398,6 @@ textarea {
 .product-middle {
   margin-top: 80px;
   margin-bottom: 120px;
-}
-
-.product-middle .product-clothes .clothes-title {
-  padding-top: 20px;
-  margin-bottom: 30px;
-  font-size: 2.75rem;
-  font-weight: 500;
-  color: #4b3d32;
-  font-family: "Cormorant", serif;
-}
-
-.product-middle .product-clothes .clothes-item {
-  margin-bottom: 75px;
-}
-
-.product-middle .product-clothes .clothes-item-title {
-  font-weight: 300;
-  -webkit-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  transition: 0.5s ease;
-  border-bottom: 1px solid rgba(255, 0, 0, 0);
-}
-
-.product-middle .product-clothes .clothes-item-title a:hover {
-  border-bottom: 1px solid #111111;
-}
-
-.product-middle .product-clothes .clothes-item-img {
-  display: block;
-  margin-bottom: 12px;
-  width: 100%;
-  line-height: 0;
-  overflow: hidden;
-}
-
-.product-middle .product-clothes .clothes-item-img img {
-  width: 100%;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.product-middle .product-clothes .clothes-item-img img:hover {
-  -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
-  transform: scale(1.03);
-}
-
-.product-middle .product-clothes .clothes-item-price {
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.product-middle .product-clothes .clothes-item-currency {
-  font-size: 0.75rem;
-  margin-right: 16px;
-}
-
-.product-middle .product-clothes .clothes-item-circles {
-  display: inline-block;
-}
-
-.product-middle .product-clothes .clothes-item-circle {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 1px solid #dbd8d6;
 }
 
 .product-middle .product-clothes .clothes-color-grey {
@@ -3147,14 +3079,6 @@ body {
   .footer {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
-
-  .product-middle .product-clothes .clothes {
-    margin-bottom: 0;
-  }
-
-  .product-middle .product-clothes .clothes-item {
-    margin-bottom: 35px;
   }
 
   .top-screen .container {
