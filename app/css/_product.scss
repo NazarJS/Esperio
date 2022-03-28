@@ -68,18 +68,22 @@
         display: block;
       }
 
+      &-slide {
+        border: none;
+      }
+
       &-list {
         width: 84px;
         min-height: 100%;
       }
 
-      &-slider {
-        margin-bottom: 18px;
-      }
+      // &-slider {
+      //   padding-bottom: 18px;
+      // }
     }
 
     img {
-      margin-bottom: 18px;
+      padding-bottom: 18px;
     }
   }
 
