@@ -141,7 +141,8 @@ menu.forEach((element) => {
 //Change color for Header
 let headermenu = document.querySelectorAll(".header-info-link-title");
 let arrow = document.querySelectorAll(".arrow");
-
+// change possition for header
+let headerabsolute = document.querySelector('.header')
 // Button for mobile-catalog
 let tocard = document.querySelectorAll(".col-hide");
 let opencard = document.querySelector(".main-catalog-btn");
@@ -150,6 +151,9 @@ function changeHeader() {
   headerLogo.src = "./images/icon/ESPIREO-white.svg";
   headerShop.src = "./images/icon/header-shop-white.svg";
   magnifier.src = "./images/icon/header-search-white.svg";
+  // change posittion of header
+  headerabsolute.style.position = "absolute"
+  headerabsolute.style.width = "100%"
   headerMob.style.marginBottom = "150px";
   headermenu.forEach((el) => {
     el.style.color = "#fff";
