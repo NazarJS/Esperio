@@ -1,10 +1,10 @@
 .header {
   margin-bottom: 60px;
   padding-top: 20px;
-  z-index: 9999;
+  z-index: 2;
 
   @media (max-width: 576px) {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
   &-info {
     display: inline-block;
@@ -70,6 +70,7 @@
           }
           li {
             margin-bottom: 8px;
+            line-height: 1.2;
             a {
               transition: 0.5s ease;
               border-bottom: 1px solid rgba(255, 0, 0, 0);
@@ -233,7 +234,7 @@
 
     @media(max-width:992px){
       display: block;
-    
+      margin-top:-4px
     }
   }
   &-mob {

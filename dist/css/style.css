@@ -863,7 +863,7 @@ select {
 .header {
   margin-bottom: 60px;
   padding-top: 20px;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .header-info {
@@ -930,6 +930,7 @@ select {
 
 .header-info-link ul li {
   margin-bottom: 8px;
+  line-height: 1.2;
 }
 
 .header-info-link ul li a {
@@ -3165,6 +3166,7 @@ body {
 
   .header-menu {
     display: block;
+    margin-top: -4px;
   }
 
   .header-btns-lupa {
@@ -3269,7 +3271,14 @@ body {
 
 @media (max-width: 576px) {
   .catalog {
+    padding-top: 20px;
     margin-bottom: 0;
+  }
+
+  .catalog-title {
+    margin-bottom: 15px;
+    font-size: 1.75rem;
+    padding-top: 0;
   }
 
   .catalog-txt {
@@ -3281,7 +3290,7 @@ body {
   }
 
   .header {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .footer {
