@@ -1,7 +1,6 @@
 .top-screen {
   position: relative;
   margin-bottom: 120px;
-  margin-top: -150px;
   @media (max-width: 400px) {
     margin-bottom: 40px;
    
@@ -241,16 +240,14 @@
   }
 }
 .collection {
-  background-image: url(../images/bg/collection-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position:relative;
   text-align: center;
   padding: 160px 0px;
   margin-bottom: 105px;
-  @media (max-width:400px) {
-    background-image: url(../images/bg/collection-bg-mobile.png);
-    padding: 52px 0px;
+  overflow: hidden;
+  @media(max-width:400px) {
+    padding: 30px 0px;
+    margin-bottom: 40px;
   }
   &-title {
     font-size: rem(80);
@@ -261,10 +258,12 @@
     font-family: $ffCormorant;
     @media (max-width: 576px) {
       font-size: rem(60);
+      margin-bottom: 27px;
     }
     @media (max-width: 400px) {
       font-size: rem(44);
       line-height: 1.1;
+      margin-bottom: 15px;
     }
   }
   &-link {
