@@ -659,7 +659,7 @@ textarea {
 .ui-btn {
   display: inline-block;
   height: 38px;
-  line-height: 40px;
+  line-height: 36px;
   background: #fff;
   padding: 0px 36px;
   font-family: "Open Sans", sans-serif;
@@ -804,6 +804,60 @@ textarea {
 .ui-field select :focus,
 .ui-field select :active {
   border: 1px solid #4b3d32;
+}
+
+select {
+  display: none;
+}
+
+.jq-selectbox__select-text {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  border: 1px solid #dbd8d6;
+  color: #4b3d32;
+}
+
+.jq-selectbox__select-text:focus-visible,
+.jq-selectbox__select-text :focus,
+.jq-selectbox__select-text :active {
+  border: 1px solid #4b3d32;
+}
+
+.jq-selectbox__select-text::after {
+  content: "";
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+  -ms-transform: translate(-50%, -50%) rotate(135deg);
+  transform: translate(-50%, -50%) rotate(135deg);
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.jq-selectbox {
+  position: relative;
+}
+
+.jq-selectbox__dropdown {
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #dbd8d6;
+  padding: 0 10px;
+  border-top: none;
+}
+
+.opened .jq-selectbox__select-text::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .header {
@@ -1252,6 +1306,10 @@ textarea {
   margin-bottom: -2px;
 }
 
+.product-about {
+  margin-bottom: 80px;
+}
+
 .product-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1315,22 +1373,23 @@ textarea {
   display: block;
 }
 
+.product-items .slick-slide {
+  border: none;
+}
+
 .product-items .slick-list {
   width: 84px;
   min-height: 100%;
 }
 
-.product-items .slick-slider {
-  margin-bottom: 18px;
-}
-
 .product-items img {
-  margin-bottom: 18px;
+  padding-bottom: 18px;
 }
 
 .product-preview {
   width: 465px;
   margin-left: 18px;
+  line-height: 0;
 }
 
 .product-info {
@@ -1339,19 +1398,19 @@ textarea {
   color: #4B3D32;
 }
 
-.product-info-text .title {
+.product-info-title {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 1rem;
   color: #4B3D32;
 }
 
-.product-info-text .price {
+.product-info-price {
   font-weight: 300;
   font-size: 2rem;
 }
 
-.product-info-text .price span {
+.product-info-price span {
   font-weight: 400;
   font-size: 0.75rem;
 }
@@ -1546,71 +1605,113 @@ textarea {
 }
 
 .product-middle {
-  margin-top: 80px;
   margin-bottom: 120px;
-}
-
-.product-middle .product-clothes .clothes-title {
-  padding-top: 20px;
-  margin-bottom: 30px;
-  font-family: "Cormorant", serif;
-  font-size: 2.75rem;
-  font-weight: 500;
-}
-
-.product-middle .product-clothes .clothes-txt {
-  font-weight: 300;
-}
-
-.product-middle .product-clothes .clothes-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  min-height: calc(100% - 75px);
-  margin-bottom: 75px;
-}
-
-.product-middle .product-clothes .clothes-item-img {
-  line-height: 0;
-}
-
-.product-middle .product-clothes .clothes-item-description {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-.product-middle .product-clothes .clothes-item-price {
-  font-size: 2rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
-}
-
-.product-middle .product-clothes .clothes-item-currency {
-  font-size: 0.75rem;
-  margin-right: 16px;
-}
-
-.product-middle .product-clothes .clothes-item-circles {
-  display: inline-block;
-}
-
-.product-middle .product-clothes .clothes-item-circle {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 1px solid #dbd8d6;
 }
 
 .product-middle .product-clothes .clothes-color-grey {
   background-color: #736f63;
+}
+
+.page-404 .header-404 {
+  margin-top: 37px;
+  text-align: center;
+}
+
+.page-404 .header-404 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4B3D32;
+  margin-bottom: 24px;
+}
+
+.page-404 .product-middle {
+  margin-top: 120px;
+}
+
+.page-404 .product-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.page-404 .product-text .product-link {
+  margin-right: 30px;
+}
+
+.page-404 .product-text .product-link .arrow-left {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.search-page .product-middle {
+  margin-top: 120px;
+}
+
+.search-page .product-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.search-page .product-text .product-link {
+  margin-right: 30px;
+}
+
+.search-page .product-text .product-link .arrow-left {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.search-top {
+  margin: 0;
+}
+
+.search-request {
+  margin-bottom: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4B3D32;
+}
+
+.search-result .catalog-item {
+  text-align: start;
+}
+
+.search-request {
+  margin-bottom: 32px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #4B3D32;
+}
+
+.search-result {
+  margin-top: 96px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+  color: #4B3D32;
+}
+
+#not-found .product-middle {
+  margin-top: 200px;
 }
 
 .top-screen {
@@ -3133,10 +3234,6 @@ body {
     margin-top: 28px;
   }
 
-  .product-middle .product-clothes .clothes-item-description {
-    font-size: 0.875rem;
-  }
-
   .top-screen-slide-title {
     font-size: 5rem;
     margin-bottom: 20px;
@@ -3396,5 +3493,11 @@ body {
 
   .header-mob-time {
     max-width: 167px;
+  }
+}
+
+@media (max-height: 500px) {
+  .top-screen-slide-img {
+    height: auto;
   }
 }

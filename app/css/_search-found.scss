@@ -1,0 +1,41 @@
+.search {
+  &-page {
+    .product {
+      &-middle {
+        margin-top: 120px;
+      }
+
+      &-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .product-link {
+          margin-right: 30px;
+
+          .arrow-left {
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+
+  &-top {
+    margin: 0;
+  }
+
+  &-request {
+    margin-bottom: 32px;
+    font-family: $ffOpenSans;
+    font-weight: 300;
+    font-size: 16px;
+    color: #4B3D32;
+  }
+
+  &-result {
+    .catalog-item {
+      text-align: start;
+    }
+  }
+}

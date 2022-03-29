@@ -171,6 +171,6 @@ if (document.querySelector(".top-screen")) {
 // Form styler
 (function ($) {
   $(function () {
-    $("input, select").styler();
+    $("select").styler();
   });
 })(jQuery);
