@@ -10,6 +10,10 @@
     }
   }
 
+  &-about {
+    margin-bottom: 80px;
+  }
+
   &-box {
     display: flex;
     justify-content: end;
@@ -104,22 +108,20 @@
       }
     }
 
-    &-text {
-      .title {
-        font-family: 'Open Sans';
+    &-title {
+      font-family: 'Open Sans';
+      font-weight: 400;
+      font-size: rem(16);
+      color: #4B3D32;
+    }
+
+    &-price {
+      font-weight: 300;
+      font-size: rem(32);
+
+      span {
         font-weight: 400;
-        font-size: rem(16);
-        color: #4B3D32;
-      }
-
-      .price {
-        font-weight: 300;
-        font-size: rem(32);
-
-        span {
-          font-weight: 400;
-          font-size: rem(12);
-        }
+        font-size: rem(12);
       }
     }
 
@@ -323,7 +325,6 @@
   }
 
   &-middle {
-    margin-top: 80px;
     margin-bottom: 120px;
 
     .product-clothes {
