@@ -1155,6 +1155,10 @@ select {
   margin-bottom: -2px;
 }
 
+.product-about {
+  margin-bottom: 80px;
+}
+
 .product-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1243,19 +1247,19 @@ select {
   color: #4B3D32;
 }
 
-.product-info-text .title {
+.product-info-title {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 1rem;
   color: #4B3D32;
 }
 
-.product-info-text .price {
+.product-info-price {
   font-weight: 300;
   font-size: 2rem;
 }
 
-.product-info-text .price span {
+.product-info-price span {
   font-weight: 400;
   font-size: 0.75rem;
 }
@@ -1450,7 +1454,6 @@ select {
 }
 
 .product-middle {
-  margin-top: 80px;
   margin-bottom: 120px;
 }
 
