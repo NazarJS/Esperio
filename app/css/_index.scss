@@ -4,6 +4,7 @@
   margin-top: -150px;
   @media (max-width: 400px) {
     margin-bottom: 40px;
+   
   }
   .container {
     position: relative;
@@ -27,6 +28,9 @@
       min-width: 100%;
       max-width: none;
       height: 100%;
+      @media (max-height:500px) {
+        height: auto;
+      }
     }
     &-content {
       height: 100vh;

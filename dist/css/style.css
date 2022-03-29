@@ -508,7 +508,7 @@ textarea {
 .ui-btn {
   display: inline-block;
   height: 38px;
-  line-height: 40px;
+  line-height: 36px;
   background: #fff;
   padding: 0px 36px;
   font-family: "Open Sans", sans-serif;
@@ -3339,5 +3339,11 @@ body {
 
   .header-mob-time {
     max-width: 167px;
+  }
+}
+
+@media (max-height: 500px) {
+  .top-screen-slide-img {
+    height: auto;
   }
 }
