@@ -29,24 +29,24 @@
     font-weight: 400;
     font-size: rem(14);
     color: #4B3D32;
-    
+
     a {
       display: flex;
       align-items: center;
 
       &:hover {
-       opacity: 0.5;
-     }
+        opacity: 0.5;
+      }
 
-     .arrow {
-       margin-right: 7px;
-       width: 7px;
-       height: 7px;
+      .arrow {
+        margin-right: 7px;
+        width: 7px;
+        height: 7px;
 
-       &-right {
-         transform: rotate(-135deg);
-       }
-     }
+        &-right {
+          transform: rotate(-135deg);
+        }
+      }
     }
 
     @media (max-width: 1150px) {
@@ -62,11 +62,11 @@
     display: flex;
     overflow: hidden;
   }
-  
+
   &-items {
     display: flex;
     flex-direction: column;
-    
+
     .slick {
       &-track {
         display: block;
@@ -143,22 +143,22 @@
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
-  
+
           input {
             position: absolute;
             opacity: 0;
             cursor: pointer;
-  
-            &:checked ~ .checkmark {
+
+            &:checked~.checkmark {
               border: 1px solid #4B3D32;
             }
-  
-            &:checked ~ .checkmark:after {
+
+            &:checked~.checkmark:after {
               display: block;
             }
           }
-  
-          &:hover input ~ .checkmark {
+
+          &:hover input~.checkmark {
             border: 1px solid #4B3D32;
           }
         }
@@ -177,7 +177,7 @@
             }
           }
         }
-  
+
         .checkmark {
           position: absolute;
           top: 0;
@@ -186,7 +186,7 @@
           width: 24px;
           border: 1px solid #DBD8D6;
           border-radius: 50%;
-  
+
           &:after {
             content: "";
             position: absolute;
@@ -197,7 +197,7 @@
             border-radius: 50%;
             background: #fff;
           }
-        }  
+        }
       }
 
       .chosen-color {
@@ -232,8 +232,8 @@
             position: absolute;
             opacity: 0;
             cursor: pointer;
-            
-            &:checked ~ .checkmark {
+
+            &:checked~.checkmark {
               border: 1px solid #4B3D32;
               background: #4B3D32;
               color: #fff;
@@ -246,7 +246,7 @@
             }
           }
 
-          &:hover input ~ .checkmark {
+          &:hover input~.checkmark {
             border: 1px solid #4B3D32;
           }
 
@@ -282,7 +282,7 @@
           span {
             font-weight: 300;
           }
-        } 
+        }
 
         a {
           font-weight: 300;
