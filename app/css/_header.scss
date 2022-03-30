@@ -99,10 +99,6 @@
           }
         }
       }
-    }
-  &-wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   &-logo {
     font-size: rem(24);
@@ -326,7 +322,7 @@
 .header-dropdown-list-mob {
   top:140px;
 }
-.header-btns-lupa {
+.header-btns-lupa{
   margin-right: 30px;
   @media (max-width:992px) {
     display: none;
