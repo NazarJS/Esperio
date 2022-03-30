@@ -963,11 +963,6 @@ select {
   display: block;
 }
 
-.header-wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .header-logo {
   font-size: 1.5rem;
 }
