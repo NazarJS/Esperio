@@ -1,5 +1,6 @@
 const product = document.querySelector('.product-info-block');
 const preview = document.querySelector('.product-img');
+const btnCart = document.querySelector('.btn-cart');
 const img = document.querySelectorAll('.img-gallery');
 const slider = $(".product-items");
 
@@ -21,6 +22,7 @@ $(document).ready(function () {
     nextArrow: false,
     vertical: true,
     verticalSwiping: true,
+    focusOnSelect: true,
   }); 
 });
 
@@ -29,9 +31,9 @@ slider.on('wheel', (function(e) {
   e.preventDefault();
 
   if(e.originalEvent.deltaY < 0) {
-    $(this).slick('slickNext');
-  } else {
     $(this).slick('slickPrev');
+  } else {
+    $(this).slick('slickNext');
   }
 }));
 
