@@ -186,7 +186,7 @@ if (document.querySelector(".top-screen")) {
 //   });
 // }
 // Imask for checkout.html
-var element = document.getElementById("imask-phone");
+var element = document.getElementById("tel");
 var maskOptions = {
   placeholder: "+{000}(00)000-00-00",
   mask: "+{000}(00)000-00-00",
