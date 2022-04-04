@@ -26,4 +26,6 @@ burger.onclick = () => {
 closeHeader.onclick = () => {
     headerDesctop.style.display = "flex";
     headerMob.style.display = "none";
+    magnifier.style.display = "none"
+    magnifier.onclick();
 }
