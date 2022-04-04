@@ -31,7 +31,7 @@
                         </div>
                         <div class="ui-field">
                            <label for="tel">Мобильный телефон*</label>
-                           <input name="tel" placeholder="+375" type="text">
+                           <input name="tel" placeholder="+375" type="text" id="imask-phone">
                         </div>
                         <div class="ui-field">
                            <label for="instagram">Instagram</label>
@@ -81,12 +81,9 @@
                         </div>
                         <div class="ui-field">
                            <label for="payment">Способы оплаты*</label>
-                           <select name="payment">
-                              <option>Картой на сайте</option>
-                              <option>Пункт 2</option>
-                              <option>Пункт 1</option>
-                              <option>Пункт 2</option>
-                           </select>
+                           <div class="payment-field">
+                              Наличными при получении
+                           </div>
 
                         </div>
                      </div>
@@ -102,6 +99,11 @@
                         <div class="cart-info-price">
                            Способ доставки:
                            <span class="cart-info-price-span">Курьерская доставка</span>
+                           <div class="cart-info-price-subinfo">
+                              <div>Курьерская доставка осуществляется только в пределах Минска.</div>
+                              <div> Оплата происходит наличными курьеру при получении заказа.</div>
+                           </div>
+
                         </div>
                         <div class="cart-info-price">
                            Стоимость товаров:
@@ -109,11 +111,11 @@
                         </div>
                         <div class="cart-info-price">
                            Доставка:
-                           <span class="cart-info-price-span">170 BYN</span>
+                           <span class="cart-info-price-span">11 BYN</span>
                         </div>
                         <div class="cart-info-total">
                            Итого к оплате:
-                           <span class="cart-info-total-span">15 BYN</span>
+                           <span class="cart-info-total-span">181 BYN</span>
                         </div>
                         <input class="styler ui-basket" type="submit" value="Оформить заказ" />
                      </div>

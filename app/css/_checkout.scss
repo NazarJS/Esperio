@@ -55,7 +55,7 @@
     margin-bottom: 40px;
   }
 }
-// Eror style ❌ 
+// Eror style ❌
 span.upload-error {
   left: 0;
   bottom: -17px;
@@ -64,22 +64,37 @@ span.upload-error {
   color: rgb(252, 104, 104);
 }
 
-// Form style ⭕ 
+// Form style ⭕
 
-button.styler, input[type='button'].styler, input[type='submit'].styler, input[type='reset'].styler {
-width: 100%;
-height: 40px;
-line-height: 40px;
-background: $colorBlack;
-box-shadow: none;
-border-radius: 0;
-border: none;
-font: 14px $ffOpenSans;
-text-shadow: none;
-color: #fff;
-
+button.styler,
+input[type="button"].styler,
+input[type="submit"].styler,
+input[type="reset"].styler {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: $colorBlack;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  font: 14px $ffOpenSans;
+  text-shadow: none;
+  color: #fff;
 }
-button.styler:not([disabled]):hover, input[type='button'].styler:not([disabled]):hover, input[type='submit'].styler:not([disabled]):hover, input[type='reset'].styler:not([disabled]):hover, input[type='reset'].styler:hover {
+button.styler:not([disabled]):hover,
+input[type="button"].styler:not([disabled]):hover,
+input[type="submit"].styler:not([disabled]):hover,
+input[type="reset"].styler:not([disabled]):hover,
+input[type="reset"].styler:hover {
   opacity: 0.5;
   background: $colorBlack;
+}
+
+.payment-field {
+  line-height: 38px;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #dbd8d6;
+  color: #4b3d32;
+  font-weight: 300;
 }

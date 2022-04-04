@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
   // Top-Screen Slider
   $(".top-screen-slider").slick({
@@ -142,7 +140,7 @@ menu.forEach((element) => {
 let headermenu = document.querySelectorAll(".header-info-link-title");
 let arrow = document.querySelectorAll(".arrow");
 // change possition for header
-let headerabsolute = document.querySelector('.header')
+let headerabsolute = document.querySelector(".header");
 // Button for mobile-catalog
 let tocard = document.querySelectorAll(".col-hide");
 let opencard = document.querySelector(".main-catalog-btn");
@@ -152,8 +150,8 @@ function changeHeader() {
   headerShop.src = "./images/icon/header-shop-white.svg";
   magnifier.src = "./images/icon/header-search-white.svg";
   // change posittion of header
-  headerabsolute.style.position = "absolute"
-  headerabsolute.style.width = "100%"
+  headerabsolute.style.position = "absolute";
+  headerabsolute.style.width = "100%";
   headerMob.style.marginBottom = "150px";
   headermenu.forEach((el) => {
     el.style.color = "#fff";
@@ -178,3 +176,19 @@ if (document.querySelector(".top-screen")) {
     $("select").styler();
   });
 })(jQuery);
+
+// Iframe
+// ymaps.ready(init);
+// function init() {
+//   var myMap = new ymaps.Map("map", {
+//     center: [55.76, 37.64],
+//     zoom: 7,
+//   });
+// }
+// Imask for checkout.html
+var element = document.getElementById("imask-phone");
+var maskOptions = {
+  placeholder: "+{000}(00)000-00-00",
+  mask: "+{000}(00)000-00-00",
+};
+var mask = IMask(element, maskOptions);
