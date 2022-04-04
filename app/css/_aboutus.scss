@@ -1,9 +1,9 @@
 .aboutus {
   .container {
-    max-width: 1065px;
+    max-width: 980px;
   }
   &-header {
-    margin-bottom: 15px;
+    margin-bottom: 80px;
     h1 {
       color: $colorBlack;
       font-size: rem(44px);
@@ -13,54 +13,49 @@
       padding: 17px 0;
     }
   }
-  &-img {
-    text-align: center;
-    margin-bottom: 32px;
-    line-height: 0;
-    height: 464px;
-    width: 100%;
-    img {
-      max-height: 464px;
-    }
-  }
-  &-list {
-    font-weight: 300;
+  &-now {
+    padding: 133px 20px 240px 130px;
+    // height: 556px;
     margin-bottom: 120px;
+    background-image: url(../images/bg/aboutus-now.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: 992px) {
+      padding: 130px 0;
+    }
     &-title {
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
-    ul {
-      margin-bottom: 16px;
-    }
-    li {
-      position: relative;
-      padding: 0 24px;
-      margin-bottom: 16px;
-      &::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        transform: translate(0%, -50%);
-        top: 50%;
-        left: 12px;
-        width: 5px;
-        height: 5px;
-        border-radius: 100%;
-        background: $colorBlack;
+    &-item {
+      display: inline-block;
+      margin-right: 100px;
+      @media (max-width: 768px) {
+        margin-right: 50px;
+      }
+      &-title {
+        margin-bottom: 12px;
       }
     }
   }
+
   &-team {
     margin-bottom: 120px;
     &-card {
-      gap: 20px;
+      gap: 12px;
       margin-bottom: 40px;
       &-img {
+        -webkit-box-flex: 0;
+        flex: 0 0 158px;
+        max-width: 158px;
         line-height: 0;
-        height: 465px;
+        height: 240px;
         img {
-          max-height: 465px;
+          max-height: 240px;
         }
+      }
+      &-text {
+        display: inline-block;
       }
       &-name {
         font-size: rem(18px);
@@ -79,15 +74,15 @@
   }
   &-proj {
     margin-bottom: 120px;
-    &-item {
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-      border-bottom: 1px solid #dbd8d6;
-      &:last-child {
-        padding-bottom: 0px;
-        margin-bottom: 0px;
-        border-bottom: 0;
+    &-img {
+      line-height: 0;
+      height: 268px;
+      img {
+        max-height: 268px;
       }
+    }
+    &-item {
+      margin-bottom: 40px;
     }
 
     h1 {
@@ -107,66 +102,61 @@
   }
   &-smi {
     margin-bottom: 120px;
-    &-title {
-      font-family: $ffCormorant;
-      font-size: rem(44px);
-      font-weight: 500;
-      margin-bottom: 28px;
+    .ui-title {
+      margin-bottom: 35px;
     }
     &-item {
-      padding-bottom: 40px;
-      margin-bottom: 40px;
-      border-bottom: 1px solid #dbd8d6;
-      &:last-child {
-        padding-bottom: 0;
-        margin-bottom: 0;
-        border-bottom: none;
+      display: inline-block;
+      margin-bottom: 50px;
+      &:hover &-link {
+        text-decoration: none;
       }
       &-img {
         line-height: 0;
-      }
-      &-content {
-        height: 100%;
-        flex-direction: column;
-      }
-      &-title {
-        font-size: rem(18px);
-        font-weight: 700;
-        line-height: 1.5;
-        text-decoration: underline;
-        &:hover {
-          text-decoration: none;
+        margin-bottom: 24px;
+        height: 45px;
+        img {
+          max-height: 45px;
         }
       }
       &-link {
-        font-weight: 300;
+        font-weight: 700;
+        font-size: rem(18);
+        text-decoration: underline;
       }
     }
   }
   &-contact {
-    &-info {
-      padding-right: 50px;
+    .ui-title {
+      margin-bottom: 28px;
+    }
+    &-item {
       margin-bottom: 40px;
-    }
-    &-tel {
+      &:hover a {
+        text-decoration: underline;
+      }
       &-title {
-        font-size: rem(18px);
         font-weight: 700;
+        font-size: rem(18px);
         margin-bottom: 8px;
       }
-      &-number {
+      &-info {
         font-weight: 300;
+        margin-bottom: 12px;
       }
-    }
-    &-inst {
-      &-title {
-        font-size: rem(18px);
-        font-weight: 700;
-        margin-bottom: 8px;
-      }
-      &-adress {
+      table {
+        font-size: rem(13);
         font-weight: 300;
+        opacity: 0.65;
       }
     }
   }
+}
+
+// Style for map
+.place-card .place-card-large {
+  display: none;
+}
+.gm-inset-light {
+  display: none;
 }
