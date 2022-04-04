@@ -7,7 +7,6 @@ headerInputMob.onclick  = function(e) {
     inputListMob.style.display = "block";
 }
 magnifier.onclick = (e) => {
-    e.stopPropagation();
     magnifier.style.display = "none";
     headerBtnsSearch.style.display = "inline-block";
 }    
@@ -24,8 +23,9 @@ burger.onclick = () => {
     headerMob.style.display = "block";
 }
 closeHeader.onclick = () => {
-    headerDesctop.style.display = "flex";
     headerMob.style.display = "none";
-    magnifier.style.display = "none"
-    magnifier.onclick();
+    headerDesctop.style.display = "flex";
+    setTimeout(() =>  magnifier.style.display = "none", 0.1);
+       
 }
+
