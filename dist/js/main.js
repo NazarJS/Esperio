@@ -178,10 +178,17 @@ if (document.querySelector(".top-screen")) {
 })(jQuery);
 
 // Iframe
-ymaps.ready(init);
-function init() {
-  var myMap = new ymaps.Map("map", {
-    center: [55.76, 37.64],
-    zoom: 7,
-  });
-}
+// ymaps.ready(init);
+// function init() {
+//   var myMap = new ymaps.Map("map", {
+//     center: [55.76, 37.64],
+//     zoom: 7,
+//   });
+// }
+// Imask for checkout.html
+var element = document.getElementById("imask-phone");
+var maskOptions = {
+  placeholder: "+{000}(00)000-00-00",
+  mask: "+{000}(00)000-00-00",
+};
+var mask = IMask(element, maskOptions);
