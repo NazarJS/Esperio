@@ -113,7 +113,7 @@
     &-search {
       display: none;
       position: absolute;
-      right: 9%;
+      right: 8.5%;
       top: -33%;
     @media(max-width:992px) {
       display: none !important;
@@ -235,6 +235,9 @@
   }
   &-mob {
     display: none;
+    margin: -20px -40px 0 -40px;
+    padding:  20px 40px 20px 40px;
+    background-color: #ffffff;
     &-box {
       border-bottom: 1px solid #DBD8D6;
       margin-bottom: 20px;
