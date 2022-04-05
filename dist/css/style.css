@@ -2555,6 +2555,7 @@ body {
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  min-height: 100%;
   min-width: 100%;
 }
 
@@ -2619,6 +2620,15 @@ body {
 
 .text-right {
   text-align: right;
+}
+
+.pages ol li {
+  list-style: auto;
+  margin-bottom: 8px;
+}
+
+.pages ol li:hover a {
+  text-decoration: underline;
 }
 
 @media (min-width: 320px) {
