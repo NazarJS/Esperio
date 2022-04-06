@@ -956,7 +956,6 @@ textarea {
 .ui-field {
   font-family: "Open Sans", sans-serif;
   margin-bottom: 28px;
-  padding-right: 17px;
   position: relative;
 }
 
@@ -1425,17 +1424,23 @@ select {
   border-top: 1px solid #4b3d32;
 }
 
+.footer ul {
+  font-size: 0.875rem;
+}
+
 .footer-info {
   margin-bottom: 40px;
 }
 
 .footer-info-adress {
+  font-size: 0.875rem;
   margin-bottom: 8px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
 .footer-info-time {
+  font-size: 0.875rem;
   margin-bottom: 8px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -2354,12 +2359,16 @@ input[type=reset].styler:hover {
 }
 
 .aboutus-now {
-  padding: 133px 20px 240px 130px;
+  padding: 133px 0px 234px 0px;
   margin-bottom: 120px;
   background-image: url(../images/bg/aboutus-now.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.aboutus-now .container {
+  max-width: 1366px;
 }
 
 .aboutus-now-title {
@@ -2557,6 +2566,7 @@ body {
   margin-right: auto;
   position: relative;
   overflow: hidden;
+  min-height: 100%;
   min-width: 100%;
 }
 
@@ -2621,6 +2631,15 @@ body {
 
 .text-right {
   text-align: right;
+}
+
+.pages ol li {
+  list-style: auto;
+  margin-bottom: 8px;
+}
+
+.pages ol li:hover a {
+  text-decoration: underline;
 }
 
 @media (min-width: 320px) {
