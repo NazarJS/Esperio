@@ -14,7 +14,10 @@
     }
   }
   &-now {
-    padding: 133px 20px 240px 130px;
+    .container {
+      max-width: 1366px;
+    }
+    padding: 133px 0px 234px 0px;
     // height: 556px;
     margin-bottom: 120px;
     background-image: url(../images/bg/aboutus-now.png);
