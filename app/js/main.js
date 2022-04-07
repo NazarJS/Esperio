@@ -149,6 +149,7 @@ function changeHeader() {
   headerLogo.src = "./images/icon/ESPIREO-white.svg";
   headerShop.src = "./images/icon/header-shop-white.svg";
   magnifier.src = "./images/icon/header-search-white.svg";
+  burgerImg.src = "./images/icon/header-burger-white.svg";
   // change posittion of header
   headerabsolute.style.position = "absolute";
   headerabsolute.style.width = "100%";

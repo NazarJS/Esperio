@@ -1441,10 +1441,6 @@ select {
   border-top: 1px solid #DBD8D6;
 }
 
-.footer ul {
-  font-size: 0.875rem;
-}
-
 .footer-info {
   margin-bottom: 40px;
 }
@@ -3407,7 +3403,7 @@ body {
 
   .header-menu {
     display: block;
-    margin-top: -4px;
+    margin-top: 7px;
   }
 
   .header-btns-lupa {
