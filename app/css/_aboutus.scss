@@ -15,19 +15,39 @@
   }
   &-now {
     position: relative;
+    padding-top: 130px;
+    padding-bottom: 240px;
     margin-bottom: 120px;
+    overflow: hidden;
     @media (max-width: 992px) {
-      background: red;
+      background: rgb(185, 187, 182);
+      background: linear-gradient(
+        90deg,
+        rgba(185, 187, 182, 1) 0%,
+        rgba(201, 202, 197, 1) 39%,
+        rgba(237, 237, 237, 1) 100%
+      );
+      padding-top: 90px;
+      padding-bottom: 180px;
+    }
+    @media (max-width: 576px) {
+      padding-top: 90px;
+      padding-bottom: 90px;
     }
     .container {
       max-width: 1366px;
     }
-    &-wrap {
-      position: absolute;
-      top: 130px;
-    }
+
     &-img {
-      text-align: center;
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      width: 100vw;
+      min-width: 1360px;
       @media (max-width: 992px) {
         display: none;
       }
