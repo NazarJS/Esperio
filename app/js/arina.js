@@ -24,7 +24,7 @@ $(document).ready(function () {
     slidesToShow: 4,
     adaptiveHeight: true,
     draggable: false,
-    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false"><div class="arrow arrow-right"></div></button>'
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false"><div class="arrow arrow-slide"></div></button>'
   }); 
 });
 
