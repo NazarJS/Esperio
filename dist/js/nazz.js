@@ -11,13 +11,18 @@ magnifier.onclick = (e) => {
     headerBtnsSearch.style.display = "inline-block";
 }    
 wrapper.onclick = (e) => {
-    e.stopPropagation();
+    // e.stopPropagation();
     inputListMob.style.display = "none";
     headerBtnsSearch.style.display = "none";
     inputList.style.display = "none";
-    magnifier.style.display = "inline-block";
+    window.innerWidth < 992 ? false: magnifier.style.display = "inline-block";
 }
-
+magnifier.onclick = (e) => {
+    e.stopPropagation();
+    magnifier.style.display = "none";
+    headerBtnsSearch.style.display = "inline-block";
+    console.log('magnifier')
+}
 burger.onclick = () => {
     headerDesctop.style.display = "none";
     headerMob.style.display = "block";
@@ -25,7 +30,6 @@ burger.onclick = () => {
 closeHeader.onclick = () => {
     headerMob.style.display = "none";
     headerDesctop.style.display = "flex";
-    setTimeout(() =>  magnifier.style.display = "none", 0.1);
-       
+    setTimeout(() =>  magnifier.style.display = "none", 0.1);    
 }
 

@@ -8,6 +8,10 @@
         font-weight: 500;
         line-height: 1.1;
         font-family: $ffCormorant;
+
+        @media(max-width:576px) {
+            font-size: rem(28);
+        }
     }
     &-order {
         margin-bottom: 100px;
@@ -23,6 +27,7 @@
     }
     &-pay {
         margin-bottom: 100px;
+        line-height: 1.5;
         &-title {
             margin-bottom: 16px;
             font-weight: 600;
@@ -54,26 +59,30 @@
     }
     &-delivery {
         margin-bottom: 100px;
+        line-height: 1.5;
         p {
             font-weight: 300;
             margin-bottom: 20px;
         }
-        ul li {
-            margin-bottom: 16px;
-            text-decoration: dotted;
-            font-weight: 300;
-            list-style: disc;
-            ul {
-                padding-left: 20px;
-                li {
-                
-                    font-weight: 300;
-                        
-                    &:nth-of-type(1) {
-                        padding-top: 8px;
-                    }
-                    &:nth-of-type(4) {
-                        margin-bottom: 0;
+        ul {
+            padding-left: 20px;
+            li {
+                margin-bottom: 16px;
+                text-decoration: dotted;
+                font-weight: 300;
+                list-style: disc;
+                ul {
+                    padding-left: 20px;
+                    li {
+                    
+                        font-weight: 300;
+                            
+                        &:nth-of-type(1) {
+                            padding-top: 8px;
+                        }
+                        &:nth-of-type(4) {
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
@@ -90,10 +99,11 @@
             margin-bottom: 20px;
         }
         ul {
-            padding-left: 20px;
+            padding-left: 40px;
             
             li {
                 margin-bottom: 16px;
+                // padding-left: 20px;
                 list-style: disc;
             }
         }
@@ -102,9 +112,17 @@
         }
     }
     &-table {
+        overflow: auto;
+	    position: relative;
         margin-bottom: 32px;
         table {
             width: 100%;
+            max-width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+
+            
         }
         tr th {
             text-align: center;
@@ -116,9 +134,9 @@
                width: 20.5%;
             }
 
-            @media(max-width:576px) {
-                font-size: rem(12);
-            }
+            // @media(max-width:576px) {
+            //     font-size: rem(12);
+            // }
             
         }
         tr td {
@@ -131,9 +149,9 @@
                 width: 20.5%;
                 font-weight: 700;
             }
-            @media(max-width:576px) {
-                font-size: rem(12);
-            }
+            // @media(max-width:576px) {
+            //     font-size: rem(12);
+            // }
         }
     }
     &-tips {
@@ -143,7 +161,7 @@
             margin-bottom: 20px;
         }
         ul {
-            padding-left: 20px;
+            padding-left: 40px;
             li {
                 list-style: disc;
                 margin-bottom: 16px;
@@ -161,8 +179,10 @@
         position: relative;
         margin-bottom: 100px;
         height: 721px;
-        background: url(../images/info-review.png) no-repeat center ;
+        background: url(../images/info-review.png) top;
+        background-repeat: no-repeat;
         background-size: cover;
+        background-position:center;
 
         @media(max-width:992px) {
             margin-bottom:40px;
@@ -201,14 +221,8 @@
             font-weight: 300;
         }
         &-btn {
-            display: inline-block;
+            background-color:inherit !important;
             width: 200px;
-            height: 40px;
-            line-height: 38px;
-            font-weight: 400;
-            text-align: center;
-            border: 1px solid $colorBlack;
-            color: $colorBlack;
             &:hover {
                 opacity: 50%;
             }
@@ -228,18 +242,16 @@
             position: relative;
         }
         &-name {
-            // vertical-align: top;
-            // margin-right: 28px;
-            // margin-top: 35px;
             font-family: $ffCormorant;
             font-weight: 500;
             font-size: rem(24);
+            max-width: 90px;
+            word-wrap: break-word;
         }
         &-container {
             display: inline-block;
             width: 100%;
             padding: 24px 20px;
-            margin-right: 20px;
             margin-bottom: 16px;
             
             border: 1px solid #DBD8D6;
@@ -308,7 +320,7 @@
             margin: auto;
             width: 100%;
             @media(min-width:992px) {
-                width: 76%;
+                width: 688px;
             }
         }
     }
