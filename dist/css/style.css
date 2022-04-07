@@ -2422,20 +2422,26 @@ input[type=reset].styler:hover {
 
 .aboutus-now {
   position: relative;
+  padding-top: 130px;
+  padding-bottom: 240px;
   margin-bottom: 120px;
+  overflow: hidden;
 }
 
 .aboutus-now .container {
   max-width: 1366px;
 }
 
-.aboutus-now-wrap {
-  position: absolute;
-  top: 130px;
-}
-
 .aboutus-now-img {
-  text-align: center;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  width: 100vw;
+  min-width: 1360px;
 }
 
 .aboutus-now-title {
@@ -3518,7 +3524,12 @@ body {
   }
 
   .aboutus-now {
-    background: red;
+    background: #b9bbb6;
+    background: -webkit-gradient(linear, left top, right top, from(#b9bbb6), color-stop(39%, #c9cac5), to(#ededed));
+    background: -o-linear-gradient(left, #b9bbb6 0%, #c9cac5 39%, #ededed 100%);
+    background: linear-gradient(90deg, #b9bbb6 0%, #c9cac5 39%, #ededed 100%);
+    padding-top: 90px;
+    padding-bottom: 180px;
   }
 
   .aboutus-now-img {
@@ -3684,6 +3695,11 @@ body {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+  }
+
+  .aboutus-now {
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
 
   #middle {
