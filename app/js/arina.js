@@ -17,11 +17,13 @@ for (let i = 0; i < img.length; i++) {
 // slick slider
 $(document).ready(function () {
   $('.product-items').slick({
-    dots: true,
-    prevArrow: false,
-    nextArrow: false,
+    arrows: true,
     vertical: true,
     verticalSwiping: true,
+    infinite: false,
+    slidesToShow: 5,
+    adaptiveHeight: true,
+    draggable: false,
   }); 
 });
 

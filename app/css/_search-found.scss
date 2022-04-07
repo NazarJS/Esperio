@@ -7,6 +7,11 @@
 
       &-link {
         margin-right: 0;
+
+        @media (max-width: 992px) {
+          display: block;
+          margin-top: 12px;
+        }
       }
 
       &-text {
@@ -19,6 +24,10 @@
           &::after {
             top: 1px;
           }
+        }
+
+        @media (max-width: 992px) {
+          flex-direction: column;
         }
       }
     }
