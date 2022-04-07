@@ -227,7 +227,7 @@
         &-img {
           position: relative;
           text-align: center;
-            
+           
         }
         &-mob {
             display: none;
@@ -245,9 +245,12 @@
             text-align: left;
             top: 315px;
             left: 387px;
+<<<<<<< HEAD
             @media(max-width:1440px) {
                 left: 215px;
             }
+=======
+>>>>>>> main
             @media(max-width:1360px) {
                 left: 111px;
             }
