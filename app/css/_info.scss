@@ -227,15 +227,7 @@
         &-img {
           position: relative;
           text-align: center;
-            img {
-                // position: absolute;
-                // left: 50%;
-                // top: 50%;
-                // transform: translate(-50%,-50%);
-                // width: 100vw;
-                // min-width: 1366px;
-                // z-index: -1;
-            }
+           
         }
         &-mob {
             display: none;
@@ -253,6 +245,12 @@
             text-align: left;
             top: 315px;
             left: 387px;
+<<<<<<< HEAD
+            @media(max-width:1440px) {
+                left: 215px;
+            }
+=======
+>>>>>>> main
             @media(max-width:1360px) {
                 left: 111px;
             }
