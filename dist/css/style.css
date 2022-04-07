@@ -3399,6 +3399,12 @@ body {
   }
 }
 
+@media (max-width: 1440px) {
+  .info-review-wrapper {
+    left: 215px;
+  }
+}
+
 @media (max-width: 1360px) {
   .info-review-wrapper {
     left: 111px;
@@ -3630,7 +3636,7 @@ body {
   }
 
   .header {
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   .footer {

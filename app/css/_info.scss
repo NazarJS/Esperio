@@ -245,6 +245,9 @@
             text-align: left;
             top: 315px;
             left: 387px;
+            @media(max-width:1440px) {
+                left: 215px;
+            }
             @media(max-width:1360px) {
                 left: 111px;
             }
