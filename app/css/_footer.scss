@@ -1,14 +1,13 @@
 .footer {
   padding-top: 80px;
   padding-bottom: 80px;
-  ul {
-    font-size: rem(14px);
-  }
+  border-top: 1px solid #DBD8D6;
+  
   @media (max-width: 576px) {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-  border-top: 1px solid $colorBlack;
+
   &-info {
     margin-bottom: 40px;
 
