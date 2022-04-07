@@ -1589,7 +1589,7 @@ select {
 
 .product-items .slick-list {
   width: 84px;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .product-items .slick-next {
