@@ -45,9 +45,9 @@ body {
 #middle {
   -webkit-box-flex: 1;
   flex: 1 0 auto;
-  padding-bottom: 45px;
+  padding-bottom: 80px;
   @media (max-width: 576px) {
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 }
 
