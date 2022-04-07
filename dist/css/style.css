@@ -17,6 +17,7 @@
 }
 
 .catalog-txt {
+  width: 94%;
   font-weight: 300;
   margin-bottom: 75px;
 }
@@ -1440,17 +1441,23 @@ select {
   border-top: 1px solid #DBD8D6;
 }
 
+.footer ul {
+  font-size: 0.875rem;
+}
+
 .footer-info {
   margin-bottom: 40px;
 }
 
 .footer-info-adress {
+  font-size: 0.875rem;
   margin-bottom: 8px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
 .footer-info-time {
+  font-size: 0.875rem;
   margin-bottom: 8px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -2369,12 +2376,16 @@ input[type=reset].styler:hover {
 }
 
 .aboutus-now {
-  padding: 133px 20px 240px 130px;
+  padding: 133px 0px 234px 0px;
   margin-bottom: 120px;
   background-image: url(../images/bg/aboutus-now.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.aboutus-now .container {
+  max-width: 1366px;
 }
 
 .aboutus-now-title {
