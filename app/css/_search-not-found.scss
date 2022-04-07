@@ -1,4 +1,10 @@
 .search {
+  &-page {
+    @media (max-width: 576px) {
+      margin-top: 60px;
+    }
+  }
+
   &-request {
     margin-bottom: 32px;
     font-family: $ffOpenSans;
@@ -18,7 +24,12 @@
 }
 
 #not-found {
-  .product-middle {
-    margin-top: 200px;
+  .product {
+    &-middle {
+      margin-top: 200px;
+      @media (max-width: 576px) {
+        margin-top: 100px;
+      }
+    }
   }
 }

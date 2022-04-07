@@ -2,27 +2,26 @@
   &-page {
     .product {
       &-middle {
-        margin-top: 120px;
+        margin-top: 45px;
+      }
+
+      &-link {
+        margin-right: 0;
       }
 
       &-text {
         display: flex;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-between;
-
-        .product-link {
-          margin-right: 30px;
-
-          .arrow-left {
-            transform: rotate(45deg);
+        margin-bottom: 28px;
+        
+        .ui-arrow-brown {
+          &::after {
+            top: 1px;
           }
         }
       }
     }
-  }
-
-  &-top {
-    margin: 0;
   }
 
   &-request {
@@ -37,5 +36,11 @@
     .catalog-item {
       text-align: start;
     }
+  }
+}
+
+#found {
+  .search-result {
+    margin-top: 0;
   }
 }
