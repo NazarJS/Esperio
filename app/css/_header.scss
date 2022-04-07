@@ -100,6 +100,12 @@
         }
       }
   }
+
+  &-magnifier {
+    display: inline-block;
+    line-height: 0;
+  }
+
   &-logo {
     font-size: rem(24);
     &:hover {

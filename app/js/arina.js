@@ -22,7 +22,6 @@ $(document).ready(function () {
     nextArrow: false,
     vertical: true,
     verticalSwiping: true,
-    focusOnSelect: true,
   }); 
 });
 

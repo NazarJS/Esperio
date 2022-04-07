@@ -1153,6 +1153,11 @@ select {
   display: block;
 }
 
+.header-magnifier {
+  display: inline-block;
+  line-height: 0;
+}
+
 .header-logo {
   font-size: 1.5rem;
 }
@@ -1704,12 +1709,20 @@ select {
 .product-info-size .size-section .size {
   display: block;
   position: relative;
-  padding-left: 62px;
-  margin-bottom: 50px;
   cursor: pointer;
   font-family: "Open Sans";
   font-size: 0.75rem;
   text-align: center;
+  border: 1px solid #DBD8D6;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-right: 18px;
+}
+
+.product-info-size .size-section .size:hover {
+  border: 1px solid #4B3D32;
 }
 
 .product-info-size .size-section .size input {
@@ -1730,17 +1743,21 @@ select {
   display: none;
 }
 
-.product-info-size .size-section .size:hover input ~ .checkmark {
-  border: 1px solid #4B3D32;
-}
-
 .product-info-size .size-section .checkmark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
-  border: 1px solid #DBD8D6;
-  border-radius: 50%;
-  padding: 8px 17px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .product-info-size .size-section .checkmark:after {
