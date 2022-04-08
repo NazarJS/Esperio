@@ -1,38 +1,48 @@
 const product = document.querySelector('.product-info-block');
 const preview = document.querySelector('.product-img');
-const btnCart = document.querySelector('.btn-cart');
 const img = document.querySelectorAll('.img-gallery');
-const slider = $(".product-items");
+const slider = $('.product-items');
 
-// product slider 
+// changing the preview img using data-img  
 for (let i = 0; i < img.length; i++) {
   img[i].onclick = function(e) {
     const thisPicture = e.target;
     const srcPicture = thisPicture.dataset.img;
 
-    preview.setAttribute("src", srcPicture); 
+    preview.setAttribute('src', srcPicture); 
   }
 }
 
-// slick slider
+// init slick slider
 $(document).ready(function () {
   $('.product-items').slick({
     arrows: true,
     vertical: true,
     verticalSwiping: true,
     infinite: false,
-    slidesToShow: 4,
-    adaptiveHeight: true,
-    draggable: false,
-    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false"><div class="arrow arrow-slide"></div></button>'
+    dots: true,
+
   }); 
 });
 
-// Implementing navigation of slides using mouse scroll
+// checking count of img slides 
+// if more than 5 then we show the button 
+slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  console.log(slick)
+  if (slick.$dots[0].children.length > 5) {
+    slick.$nextArrow[0].style.display = 'block';
+    slick.$prevArrow[0].style.display = 'block';
+  } else {
+    slick.$nextArrow[0].style.display = 'none';
+    slick.$prevArrow[0].style.display = 'none';
+  }
+});
+
+// implementing navigation of slides using mouse scroll
 slider.on('wheel', (function(e) {
   e.preventDefault();
 
-  if(e.originalEvent.deltaY < 0) {
+  if (e.originalEvent.deltaY < 0) {
     $(this).slick('slickPrev');
   } else {
     $(this).slick('slickNext');
