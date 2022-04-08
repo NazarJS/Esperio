@@ -21,14 +21,16 @@ $(document).ready(function () {
     verticalSwiping: true,
     infinite: false,
     dots: true,
-
+    prevArrow: '<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: block;"><i class="arrow up"></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false"><i class="arrow down"></button>',
   }); 
 });
 
 // checking count of img slides 
 // if more than 5 then we show the button 
 slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-  console.log(slick)
+  slick.$dots[0].style.display = 'none';
+
   if (slick.$dots[0].children.length > 5) {
     slick.$nextArrow[0].style.display = 'block';
     slick.$prevArrow[0].style.display = 'block';
@@ -37,17 +39,6 @@ slider.on('init reInit afterChange', function (event, slick, currentSlide, nextS
     slick.$prevArrow[0].style.display = 'none';
   }
 });
-
-// implementing navigation of slides using mouse scroll
-slider.on('wheel', (function(e) {
-  e.preventDefault();
-
-  if (e.originalEvent.deltaY < 0) {
-    $(this).slick('slickPrev');
-  } else {
-    $(this).slick('slickNext');
-  }
-}));
 
 // off jQuery form styler in product.html
 if(product) {
