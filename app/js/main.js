@@ -179,17 +179,50 @@ if (document.querySelector(".top-screen")) {
 })(jQuery);
 
 // Iframe
-// ymaps.ready(init);
-// function init() {
-//   var myMap = new ymaps.Map("map", {
-//     center: [55.76, 37.64],
-//     zoom: 7,
-//   });
-// }
+ymaps.ready(init);
+function init() {
+  var myMap = new ymaps.Map("map", {
+      center: [53.931429, 27.650162],
+      controls: [],
+      zoom: 17,
+    }),
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    ),
+    myPlacemarkWithContent = new ymaps.Placemark(
+      [53.931429, 27.650162],
+      {
+        hintContent: "Собственный значок метки с контентом",
+        balloonContent: "Мы тут!",
+        iconContent: "12",
+      },
+      {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: "default#imageWithContent",
+        // Своё изображение иконки метки.
+        iconImageHref: "images/icon/ESPIRIO-map-icon.svg",
+        // Размеры метки.
+        iconImageSize: [106, 119],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-24, -24],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        iconContentOffset: [15, 15],
+        // Макет содержимого.
+        iconContentLayout: MyIconContentLayout,
+      }
+    );
+
+  myMap.geoObjects.add(myPlacemarkWithContent);
+}
+
 // Imask for checkout.html
-var element = document.getElementById("tel");
-var maskOptions = {
-  placeholder: "+{000}(00)000-00-00",
-  mask: "+{000}(00)000-00-00",
-};
-var mask = IMask(element, maskOptions);
+if (document.getElementById("#tel")) {
+  var element = document.getElementById("tel");
+  var maskOptions = {
+    placeholder: "+{000}(00)000-00-00",
+    mask: "+{000}(00)000-00-00",
+  };
+  var mask = IMask(element, maskOptions);
+}

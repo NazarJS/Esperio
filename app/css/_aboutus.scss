@@ -14,18 +14,43 @@
     }
   }
   &-now {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 240px;
+    margin-bottom: 120px;
+    overflow: hidden;
+    @media (max-width: 992px) {
+      background: rgb(185, 187, 182);
+      background: linear-gradient(
+        90deg,
+        rgba(185, 187, 182, 1) 0%,
+        rgba(201, 202, 197, 1) 39%,
+        rgba(237, 237, 237, 1) 100%
+      );
+      padding-top: 90px;
+      padding-bottom: 180px;
+    }
+    @media (max-width: 576px) {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
     .container {
       max-width: 1366px;
     }
-    padding: 133px 0px 234px 0px;
-    // height: 556px;
-    margin-bottom: 120px;
-    background-image: url(../images/bg/aboutus-now.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (max-width: 992px) {
-      padding: 130px 0;
+
+    &-img {
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      width: 100vw;
+      min-width: 1360px;
+      @media (max-width: 992px) {
+        display: none;
+      }
     }
     &-title {
       margin-bottom: 40px;
@@ -49,8 +74,8 @@
       margin-bottom: 40px;
       &-img {
         -webkit-box-flex: 0;
-        flex: 0 0 158px;
-        max-width: 158px;
+        flex: 0 0 36%;
+        max-width: 36%;
         line-height: 0;
         height: 240px;
         img {
@@ -72,6 +97,9 @@
       &-desc {
         font-weight: 300;
         line-height: 1.5;
+        @media (max-width: 400px) {
+          line-height: 1.3;
+        }
       }
     }
   }
@@ -157,9 +185,10 @@
 }
 
 // Style for map
-.place-card .place-card-large {
-  display: none;
+
+.ymaps-2-1-79-map-copyrights-promo {
+  display: none !important;
 }
-.gm-inset-light {
-  display: none;
+.ymaps-2-1-79-copyright .ymaps-2-1-79-copyright_logo_no {
+  display: none !important;
 }
