@@ -1629,12 +1629,16 @@ select {
   width: 100%;
 }
 
-.product-items .slick-prev i {
+.product-items .slick-arrow i {
   margin: -5px auto;
   border: solid #fff;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 6px;
+}
+
+.product-items .slick-prev i {
+  margin: -5px auto;
 }
 
 .product-items .slick-prev .up {
@@ -1649,10 +1653,6 @@ select {
 
 .product-items .slick-next i {
   margin: 2px auto;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 6px;
 }
 
 .product-items .slick-next .down {
