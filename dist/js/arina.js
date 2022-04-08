@@ -1,40 +1,44 @@
 const product = document.querySelector('.product-info-block');
 const preview = document.querySelector('.product-img');
-const btnCart = document.querySelector('.btn-cart');
 const img = document.querySelectorAll('.img-gallery');
-const slider = $(".product-items");
+const slider = $('.product-items');
 
-// product slider 
+// changing the preview img using data-img  
 for (let i = 0; i < img.length; i++) {
   img[i].onclick = function(e) {
     const thisPicture = e.target;
     const srcPicture = thisPicture.dataset.img;
 
-    preview.setAttribute("src", srcPicture); 
+    preview.setAttribute('src', srcPicture); 
   }
 }
 
-// slick slider
+// init slick slider
 $(document).ready(function () {
   $('.product-items').slick({
-    dots: true,
-    prevArrow: false,
-    nextArrow: false,
+    arrows: true,
     vertical: true,
     verticalSwiping: true,
+    infinite: false,
+    dots: true,
+    prevArrow: '<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: block;"><i class="arrow up"></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false"><i class="arrow down"></button>',
   }); 
 });
 
-// Implementing navigation of slides using mouse scroll
-slider.on('wheel', (function(e) {
-  e.preventDefault();
+// checking count of img slides 
+// if more than 5 then we show the button 
+slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  slick.$dots[0].style.display = 'none';
 
-  if(e.originalEvent.deltaY < 0) {
-    $(this).slick('slickPrev');
+  if (slick.$dots[0].children.length > 5) {
+    slick.$nextArrow[0].style.display = 'block';
+    slick.$prevArrow[0].style.display = 'block';
   } else {
-    $(this).slick('slickNext');
+    slick.$nextArrow[0].style.display = 'none';
+    slick.$prevArrow[0].style.display = 'none';
   }
-}));
+});
 
 // off jQuery form styler in product.html
 if(product) {
