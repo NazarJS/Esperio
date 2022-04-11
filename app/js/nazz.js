@@ -41,20 +41,19 @@ window.addEventListener('click', function (e) {
     e.stopPropagation();
 });
 
-let content = document.querySelectorAll('.test');
+let content = document.querySelectorAll('.info-comments-wrap');
 
 for (let i = 0; i < content.length; ++i) {
     let btn = content[i].childNodes[1];
-    let btnText = btn.childNodes[1];
     let answer = content[i].childNodes[3];
 
     btn.onclick = function () {
         if (answer.classList[2] === 'active') {
             answer.classList.remove('active');
-            btnText.innerText = 'ответ магазина';
+            btn.innerText = 'ответ магазина';
         } else {
             answer.classList.add('active');
-            btnText.innerText = 'свернуть ответ';
+            btn.innerText = 'свернуть ответ';
         }
     }
 }
