@@ -204,13 +204,11 @@
 
     &-color {
       .color-section {
-        display: flex;
-        width: 150px;
-        height: 20px;
+        height: auto;
         margin-bottom: 14px;
 
         .color {
-          display: block;
+          display: inline-block;
           position: relative;
           padding-left: 35px;
           margin-bottom: 12px;
@@ -220,6 +218,7 @@
           -moz-user-select: none;
           -ms-user-select: none;
           user-select: none;
+          margin-top: 12px;
 
           input {
             position: absolute;
