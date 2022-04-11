@@ -39,4 +39,17 @@ window.addEventListener('click', function (e) {
     }
 
     e.stopPropagation();
+<<<<<<< HEAD
 });
+=======
+});
+
+let rew = document.querySelectorAll('.info-comments-link');
+let ans = document.querySelectorAll('.comments-answer')
+rew.forEach(el => {
+    el.addEventListener('click', () => {
+        el.innerHTML = 'Ответ магазина'
+        ans.style.display = 'none';
+    })
+})
+>>>>>>> 9ccbda0f0e92d0ac0b160826fe795072591f30d9
