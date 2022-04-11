@@ -1714,16 +1714,12 @@ select {
 }
 
 .product-info-color .color-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 150px;
-  height: 20px;
+  height: auto;
   margin-bottom: 14px;
 }
 
 .product-info-color .color-section .color {
-  display: block;
+  display: inline-block;
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
@@ -1733,6 +1729,7 @@ select {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-top: 12px;
 }
 
 .product-info-color .color-section .color input {
