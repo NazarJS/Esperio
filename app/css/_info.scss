@@ -299,7 +299,7 @@
             width: 100%;
             padding: 24px 20px;
             margin-bottom: 16px;
-            
+            text-align-last: left;
             border: 1px solid #DBD8D6;
         }
         &-head {
@@ -353,9 +353,11 @@
         &-wrap {
             display: block;
             text-align: right;
-            margin-bottom: 20px;
+            
         }
         &-link {
+            display: inline-block;
+            margin-bottom: 20px;
             text-decoration: underline;
             font-weight: 300;
             &:hover {

@@ -567,6 +567,8 @@
   width: 100%;
   padding: 24px 20px;
   margin-bottom: 16px;
+  -moz-text-align-last: left;
+  text-align-last: left;
   border: 1px solid #DBD8D6;
 }
 
@@ -617,10 +619,11 @@
 .info-comments-wrap {
   display: block;
   text-align: right;
-  margin-bottom: 20px;
 }
 
 .info-comments-link {
+  display: inline-block;
+  margin-bottom: 20px;
   text-decoration: underline;
   font-weight: 300;
 }
