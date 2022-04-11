@@ -25,7 +25,6 @@
 
   &-link {
     margin-right: 102px;
-    font-family: $ffOpenSans;
     font-weight: 400;
     font-size: rem(14);
     color: #4B3D32;
@@ -69,8 +68,15 @@
     position: relative;
     width: 84px;
 
-    @media (max-width: 480px) {
-      width: 25%;  
+    @media (max-width: 345px) {
+      width: 11%;  
+    }
+    @media (max-width: 520px) {
+      width: 12%;  
+    }
+
+    @media (max-width: 1170px) {
+      width: 14%;  
     }
 
     .slick {
@@ -80,6 +86,7 @@
 
       &-slide {
         border: none;
+        cursor: pointer;
       }
 
       &-arrow {
@@ -92,7 +99,6 @@
       }
 
       &-list {
-        // width: 84px;
         min-height: 100%;
       }
       
@@ -144,7 +150,7 @@
     }
 
     img {
-      padding-bottom: 18px;
+      margin-bottom: 18px;
     }
   }
 
@@ -153,15 +159,24 @@
     margin-left: 18px;
     line-height: 0;
 
-    @media (max-width: 480px) {
+    @media (max-width: 520px) {
       width: 72%;
+      margin-left: 3%;  
+    }
+
+    @media (max-width: 520px) {
+      width: 70%;
+      margin-left: 3%;  
+    }
+    
+    @media (max-width: 1170px) {
+      width: 77%;
       margin-left: 3%;  
     }
   }
 
   &-info {
     margin-bottom: 28px;
-    font-family: $ffOpenSans;
     color: #4B3D32;
 
     &-block {
@@ -276,13 +291,11 @@
     &-size {
       .size-section {
         margin-bottom: 16px;
-        display: flex;
         
         .size {
-          display: block;
+          display: inline-block;
           position: relative;
           cursor: pointer;
-          font-family: "Open Sans";
           font-size: 0.75rem;
           text-align: center;
           border: 1px solid #DBD8D6;
@@ -290,6 +303,8 @@
           padding: 25px;
           overflow: hidden;
           margin-right: 18px;
+          width: 48px;
+          height: 48px;
 
           &:hover {
             border: 1px solid #4B3D32;
@@ -340,7 +355,6 @@
       }
 
       .size-text {
-        font-family: $ffOpenSans;
         color: #4B3D32;
 
         .desc {
@@ -369,7 +383,6 @@
         height: 40px;
         background: #4B3D32;
         border: none;
-        font-family: $ffOpenSans;
         font-weight: 400;
         font-size: rem(14);
         color: #fff;
