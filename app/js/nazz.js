@@ -48,11 +48,11 @@ for (let i = 0; i < content.length; ++i) {
     let answer = content[i].childNodes[3];
 
     btn.onclick = function () {
+        answer.classList.toggle('active');
+        
         if (answer.classList[2] === 'active') {
-            answer.classList.remove('active');
             btn.innerText = 'ответ магазина';
         } else {
-            answer.classList.add('active');
             btn.innerText = 'свернуть ответ';
         }
     }
