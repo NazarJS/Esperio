@@ -50,10 +50,10 @@ for (let i = 0; i < content.length; ++i) {
     btn.onclick = function () {
         answer.classList.toggle('active');
         
-        if (answer.classList[2] === 'active') {
-            btn.innerText = 'ответ магазина';
-        } else {
+        if (btn.innerText === 'ответ магазина') {
             btn.innerText = 'свернуть ответ';
+        } else {
+            btn.innerText = 'ответ магазина';
         }
     }
 }
