@@ -1552,7 +1552,6 @@ select {
 
 .product-link {
   margin-right: 102px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   color: #4B3D32;
@@ -1608,6 +1607,7 @@ select {
 
 .product-items .slick-slide {
   border: none;
+  cursor: pointer;
 }
 
 .product-items .slick-arrow {
@@ -1666,7 +1666,7 @@ select {
 }
 
 .product-items img {
-  padding-bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .product-preview {
@@ -1677,7 +1677,6 @@ select {
 
 .product-info {
   margin-bottom: 28px;
-  font-family: "Open Sans", sans-serif;
   color: #4B3D32;
 }
 
@@ -1782,16 +1781,12 @@ select {
 
 .product-info-size .size-section {
   margin-bottom: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .product-info-size .size-section .size {
-  display: block;
+  display: inline-block;
   position: relative;
   cursor: pointer;
-  font-family: "Open Sans";
   font-size: 0.75rem;
   text-align: center;
   border: 1px solid #DBD8D6;
@@ -1799,6 +1794,8 @@ select {
   padding: 25px;
   overflow: hidden;
   margin-right: 18px;
+  width: 48px;
+  height: 48px;
 }
 
 .product-info-size .size-section .size:hover {
@@ -1857,7 +1854,6 @@ select {
 }
 
 .product-info-size .size-text {
-  font-family: "Open Sans", sans-serif;
   color: #4B3D32;
 }
 
@@ -1884,7 +1880,6 @@ select {
   height: 40px;
   background: #4B3D32;
   border: none;
-  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   color: #fff;
@@ -3478,6 +3473,15 @@ body {
     left: 111px;
     top: 215px;
   }
+
+  .product-items {
+    width: 14%;
+  }
+
+  .product-preview {
+    width: 77%;
+    margin-left: 3%;
+  }
 }
 
 @media (max-width: 1150px) {
@@ -3789,13 +3793,18 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .product-items {
-    width: 25%;
+    width: 12%;
   }
 
   .product-preview {
     width: 72%;
+    margin-left: 3%;
+  }
+
+  .product-preview {
+    width: 70%;
     margin-left: 3%;
   }
 }
@@ -3957,6 +3966,12 @@ body {
 
   .header-mob-time {
     max-width: 167px;
+  }
+}
+
+@media (max-width: 345px) {
+  .product-items {
+    width: 11%;
   }
 }
 
