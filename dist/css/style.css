@@ -1098,10 +1098,6 @@ select {
   font-family: "Cormorant", serif;
 }
 
-.header-info ul li:last-child {
-  margin-right: 0;
-}
-
 .header-info-link {
   display: inline-block;
   position: relative;
