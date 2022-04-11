@@ -41,12 +41,19 @@ window.addEventListener('click', function (e) {
     e.stopPropagation();
 });
 
-let rew = document.querySelectorAll('.info-comments-link');
+let content = document.querySelectorAll('.info-comments-wrap');
 
-rew.forEach(el => {
-    el.addEventListener('click', () => {
-       
-        el.innerHTML = 'Ответ магазина'
-        el.closest('div').style.display = "none";
-    })
-})
+for (let i = 0; i < content.length; ++i) {
+    let btn = content[i].childNodes[1];
+    let answer = content[i].childNodes[3];
+
+    btn.onclick = function () {
+        if (answer.classList[2] === 'active') {
+            answer.classList.remove('active');
+            btn.innerText = 'ответ магазина';
+        } else {
+            answer.classList.add('active');
+            btn.innerText = 'свернуть ответ';
+        }
+    }
+}
