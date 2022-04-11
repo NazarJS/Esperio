@@ -25,7 +25,7 @@
 
   &-link {
     margin-right: 102px;
-    font-family: 'Open Sans';
+    font-family: $ffOpenSans;
     font-weight: 400;
     font-size: rem(14);
     color: #4B3D32;
@@ -62,10 +62,16 @@
     display: flex;
     overflow: hidden;
   }
-
+  
   &-items {
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: 84px;
+
+    @media (max-width: 480px) {
+      width: 25%;  
+    }
 
     .slick {
       &-track {
@@ -76,14 +82,65 @@
         border: none;
       }
 
-      &-list {
-        width: 84px;
-        min-height: 100%;
+      &-arrow {
+        background: #4B3D32;
+        border: none;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 0.875rem;
+        color: #fff;
       }
 
-      // &-slider {
-      //   padding-bottom: 18px;
-      // }
+      &-list {
+        // width: 84px;
+        min-height: 100%;
+      }
+      
+      &-next {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      &-arrow {
+        i {
+          margin: -5px auto;
+          border: solid #fff;
+          border-width: 0 2px 2px 0;
+          display: inline-block;
+          padding: 6px;
+        }
+      }
+
+      &-prev {
+        i {
+          margin: -5px auto;
+        }
+        
+        .up {
+          transform: rotate(-135deg);
+          -webkit-transform: rotate(-135deg);
+        }
+
+        &:hover {
+          background-color: #a59e99;
+        }
+      }
+
+      &-next {
+        i {
+          margin: 2px auto;
+        }
+
+        .down {
+          transform: rotate(45deg);
+          -webkit-transform: rotate(45deg);
+        }
+
+        &:hover {
+          background-color: #a59e99;
+        }
+      }
     }
 
     img {
@@ -92,14 +149,19 @@
   }
 
   &-preview {
-    width: 465px;
+    width: calc(100% - 84px - 18px);
     margin-left: 18px;
     line-height: 0;
+
+    @media (max-width: 480px) {
+      width: 72%;
+      margin-left: 3%;  
+    }
   }
 
   &-info {
     margin-bottom: 28px;
-    font-family: 'Open Sans';
+    font-family: $ffOpenSans;
     color: #4B3D32;
 
     &-block {
@@ -109,7 +171,7 @@
     }
 
     &-title {
-      font-family: 'Open Sans';
+      font-family: $ffOpenSans;
       font-weight: 400;
       font-size: rem(16);
       color: #4B3D32;
@@ -213,10 +275,8 @@
 
     &-size {
       .size-section {
-        margin-bottom: 12px;
+        margin-bottom: 16px;
         display: flex;
-        width: 100%;
-        height: 55px;
         
         .size {
           display: block;
@@ -227,8 +287,7 @@
           text-align: center;
           border: 1px solid #DBD8D6;
           border-radius: 50%;
-          width: 50px;
-          height: 50px;
+          padding: 25px;
           overflow: hidden;
           margin-right: 18px;
 
@@ -264,6 +323,11 @@
           width: 100%;
           align-items: center;
           justify-content: center;
+          flex-direction: column;
+
+          span {
+            font-weight: 300;
+          }
 
           &:after {
             top: 9;
@@ -276,7 +340,7 @@
       }
 
       .size-text {
-        font-family: 'Open Sans';
+        font-family: $ffOpenSans;
         color: #4B3D32;
 
         .desc {
@@ -305,7 +369,7 @@
         height: 40px;
         background: #4B3D32;
         border: none;
-        font-family: 'Open Sans';
+        font-family: $ffOpenSans;
         font-weight: 400;
         font-size: rem(14);
         color: #fff;
@@ -330,14 +394,12 @@
   }
 
   &-middle {
-    margin-bottom: 120px;
-
     .product-clothes {
-      .clothes {
-        &-color-grey {
-          background-color: #736f63;
-        }
-      }
+      margin-bottom: 45px;
     }
+  }
+
+  .ui-title {
+    margin-bottom: 28px;
   }
 }
