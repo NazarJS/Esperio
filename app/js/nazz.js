@@ -40,3 +40,12 @@ window.addEventListener('click', function (e) {
 
     e.stopPropagation();
 });
+
+let rew = document.querySelectorAll('.info-comments-link');
+let ans = document.querySelectorAll('.comments-answer')
+rew.forEach(el => {
+    el.addEventListener('click', () => {
+        el.innerHTML = 'Ответ магазина'
+        ans.style.display = 'none';
+    })
+})
