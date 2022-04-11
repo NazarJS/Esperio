@@ -373,9 +373,13 @@
     }
 }
 .comments-answer {
+    display: none;
     margin-bottom: 0;
     background-color: #F6F2EC;
     margin-bottom: 50px;
+}
+.comments-answer.active {
+    display: block;
 }
 .comments-link-mb {
     margin-bottom: 32px;
