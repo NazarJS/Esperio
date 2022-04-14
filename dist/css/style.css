@@ -2498,6 +2498,23 @@ input[type=reset].styler:hover {
   margin-bottom: 12px;
 }
 
+.aboutus-build {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+
+.aboutus-build .container {
+  max-width: 1366px;
+}
+
+.aboutus-build-title {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .aboutus-team {
   margin-bottom: 120px;
 }
@@ -2575,6 +2592,7 @@ input[type=reset].styler:hover {
 }
 
 .aboutus-smi {
+  position: relative;
   margin-bottom: 120px;
 }
 
@@ -2585,6 +2603,7 @@ input[type=reset].styler:hover {
 .aboutus-smi-item {
   display: inline-block;
   margin-bottom: 50px;
+  max-width: 240px;
 }
 
 .aboutus-smi-item:hover .aboutus-smi-item-link {
@@ -2615,7 +2634,12 @@ input[type=reset].styler:hover {
   margin-bottom: 40px;
 }
 
-.aboutus-contact-item:hover a {
+.aboutus-contact-item-tel {
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.aboutus-contact-item-tel:hover {
   text-decoration: underline;
 }
 
@@ -2630,6 +2654,10 @@ input[type=reset].styler:hover {
   margin-bottom: 12px;
 }
 
+.aboutus-contact-item-link {
+  max-width: 40px;
+}
+
 .aboutus-contact-item table {
   font-size: 0.8125rem;
   font-weight: 300;
@@ -2642,6 +2670,60 @@ input[type=reset].styler:hover {
 
 .ymaps-2-1-79-copyright .ymaps-2-1-79-copyright_logo_no {
   display: none !important;
+}
+
+.aboutus-smi-arrows {
+  width: 100%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.aboutus-prev {
+  text-align: left;
+  position: absolute;
+  left: -55px;
+  cursor: pointer;
+}
+
+.aboutus-next {
+  text-align: right;
+  position: absolute;
+  right: -55px;
+  cursor: pointer;
+}
+
+.aboutus-smi .slick-dots li {
+  display: inline-block;
+  margin-right: 20px;
+  opacity: 0.34;
+}
+
+.aboutus-smi .slick-dots li.slick-active button {
+  background: #000;
+  opacity: 1;
+}
+
+.aboutus-smi .slick-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.aboutus-smi .slick-dots button {
+  font-size: 0;
+  line-height: 0;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: #4b3d32;
+  width: 10px;
+  height: 10px;
 }
 
 * {
@@ -3603,6 +3685,15 @@ body {
   .aboutus-now-img {
     display: none;
   }
+
+  .aboutus-build {
+    background: #b9bbb6;
+    background: -webkit-gradient(linear, right top, left top, color-stop(100%, #ededed), color-stop(39%, #c9cac5));
+    background: -o-linear-gradient(right, #ededed 100% #b9bbb6 0%, #c9cac5 39%);
+    background: linear-gradient(270deg, #ededed 100% #b9bbb6 0%, #c9cac5 39%);
+    padding-top: 90px;
+    padding-bottom: 180px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -3775,6 +3866,11 @@ body {
   }
 
   .aboutus-now {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .aboutus-build {
     padding-top: 90px;
     padding-bottom: 90px;
   }

@@ -8,6 +8,8 @@ $(document).ready(function () {
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
   });
+  // Aboutus slider
+
   // Form validation
 
   jQuery.validator.addMethod(
@@ -127,7 +129,35 @@ $(document).ready(function () {
     },
   });
 });
-
+$(document).ready(function () {
+  $(".aboutus-slider").slick({
+    slidesToShow: 3,
+    autuHeight: true,
+    adaptiveHeight: true,
+    infinite: true,
+    dots: false,
+    prevArrow: $(".aboutus-prev"),
+    nextArrow: $(".aboutus-next"),
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  });
+});
 //Footer drop
 let menu = document.querySelectorAll(".footer-info");
 menu.forEach((element) => {
