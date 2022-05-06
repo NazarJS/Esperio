@@ -209,7 +209,8 @@ if (document.querySelector(".top-screen")) {
 })(jQuery);
 
 // Iframe
-ymaps.ready(init);
+if(document.querySelector('.aboutus')) {
+  ymaps.ready(init);
 function init() {
   var myMap = new ymaps.Map("map", {
       center: [53.931429, 27.650162],
@@ -246,6 +247,8 @@ function init() {
 
   myMap.geoObjects.add(myPlacemarkWithContent);
 }
+}
+
 
 // Imask for checkout.html
 if (document.getElementById("#tel")) {
@@ -256,3 +259,27 @@ if (document.getElementById("#tel")) {
   };
   var mask = IMask(element, maskOptions);
 }
+
+//инициализация MFP popup для форм
+$(document).on("click", ".mfp-link", function () {
+  var a = $(this);
+  $.magnificPopup.open({
+    items: { src: a.attr("data-href") },
+    type: "ajax",
+    overflowY: "hidden",
+    removalDelay: 610,
+    mainClass: "my-mfp-zoom-in",
+    ajax: {
+      tError: "Error. Not valid url",
+    },
+    callbacks: {
+      open: function () {
+        setTimeout(function () {
+          $(".mfp-wrap, .mfp-bg").addClass("delay-back");
+          $(".mfp-popup").addClass("delay-back");
+        }, 700);
+      },
+    },
+  });
+  return false;
+});
