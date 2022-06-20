@@ -36,28 +36,28 @@ let path = {
 
 let { src, dest } = require("gulp"),
   gulp = require("gulp"),
-  browsersync = require("browser-sync").create(),
+  // browsersync = require("browser-sync").create(),
   fileinclude = require("gulp-file-include"),
   scss = require("gulp-sass")(require("sass")),
   gcmq = require("gulp-group-css-media-queries"),
   svgSprite = require("gulp-svg-sprite"),
   autoprefixer = require("gulp-autoprefixer");
 
-function browserSync(params) {
-  browsersync.init({
-    server: {
-      baseDir: "./" + dist + "/",
-    },
-    port: 3000,
-    notify: false,
-  });
-}
+// function browserSync(params) {
+//   browsersync.init({
+//     server: {
+//       baseDir: "./" + dist + "/",
+//     },
+//     port: 3000,
+//     notify: false,
+//   });
+// }
 
 function html() {
   return src(path.src.html)
     .pipe(fileinclude())
     .pipe(dest(path.build.html))
-    .pipe(browsersync.stream());
+    // .pipe(browsersync.stream());
 }
 
 function css() {
@@ -75,14 +75,14 @@ function css() {
     )
     .pipe(gcmq())
     .pipe(dest(path.build.css))
-    .pipe(browsersync.stream());
+    // .pipe(browsersync.stream());
 }
 
 function js() {
   return src(path.src.js)
     .pipe(fileinclude())
     .pipe(dest(path.build.js))
-    .pipe(browsersync.stream());
+    // .pipe(browsersync.stream());
 }
 function fonts() {
   return src(path.src.fonts).pipe(dest(path.build.fonts));
@@ -91,13 +91,13 @@ function fonts() {
 function images() {
   return src(path.src.images)
     .pipe(dest(path.build.images))
-    .pipe(browsersync.stream());
+    // .pipe(browsersync.stream());
 }
 function popups() {
   return src(path.src.popups)
     .pipe(fileinclude())
     .pipe(dest(path.build.popups))
-    .pipe(browsersync.stream());
+    // .pipe(browsersync.stream());
 }
 
 function media() {
@@ -133,7 +133,7 @@ function watchFiles() {
 let build = gulp.series(
   gulp.parallel(js, css, html, images, popups, fonts, media)
 );
-let watch = gulp.parallel(build, watchFiles, browserSync);
+let watch = gulp.parallel(build, watchFiles);
 
 exports.images = images;
 exports.js = js;
