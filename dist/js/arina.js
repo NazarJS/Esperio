@@ -3,13 +3,13 @@ const preview = document.querySelector('.product-img');
 const img = document.querySelectorAll('.img-gallery');
 const slider = $('.product-items');
 
-// changing the preview img using data-img  
+// changing the preview img using data-img
 for (let i = 0; i < img.length; i++) {
   img[i].onclick = function(e) {
     const thisPicture = e.target;
     const srcPicture = thisPicture.dataset.img;
 
-    preview.setAttribute('src', srcPicture); 
+    preview.setAttribute('src', srcPicture);
   }
 }
 
@@ -23,11 +23,11 @@ $(document).ready(function () {
     dots: true,
     prevArrow: '<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: block;"><i class="arrow up"></button>',
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false"><i class="arrow down"></button>',
-  }); 
+  });
 });
 
-// checking count of img slides 
-// if more than 5 then we show the button 
+// checking count of img slides
+// if more than 5 then we show the button
 slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
   slick.$dots[0].style.display = 'none';
 
@@ -47,4 +47,20 @@ if(product) {
       $('input').styler('destroy');
     });
   })(jQuery);
+}
+
+if (matchMedia) {
+  let screen576 = window.matchMedia("(max-width:576px)");
+  screen576.addListener(accordionChanges);
+  accordionChanges(screen576);
+}
+
+function accordionChanges(screen576) {
+  if (screen576.matches) {
+    console.log($(".aboutus-contact-item.address"))
+    $(".aboutus-contact-item.social").after($(".aboutus-contact-item.address"));
+  } else {
+    $(".aboutus-contact-item.address").after($(".aboutus-contact-item.social"));
+
+  }
 }
