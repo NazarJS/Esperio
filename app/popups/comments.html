@@ -1,0 +1,129 @@
+<div class="zoom-anim-dialog popup-form">
+  <div class="form">
+    <div class="popup-title">Оставить отзыв</div>
+    <form class="form-validate" id="form_validate">
+    <div class="popup-raiting">
+      <div class="size-section">
+        <div class="raiting">
+          Ваша оценка:
+          <span class="output-value"></span>
+        </div>
+    
+        <label class="size">
+          <input type="radio" class="raiting-value" value="1" name="size" />
+          <span class="checkmark">1</span>
+        </label>
+        <label class="size">
+          <input type="radio" class="raiting-value" value="2" name="size" />
+          <span class="checkmark">2</span>
+        </label>
+        <label class="size">
+          <input type="radio" class="raiting-value" value="3" name="size" />
+          <span class="checkmark">3</span>
+        </label>
+        <label class="size">
+          <input type="radio" class="raiting-value" value="4" name="size" />
+          <span class="checkmark">4</span>
+        </label>
+        <label class="size">
+          <input type="radio" class="raiting-value" value="5" name="size" />
+          <span class="checkmark">5</span>
+        </label>
+      </div>
+    </div>
+    
+        <div class="filed-wrap">
+            <div class="form-input">
+                <label for="name" class="form-input-title">Имя</label>
+                <input type="text" name="name" id="name" class="form-input-field" />
+              </div>
+              <div class="form-input">
+                <label for="comments" class="form-input-title">Отзывы</label>
+                <textarea
+                  name="comments"
+                  id="comments"
+                  class="form-input-text"
+                ></textarea>
+              </div>
+              <!--! data-sitekey="Ваш ключ" -->
+              <div
+                class="g-recaptcha recaptcha"
+                data-sitekey="0000000000000000000000"
+              ></div>
+              <button class="form-btn ui-btn" type="submit">Отправить</button>
+        </div>
+     
+    </form>
+    <div class="popup-privacy">
+      Нажимая на кнопку «отправить», я соглашаюсь на обработку моих персональных
+      данных и ознакомлен(а) с
+      <a class="popup-privacy-info" href="#">условиями конфиденциальности</a>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+        
+      $("#form_validate").validate({
+
+        
+        errorPlacement: function (error, element) {
+          if (element.attr("name") == "size") {
+            error.appendTo(".size-section");
+          } else {
+            error.insertAfter(element);
+          }
+        },
+
+        rules: {
+          name: {
+            required: true,
+            lettersonly: true,
+          },
+          comments: {
+            required: true,
+            maxlength: 500,
+          },
+
+          size: {
+            required: true,
+          },
+        },
+        messages: {
+          name: {
+            required: "Пожалуйста, введите имя",
+            lettersonly: "Пожалуйста, введите корректное имя",
+          },
+          comments: {
+            required: "Пожалуйста, оставьте отзыв",
+            maxlength: "Ваш отзыв привышает 500 символов",
+          },
+          size: {
+            required: "Пожалуйста, оставьте оценку",
+          },
+        },
+      });
+   
+      let outputValue = document.querySelector(".output-value"),
+      raitingValue = document.querySelectorAll(".raiting-value");
+    function fnc(e) {
+      outputValue.innerHTML = e.target.value;
+    }
+    raitingValue.forEach((el) => {
+      el.addEventListener("click", fnc);
+    });
+
+    jQuery.validator.addMethod(
+      "lettersonly",
+      function (value, element) {
+        return this.optional(element) || /^[a-zA-ZА-Яа-я,ё\s]+$/i.test(value);
+      },
+      "Incorrect format"
+    );
+    });
+
+    
+
+   
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+</div>

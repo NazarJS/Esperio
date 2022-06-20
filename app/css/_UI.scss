@@ -27,9 +27,9 @@ h6,
 .h6 {
   font-family: $ffCormorant;
   font-weight: 500;
-  color: #fff;
-  // margin: 22px 0px 18px;
   text-transform: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -42,9 +42,13 @@ h1,
 
 h2,
 .h2 {
-  font-size: rem(80);
-
-  line-height: 1.42;
+  margin-bottom: 28px;
+  font-size: rem(44);
+  line-height: 1.1;
+  color: $colorBlack;
+  @media(max-width:576px) {
+      font-size: rem(28);
+  }
 }
 
 h3,
@@ -56,18 +60,23 @@ h3,
 
 h4,
 .h4 {
-  font-size: 24px;
-
-  line-height: 1.42;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: rem(24);
+  line-height: 1.1;
+  color: $colorBlack;
 }
-
+h6,
+.h6 {
+  margin-bottom: 16px;
+  font-size: rem(18);
+  line-height: 1.1;
+  color: $colorBlack;
+}
 a {
   color: #fff;
   text-decoration: none;
   outline: none;
-  // -webkit-transition: color 0.4s, border 0.4s;
-  // -o-transition: color 0.4s, border 0.4s;
-  // transition: color 0.4s, border 0.4s;
 }
 
 b,
