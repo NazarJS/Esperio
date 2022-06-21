@@ -488,6 +488,12 @@
   }
   &-link {
     background: transparent;
+
+    &.ui-btn {
+      @media(max-width: 576px) {
+        padding: 0 40px;
+      }
+    }
   }
 }
 

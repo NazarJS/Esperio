@@ -4288,6 +4288,10 @@ body {
     padding: 0;
   }
 
+  .sale-link.ui-btn {
+    padding: 0 40px;
+  }
+
   .aboutus-header {
     margin-bottom: 32px;
   }
