@@ -2219,11 +2219,25 @@ select {
   margin-top: 9px;
 }
 
+.whywe-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .whywe-title-text {
   font-size: 3.625rem;
   font-weight: 500;
   line-height: 0.9;
-  margin-bottom: 31px;
+  margin-bottom: 16px;
   font-family: "Cormorant", serif;
   word-break: break-word;
 }
@@ -2329,10 +2343,10 @@ select {
 
 .sale-img {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  top: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: 0;
   left: 50%;
   z-index: -1;
   width: 100vw;
@@ -2531,6 +2545,10 @@ input[type=reset].styler:hover {
   max-width: 1366px;
 }
 
+.aboutus-now-txt {
+  padding-left: 95px;
+}
+
 .aboutus-now-img {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
@@ -2581,6 +2599,7 @@ input[type=reset].styler:hover {
   font-size: 5rem;
   line-height: 1;
   max-width: 50%;
+  padding-left: 95px;
 }
 
 .aboutus-team {
@@ -2661,7 +2680,6 @@ input[type=reset].styler:hover {
 .aboutus-smi-item {
   display: inline-block;
   margin-bottom: 50px;
-  max-width: 240px;
 }
 
 .aboutus-smi-item:hover .aboutus-smi-item-link {
@@ -3788,18 +3806,8 @@ body {
     max-width: 100%;
   }
 
-  .whywe-title {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  .aboutus-build-title {
+    max-width: 100%;
   }
 }
 
@@ -3938,7 +3946,14 @@ body {
   }
 
   .top-screen-slide-wrap {
-    padding-left: 0;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: relative;
+    height: 80vh;
+    z-index: 9999;
+    left: 0;
+    top: 0;
   }
 
   .top-screen-slide-wrap::after {
@@ -3959,6 +3974,18 @@ body {
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
+  }
+
+  .top-screen-slide-img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 
   .top-screen-slide-content {
@@ -3990,6 +4017,10 @@ body {
     font-size: 2.625rem;
   }
 
+  .collection-link.ui-btn {
+    padding: 0 40px;
+  }
+
   .sale {
     padding: 40px 0;
     margin-bottom: 100px;
@@ -3998,6 +4029,10 @@ body {
   .sale-img {
     -o-object-fit: scale-down;
     object-fit: scale-down;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
   }
 
   .sale-wrapper {
@@ -4051,6 +4086,10 @@ body {
     margin-bottom: 100px;
   }
 
+  .aboutus-now-txt {
+    padding-left: 0;
+  }
+
   .aboutus-now-title {
     font-size: 44px;
     color: #fff;
@@ -4092,6 +4131,7 @@ body {
     font-size: 3.75rem;
     color: #fff;
     text-align: center;
+    padding-left: 0;
   }
 
   .aboutus-team {
@@ -4204,6 +4244,10 @@ body {
     padding: 0 20px;
   }
 
+  .top-screen-slide-wrap {
+    height: 100vh;
+  }
+
   .top-screen-slide-content {
     margin-bottom: 67px;
   }
@@ -4216,13 +4260,10 @@ body {
     font-size: 2.5rem;
   }
 
-  .whywe-title-text {
-    margin-bottom: 20px;
-  }
-
   .collection {
     height: 300px;
     padding: 0;
+    margin-bottom: 60px;
   }
 
   .collection-title {
@@ -4233,6 +4274,7 @@ body {
   .sale {
     height: 300px;
     padding: 0;
+    margin-bottom: 60px;
   }
 
   .sale-img {
@@ -4305,6 +4347,15 @@ body {
 
   .aboutus-smi {
     margin-bottom: 60px;
+    margin-right: -20px;
+  }
+
+  .aboutus-smi-item {
+    max-width: 67vw;
+  }
+
+  .aboutus-smi-item-link {
+    font-size: 0.875rem;
   }
 
   .aboutus-contact .ui-title {
@@ -4313,6 +4364,10 @@ body {
 
   .aboutus-contact-item {
     margin-bottom: 24px;
+  }
+
+  .aboutus-slide {
+    padding-right: 52px;
   }
 
   .aboutus-smi .slick-dots {
@@ -4430,10 +4485,6 @@ body {
   }
 
   .whywe {
-    margin-bottom: 40px;
-  }
-
-  .collection {
     margin-bottom: 40px;
   }
 
