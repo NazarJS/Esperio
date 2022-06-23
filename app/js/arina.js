@@ -21,6 +21,7 @@ $(document).ready(function () {
     verticalSwiping: true,
     infinite: false,
     dots: true,
+    slidesToShow: 4,
     prevArrow: '<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: block;"><i class="arrow up"></button>',
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false"><i class="arrow down"></button>',
   });
@@ -31,7 +32,7 @@ $(document).ready(function () {
 slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
   slick.$dots[0].style.display = 'none';
 
-  if (slick.$dots[0].children.length > 5) {
+  if (slick.$dots[0].children.length > 4) {
     slick.$nextArrow[0].style.display = 'block';
     slick.$prevArrow[0].style.display = 'block';
   } else {
@@ -61,6 +62,5 @@ function accordionChanges(screen576) {
     $(".aboutus-contact-item.social").after($(".aboutus-contact-item.address"));
   } else {
     $(".aboutus-contact-item.address").after($(".aboutus-contact-item.social"));
-
   }
 }
