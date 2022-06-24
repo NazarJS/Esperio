@@ -5,6 +5,8 @@ $(document).ready(function () {
     adaptiveHeight: true,
     infinite: true,
     dots: true,
+	autoplay: true,
+    autoplaySpeed: 5000,
     prevArrow: $(".prev"),
     nextArrow: $(".next"),
   });
@@ -36,23 +38,19 @@ $(document).ready(function () {
     errorClass: "upload-error",
 
     rules: {
-      lastname: {
+      billing_last_name: {
         lettersonly: true,
         required: true,
       },
-      name: {
+      billing_first_name: {
         lettersonly: true,
         required: true,
       },
-      secondname: {
-        lettersonly: true,
-        required: true,
-      },
-      email: {
+      billing_email: {
         email: true,
         required: true,
       },
-      tel: {
+      billing_phone: {
         telephone: true,
         required: true,
       },
@@ -60,11 +58,11 @@ $(document).ready(function () {
         lettersonly: true,
         required: true,
       },
-      city: {
+      billing_city: {
         lettersonly: true,
         required: true,
       },
-      index: {
+      billing_postcode: {
         number: true,
         required: true,
       },
@@ -76,28 +74,24 @@ $(document).ready(function () {
         number: true,
         required: true,
       },
-      payment: {
+      payment_method: {
         required: true,
       },
     },
     messages: {
-      lastname: {
+      billing_last_name: {
         required: "Пожалуйста, введите свою фамилию",
         lettersonly: "Введите корректную фамилию",
       },
-      name: {
+      billing_first_name: {
         required: "Пожалуйста, введите свое имя",
         lettersonly: "Введите корректное имя",
       },
-      secondname: {
-        required: "Пожалуйста, введите свое отчество",
-        lettersonly: "Введите корректное отчество",
-      },
-      email: {
+      billing_email: {
         required: "Пожалуйста, введите email",
         email: "Введите корректный email",
       },
-      tel: {
+      billing_phone: {
         required: "Пожалуйста, введите свой телефон",
         telephone: "Введите корректный номер",
       },
@@ -105,11 +99,11 @@ $(document).ready(function () {
         required: "Пожалуйста, введите свою страну",
         lettersonly: "Введите корректное название",
       },
-      city: {
+      billing_city: {
         required: "Пожалуйста, введите свой город",
         lettersonly: "Введите корректное название",
       },
-      index: {
+      billing_postcode: {
         required: "Пожалуйста, введите свой почтоый индекс",
         number: "Введите корректный индекс",
       },
@@ -127,8 +121,14 @@ $(document).ready(function () {
         $("input, select").trigger("refresh");
       }, 1);
     },
+   /* submitHandler: function(form){
+      disable_button('.cart-info .ui-basket','true', 'Товар добавляется');
+    }*/
   });
 });
+
+
+
 $(document).ready(function () {
   $(".aboutus-slider").slick({
     slidesToShow: 3,
@@ -153,7 +153,6 @@ $(document).ready(function () {
           slidesToShow: 1,
           arrows: false,
           dots: true,
-          variableWidth: true,
         },
       },
     ],
@@ -177,10 +176,10 @@ let tocard = document.querySelectorAll(".col-hide");
 let opencard = document.querySelector(".main-catalog-btn");
 
 function changeHeader() {
-  headerLogo.src = "./images/icon/ESPIREO-white.svg";
-  headerShop.src = "./images/icon/header-shop-white.svg";
-  magnifier.src = "./images/icon/header-search-white.svg";
-  burgerImg.src = "./images/icon/header-burger-white.svg";
+  headerLogo.src = template_data.template_path+"/assets/images/icon/ESPIREO-white.svg";
+  headerShop.src = template_data.template_path+"/assets/images/icon/header-shop-white.svg";
+  magnifier.src = template_data.template_path+"/assets/images/icon/header-search-white.svg";
+  burgerImg.src = template_data.template_path+"/assets/images/icon/header-burger-white.svg";
   // change posittion of header
   headerabsolute.style.position = "absolute";
   headerabsolute.style.width = "100%";
@@ -202,6 +201,46 @@ if (document.querySelector(".top-screen")) {
   };
 }
 
+$(window).scroll(function () {
+
+  // if ($(window).width() > '800'){
+  scrol_top=$(window).scrollTop();
+  var of = $('#header').outerHeight(true);
+  var isMain = $('#top_screen');
+  if(scrol_top > of) {
+    $('body').addClass('fixed_header');
+    if (!isMain.length) {
+      $('body').css('paddingTop',$('#header').outerHeight(true)+'px')
+    }
+
+    if($('body').hasClass('home')) {
+
+      headerLogo.src = template_data.template_path+"/assets/images/icon/ESPIREO.svg";
+      headerShop.src = template_data.template_path+"/assets/images/icon/header-shop.svg";
+      magnifier.src = template_data.template_path+"/assets/images/icon/header-magnifier.svg";
+      burgerImg.src = template_data.template_path+"/assets/images/icon/header-mobile-menu.svg";
+
+    }
+
+  }else {
+    $('body').removeClass('fixed_header');
+    $('body').css('paddingTop',0)
+    if (!isMain.length) {
+      $('body').css('paddingTop',0)
+    }
+
+    if($('body').hasClass('home')) {
+      headerLogo.src = template_data.template_path+"/assets/images/icon/ESPIREO-white.svg";
+      headerShop.src = template_data.template_path+"/assets/images/icon/header-shop-white.svg";
+      magnifier.src = template_data.template_path+"/assets/images/icon/header-search-white.svg";
+      burgerImg.src = template_data.template_path+"/assets/images/icon/header-burger-white.svg";
+    }
+  }
+  // }
+
+});
+
+
 // Form styler
 (function ($) {
   $(function () {
@@ -210,45 +249,8 @@ if (document.querySelector(".top-screen")) {
 })(jQuery);
 
 // Iframe
-if(document.querySelector('.aboutus')) {
-  ymaps.ready(init);
-function init() {
-  var myMap = new ymaps.Map("map", {
-      center: [53.931429, 27.650162],
-      controls: [],
-      zoom: 17,
-    }),
-    MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-      '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-    ),
-    myPlacemarkWithContent = new ymaps.Placemark(
-      [53.931429, 27.650162],
-      {
-        hintContent: "Собственный значок метки с контентом",
-        balloonContent: "Мы тут!",
-        iconContent: "12",
-      },
-      {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: "default#imageWithContent",
-        // Своё изображение иконки метки.
-        iconImageHref: "images/icon/ESPIRIO-map-icon.svg",
-        // Размеры метки.
-        iconImageSize: [106, 119],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-24, -24],
-        // Смещение слоя с содержимым относительно слоя с картинкой.
-        iconContentOffset: [15, 15],
-        // Макет содержимого.
-        iconContentLayout: MyIconContentLayout,
-      }
-    );
 
-  myMap.geoObjects.add(myPlacemarkWithContent);
-}
-}
+
 
 
 // Imask for checkout.html
@@ -260,27 +262,64 @@ if (document.getElementById("#tel")) {
   };
   var mask = IMask(element, maskOptions);
 }
+/*window.onload = function () {
+  if (location.hash) {
+    window.scrollTo(0, 0);
+  }
+};
+*/
 
-//инициализация MFP popup для форм
-$(document).on("click", ".mfp-link", function () {
-  var a = $(this);
-  $.magnificPopup.open({
-    items: { src: a.attr("data-href") },
-    type: "ajax",
-    overflowY: "hidden",
-    removalDelay: 610,
-    mainClass: "my-mfp-zoom-in",
-    ajax: {
-      tError: "Error. Not valid url",
-    },
-    callbacks: {
-      open: function () {
-        setTimeout(function () {
-          $(".mfp-wrap, .mfp-bg").addClass("delay-back");
-          $(".mfp-popup").addClass("delay-back");
-        }, 700);
-      },
-    },
-  });
-  return false;
+
+
+
+var scrollToAnchor = function(hash) {
+
+  if (!hash) return;
+  var term = $(hash);
+  if (!term) return;
+
+  var navHeigth = $('#header').innerHeight();
+
+  var scrollto = term.offset().top - navHeigth - 10;
+  $('html, body').stop().animate({scrollTop:scrollto}, 150);
+  // console.log(scrollto, term.offset().top, navHeigth);
+
+  // var id = term.attr('id');
+
+  // var name = term.attr('name');
+
+  // term.removeAttr('id').removeAttr('name');
+
+  // $('html, body').animate({scrollTop:scrollto}, 0);
+
+
+  // setTimeout(function() {
+  //   term.attr('id', id).attr('name', name);
+  // }, 500);
+
+};
+
+$(window).load(function () {
+  if (location.hash) {
+    scrollToAnchor(location.hash);
+  }
+});
+
+
+
+$('a[href*="#"]').click(function(e) {
+  e.preventDefault();
+
+  current_href=location.href.substr(0,location.href.indexOf("#"));
+  target_href=this.href.substr(0,this.href.indexOf("#"));
+
+  if(target_href!=current_href) {
+    location=this.href;
+
+  }else {
+
+    var hash = this.href.substr(this.href.indexOf("#"));
+    scrollToAnchor(hash);
+  }
+
 });

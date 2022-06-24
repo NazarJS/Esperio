@@ -1091,9 +1091,12 @@ select {
 }
 
 .header {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
+  margin-bottom: 40px;
   padding-top: 20px;
+  padding-bottom: 20px;
   z-index: 2;
+  width: 100%;
 }
 
 .header-info {
@@ -1477,6 +1480,15 @@ select {
   margin-right: 30px;
 }
 
+.header-btns-lupa:hover,
+.header-btns-shop:hover img {
+  opacity: 0.6
+}
+
+.fixed_header img.header-btns-lupa:hover,
+.fixed_header .header-btns-shop:hover img {
+  opacity: 0.5
+}
 .footer {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -3076,7 +3088,31 @@ body {
 .pages ol li:hover a {
   text-decoration: underline;
 }
-
+.fixed_header #header {
+  position: fixed!important;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+.fixed_header #header a {
+  color:#4b3d32!important
+}
+.fixed_header #header .arrow {
+  border-color: #4b3d32!important;
+}
+.checkout_header {
+  text-align: center;
+  margin-bottom: 140px;
+  line-height: 24px;
+}
+.checkout_header strong {font-weight: 400;
+  }
+.checkout_header p {font-weight: 300}
+.selected_shipping_zone .jq-selectbox__dropdown ul li:first-child {display: none}
+.jq-selectbox__dropdown ul {padding-top: 8px}
 @media (min-width: 300px) {
   .col-ss-0 {
     display: none;
@@ -4564,4 +4600,16 @@ body {
   .top-screen-slide-img {
     height: auto;
   }
+}
+
+.jq-selectbox select {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
 }
