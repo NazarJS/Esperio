@@ -24,6 +24,16 @@ $(document).ready(function () {
     slidesToShow: 4,
     prevArrow: '<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: block;"><i class="arrow up"></button>',
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false"><i class="arrow down"></button>',
+
+    responsive: [
+      {
+        breakpoint: 420,
+        settings: {
+          slidesToShow: 3,
+          // slidesToScroll: 3,
+        }
+      },
+    ]
   });
 });
 
@@ -58,7 +68,6 @@ if (matchMedia) {
 
 function accordionChanges(screen576) {
   if (screen576.matches) {
-    console.log($(".aboutus-contact-item.address"))
     $(".aboutus-contact-item.social").after($(".aboutus-contact-item.address"));
   } else {
     $(".aboutus-contact-item.address").after($(".aboutus-contact-item.social"));

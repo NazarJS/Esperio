@@ -136,6 +136,7 @@ $(document).ready(function () {
     adaptiveHeight: true,
     infinite: true,
     dots: false,
+    variableWidth: true,
     prevArrow: $(".aboutus-prev"),
     nextArrow: $(".aboutus-next"),
     responsive: [
@@ -299,12 +300,18 @@ var scrollToAnchor = function(hash) {
 
 };
 
-$(window).load(function () {
+// $(window).load(function () {
+//   console.log('asdas')
+//   if (location.hash) {
+//     scrollToAnchor(location.hash);
+//   }
+// });
+
+$(window).on('load', function(){
   if (location.hash) {
     scrollToAnchor(location.hash);
   }
 });
-
 
 
 $('a[href*="#"]').click(function(e) {

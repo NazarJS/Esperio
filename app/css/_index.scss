@@ -21,6 +21,9 @@
       height: 100%;
       align-items: center;
       padding-left: 75px;
+      @media(max-width: 768px) {
+        padding-left: 0;
+      }
       @media (max-width: 576px) {
         padding: 0 20px;
       }
@@ -63,6 +66,7 @@
       // top: 50%;
       // z-index: -1;
       min-width: 100%;
+      max-width: none;
       // height: 100%;
       @media (max-height: 500px) {
         height: auto;
@@ -249,7 +253,7 @@
       color: #fff;
       width: 100%;
       max-width: 175px;
-      transition: 0.5s ease;
+      transition: bottom 0.5s ease;
     }
     &-title {
       display: inline-block;
