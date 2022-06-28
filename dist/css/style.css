@@ -2731,7 +2731,8 @@ input[type=reset].styler:hover {
 
 .aboutus-smi-item {
   display: inline-block;
-  margin-bottom: 50px;
+  display: inline-block;
+  margin-right: 100px;
 }
 
 .aboutus-smi-item:hover .aboutus-smi-item-link {
@@ -4207,6 +4208,11 @@ body {
     margin-bottom: 100px;
   }
 
+  .aboutus-smi-item {
+    margin-right: 50px;
+    display: block;
+  }
+
   .container {
     padding-right: 20px;
     padding-left: 20px;
@@ -4434,7 +4440,8 @@ body {
   }
 
   .aboutus-smi-item {
-    max-width: 67vw;
+    display: inline-block;
+    margin-right: 50px;
   }
 
   .aboutus-smi-item-link {
