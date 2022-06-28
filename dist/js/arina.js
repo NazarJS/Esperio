@@ -1,3 +1,6 @@
+$('.aboutus-contact-item').eq(1).addClass('address');
+$('.aboutus-contact-item').eq(2).addClass('social');
+
 const product = document.querySelector('.product-info-block');
 const preview = document.querySelector('.product-img');
 const img = document.querySelectorAll('.img-gallery');
