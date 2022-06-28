@@ -179,13 +179,11 @@ textarea {
   overflow: hidden;
   text-overflow: ellipsis;
   transition: 0.3s ease;
-  &:hover {
+  &:not([disabled]):hover {
     opacity: 0.5;
   }
 }
-
 // UI arrow
-
 .ui-arrow {
   &:hover {
     &::after {
@@ -205,6 +203,10 @@ textarea {
     -webkit-transform: rotate(-45deg);
     transition: 0.3s ease;
   }
+}
+
+.main-catalog-card-link.ui-arrow::after {
+  left: 2px;
 }
 
 .ui-arrow-brown {
@@ -261,6 +263,8 @@ select {
   padding: 0 10px;
   border: 1px solid #dbd8d6;
   color: $colorBlack;
+  overflow: hidden;
+  cursor: pointer;
   &:focus-visible,
   :focus,
   :active {

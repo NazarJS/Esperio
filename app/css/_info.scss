@@ -3,14 +3,10 @@
         max-width: 980px;
     }
     &-title {
-        margin-bottom: 20px;
-        font-size: rem(80);
-        font-weight: 500;
-        line-height: 1.1;
-        font-family: $ffCormorant;
-
         @media(max-width:576px) {
+        // @warn: DON'T DELETE
             font-size: rem(40);
+        //@warn: DON'T DELETE END
         }
     }
     &-order {
@@ -138,11 +134,13 @@
             text-align: center;
             vertical-align: middle;
             background-color: #F6F2EC;
+            // @warn: DON'T DELETE
             padding: 29px 27px;
 
             @media(max-width: 576px) {
                 padding: 29px 16px;
             }
+            // @warn: DON'T DELETE END
         }
         tr td {
             text-align: center;
@@ -200,12 +198,14 @@
         &-img {
           position: relative;
           text-align: center;
+            // @warn: DON'T DELETE
             max-height: 500px;
 
             img {
                 max-height: 500px;
                 line-height: 0;
             }
+            // @warn: DON'T DELETE END
         }
         &-mob {
             display: none;
@@ -221,11 +221,15 @@
         &-wrapper {
             position: absolute;
             text-align: left;
+            // @warn: DON'T DELETE
             top: 126px;
+            // @warn: DON'T DELETE END
             left: 387px;
             h2 {
                 font-size: 80px;
+                // @warn: DON'T DELETE
                 margin-bottom: 22px;
+                // @warn: DON'T DELETE END
             }
 
             @media(max-width:1440px) {
@@ -236,7 +240,9 @@
             }
             @media(max-width:1170px) {
                 left: 111px;
+                // @warn: DON'T DELETE
                 top: 45px;
+                // @warn: DON'T DELETE
             }
             @media(max-width:992px) {
                 display: none;
@@ -247,7 +253,7 @@
             max-width: 420px;
             margin-bottom: 20px;
             font-weight: 300;
-            font-size: 16px;
+            // font-size: 16px;
         }
         &-btn {
             background-color:inherit !important;

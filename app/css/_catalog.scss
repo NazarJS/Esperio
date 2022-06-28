@@ -1,6 +1,6 @@
-.--grey {
-    background-color: #736f63;
-  }
+// .--grey {
+//     background-color: #736f63;
+//   }
   .catalog {
     padding-top: 35px;
     margin-bottom: -15px;
@@ -11,7 +11,8 @@
     }
     &-title {
       padding-top: 20px;
-      margin-bottom: 30px;
+      /*margin-bottom: 30px;*/
+      margin-bottom: 15px;
       font-size: rem(44);
       font-weight: 500;
       color: $colorBlack;
@@ -27,23 +28,26 @@
       width: 94%;
       font-weight: 300;
       margin-bottom: 75px;
-  
+      font-size: 0.875rem;
+
       @media (max-width: 576px) {
         margin-bottom: 35px;
       }
     }
     &-item {
       margin-bottom: 75px;
+      // @warn: DON'T DELETE
       max-width: 400px;
       margin: 0 auto 35px;
-  
+      // @warn: DON'T DELETE END
+
       @media (max-width: 576px) {
         margin-bottom: 35px;
       }
       &-title {
         font-weight: 300;
-        
-  
+
+
         transition: 0.5s ease;
         border-bottom: 1px solid rgba(255, 0, 0, 0);
        a {
@@ -58,29 +62,30 @@
         width: 100%;
         line-height: 0;
         overflow: hidden;
-  
+        height: 410px;
+
         img {
           width: 100%;
           transition: 0.5s;
-  
+
           &:hover {
             transform: scale(1.03);
           }
         }
       }
       &-description {
-        
+
         font-weight: 300;
       }
       &-price {
         display: inline-block;
         font-size: rem(32);
-        
+
         font-weight: 300;
       }
       &-currency {
         font-size: rem(12px);
-        margin-right: 16px;
+        margin-right: 10px;
       }
       &-circles {
         display: inline-block;
@@ -105,4 +110,3 @@
   .arrow-down {
     transform: rotate(135deg)
   }
-  

@@ -55,6 +55,7 @@
     &-link {
       img {
         margin-top: -3px;
+	      margin-right: 8px;
       }
     }
     &-img {
@@ -64,29 +65,35 @@
       margin-bottom: 8px;
       font-family: $ffOpenSans;
       font-weight: 300;
+	    font-size: 0.875rem;
     }
     a {
-      transition: 0.5s ease;
+      transition: 0.1s ease;
       border-bottom: 1px solid rgba(255, 0, 0, 0);
       &:hover {
-        border-bottom: 1px solid rgb(17, 17, 17);
+        .cart-item-title a:hover {
+          .jq-selectbox__dropdown li:hover {
+            opacity:.5;
+          }
+        }
+        // border-bottom: 1px solid rgb(17, 17, 17);
       }
     }
   }
   &-container {
-    padding-left: 8.33%;
-    padding-right: 8.33%;
+    // padding-left: 8.33%;
+    // padding-right: 8.33%;
 
     @media (max-width: 992px) {
       padding-right: 0;
       padding-left: 0;
     }
   }
-  &-inst {
-    img {
-      margin-bottom: -2px;
-    }
-  }
+  // &-inst {
+  //   img {
+  //     margin-bottom: -2px;
+  //   }
+  // }
   @media (max-width: 400px) {
     .col-xl-2:nth-of-type(5) {
       order: 1;
@@ -103,36 +110,40 @@
     .col-xl-2:nth-of-type(3) {
       order: 3;
     }
+     ul.footer-info-mob {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+      column-gap: 60px;
+    }
     .footer-info-mob li {
       display: inline-block;
       &:first-child {
         margin-right: 40px;
+	      margin-bottom: 30px;
+      }
+
+      &:nth-child(3) {
+		    margin-bottom: 30px;
+      }
+    }
+    .payment-systems {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+
+    .payment-systems {
+      .payment-item {
+            -webkit-box-flex: 0;
+              -ms-flex: 0 1 6.25rem;
+              flex: 0 1 6.25rem;
+              margin-bottom: 1.875rem;
       }
     }
   }
 }
 
-.footer .payment-systems {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  margin-bottom: 2.5rem;
-}
 
 .footer .payment-systems .payment-item {
   -webkit-order: 0;
@@ -151,4 +162,18 @@
   color: #4B3D32;
   text-align: center;
   opacity: 0.5;
+}
+.jq-selectbox__dropdown li {
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.footer-container {
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+}
+
+.footer-inst img {
+  margin-bottom: -2px;
 }
