@@ -258,7 +258,7 @@
       transform: translate(-50%, -50%);
       top: 50%;
       left: 50%;
-      transition: 0.5s ease;
+      transition: 0.1s ease;
       width: 100%;
     }
     &-bottom {
@@ -289,7 +289,7 @@
 
       &.ui-arrow {
         &::after {
-          top: 0;
+          top: -1px;
         }
       }
     }

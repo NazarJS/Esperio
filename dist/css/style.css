@@ -2269,9 +2269,9 @@ select {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  -webkit-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  transition: 0.5s ease;
+  -webkit-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  transition: 0.1s ease;
   width: 100%;
 }
 
@@ -2307,7 +2307,7 @@ select {
 }
 
 .main-catalog-card-link.ui-arrow::after {
-  top: 0;
+  top: -1px;
 }
 
 .main-catalog-btn {
