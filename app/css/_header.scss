@@ -229,7 +229,8 @@
       margin-bottom: 12px;
       font-family: $ffCormorant;
       &-img {
-        min-width: 24px;
+        flex: 0 0 32px;
+        max-width: 32px;
         margin-right: 8px;
       }
       &-link {

@@ -1,5 +1,5 @@
-$('.aboutus-contact-item').eq(1).addClass('address');
-$('.aboutus-contact-item').eq(2).addClass('social');
+$(".aboutus-contact-item").eq(1).addClass('adress')
+$(".aboutus-contact-item").eq(2).addClass('social')
 
 const product = document.querySelector('.product-info-block');
 const preview = document.querySelector('.product-img');
@@ -18,50 +18,54 @@ for (let i = 0; i < img.length; i++) {
 
 // init slick slider
 $(document).ready(function () {
-  $('.product-items').slick({
+  $('.product-items img').wrap('<div class="product-items-slide"></div>');
+  $('.product-items').append('<div class="product-items-slick"></div>');
+  $(".product-items-slide").prependTo($('.product-items-slick'))
+  $('.product-items-slick').slick({
+    slidesToShow: 4,
     arrows: true,
     vertical: true,
     verticalSwiping: true,
     infinite: false,
     dots: true,
-    slidesToShow: 4,
-    prevArrow: '<button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="display: block;"><i class="arrow up"></button>',
-    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;" aria-disabled="false"><i class="arrow down"></button>',
-
+    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="arrow up"></button>',
+    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="arrow down"></button>',
     responsive: [
       {
         breakpoint: 420,
         settings: {
           slidesToShow: 3,
-          // slidesToScroll: 3,
         }
       },
     ]
   });
+
+  if(product) {
+    $('input').styler('destroy');
+    // (function ($) {
+    //   $(function () {
+
+    //   });
+    // })(jQuery);
+  }
 });
 
 // checking count of img slides
 // if more than 5 then we show the button
-slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-  slick.$dots[0].style.display = 'none';
+// slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+//   slick.$dots[0].style.display = 'none';
 
-  if (slick.$dots[0].children.length > 4) {
-    slick.$nextArrow[0].style.display = 'block';
-    slick.$prevArrow[0].style.display = 'block';
-  } else {
-    slick.$nextArrow[0].style.display = 'none';
-    slick.$prevArrow[0].style.display = 'none';
-  }
-});
+//   if (slick.$dots[0].children.length > 4) {
+//     slick.$nextArrow[0].style.display = 'block';
+//     slick.$prevArrow[0].style.display = 'block';
+//   } else {
+//     slick.$nextArrow[0].style.display = 'none';
+//     slick.$prevArrow[0].style.display = 'none';
+//   }
+// });
 
 // off jQuery form styler in product.html
-if(product) {
-  (function ($) {
-    $(function () {
-      $('input').styler('destroy');
-    });
-  })(jQuery);
-}
+
 
 if (matchMedia) {
   let screen576 = window.matchMedia("(max-width:576px)");

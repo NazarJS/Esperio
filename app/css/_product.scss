@@ -76,15 +76,35 @@
     flex-direction: column;
     position: relative;
     width: 84px;
+    height: 100%;
     // @warn: DON'T DELETE
-    @media(max-width: 576px) {
-      flex: 0 0 72px;
-      max-width: 72px;
+    // @media(max-width: 576px) {
+    //   flex: 0 0 72px;
+    //   max-width: 72px;
+    // }
+    &-slick {
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-height: 100%;
+      height: 100%;
+
+      &.slick-prev {
+          position: absolute !important;
+          top: 0;
+          left: 0;
+          z-index: 9;
+      }
+
+      &.slick-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 9;
+      }
     }
     // @warn: DON'T DELETE
-
-
-
     .slick {
       &-track {
         display: block;
@@ -93,6 +113,14 @@
       &-slide {
         border: none;
         cursor: pointer;
+        margin-bottom: 15px;
+        max-width: 100%;
+
+        img {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
       }
 
       &-arrow {
@@ -164,9 +192,9 @@
       }
     }
 
-    img {
-      margin-bottom: 18px;
-    }
+    // img {
+    //   margin-bottom: 18px;
+    // }
   }
 
   &-preview {
@@ -178,26 +206,27 @@
     // padding-left: 15px;
 
       // @warn: DON'T DELETE
-    @media(max-width: 576px) {
-      position: relative;
-      // width: calc(100% - 87px);
-      flex: 0 0 calc(100% - 87px);
-      max-width: calc(100% - 87px);
-      margin-left: 15px;
-      overflow: hidden;
-    }
+    // @media(max-width: 576px) {
+    //   position: relative;
+    //   // width: calc(100% - 87px);
+    //   flex: 0 0 calc(100% - 87px);
+    //   max-width: calc(100% - 87px);
+    //   margin-left: 15px;
+    //   overflow: hidden;
+    // }
 
-    img {
-      @media(max-width: 576px) {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        max-width: none;
-        // min-height: 100%;
-        height: 100%;
-      }
-    }
+    // img {
+    //   @media(max-width: 576px) {
+    //     position: absolute;
+    //     left: 50%;
+    //     top: 50%;
+    //     transform: translate(-50%, -50%);
+    //     max-width: none;
+    //     // min-height: 100%;
+    //     height: 100%;
+    //     width: auto;
+    //   }
+    // }
     // @warn: DON'T DELETE
   }
 
