@@ -24,7 +24,8 @@
   }
 
   &-link {
-    margin-right: 102px;
+    // margin-right: 102px;
+    flex: 0 0 163px;
     font-weight: 400;
     font-size: rem(14);
     color: #4B3D32;
@@ -48,9 +49,9 @@
       }
     }
 
-    @media (max-width: 1150px) {
-      margin-right: 82px;
-    }
+    // @media (max-width: 1150px) {
+    //   margin-right: 82px;
+    // }
 
     @media (max-width: 992px) {
       display: none;
@@ -61,9 +62,13 @@
     display: flex;
     overflow: hidden;
       // @warn: DON'T DELETE
-    width: 100%;
-    flex: 0 0 100%;
+    // width: 100%;
+    flex: 0 0 calc(100% - 163px);
       // @warn: DON'T DELETE
+
+      @media(max-width: 992px) {
+        flex: 0 0 100%;
+      }
   }
 
   &-items {
@@ -91,6 +96,13 @@
       }
 
       &-arrow {
+        display: block;
+        width: 100%;
+        height: 20px;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        text-align: center;
         background: #4B3D32;
         border: none;
         font-family: "Open Sans", sans-serif;
@@ -106,12 +118,10 @@
       &-next {
         position: absolute;
         bottom: 0;
-        // width: 100%;
-
-        .product-items .slick-prev {
-          width: 100%;
-        }
+        // padding-bottom: 3px;
       }
+
+
 
       &-arrow {
         i {
@@ -140,7 +150,7 @@
 
       &-next {
         i {
-          margin: 2px auto;
+          margin: 0 auto 4px;
         }
 
         .down {
@@ -244,15 +254,15 @@
 
             &:checked~.checkmark {
               border: 1px solid #4B3D32;
-              top:-2px
-            }
+              top:-2px;
 
-            &:checked~.checkmark:after {
-              display: block;
-              width: 16px;
-              height: 16px;
-              top: 3px;
-              left: 3px;
+              &::after {
+                display: block;
+                width: 16px;
+                height: 16px;
+                top: 3px;
+                left: 3px;
+              }
             }
           }
 
@@ -261,7 +271,7 @@
           // }
         }
 
-        .color:nth-child(2) {
+        .color {
           .checkmark {
             &:after {
               content: "";
@@ -447,4 +457,20 @@
     line-height: 1.1;
       // @warn: DON'T DELETE
   }
+}
+
+.color_vanilnyj .checkmark:after {
+  background: #f3e5ab
+}
+
+.color_goluboj .checkmark:after {
+  background: #80a6ff
+}
+
+.color_rozovyj .checkmark:after {
+  background: #ffc0cb
+}
+
+.color_fialkovyj .checkmark:after {
+  background: #ea8df7
 }

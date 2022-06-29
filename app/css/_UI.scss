@@ -185,10 +185,13 @@ textarea {
 }
 // UI arrow
 .ui-arrow {
+  // &:hover {
+  //   &::after {
+  //     left: 12px;
+  //   }
+  // }
   &:hover {
-    &::after {
-      left: 12px;
-    }
+    opacity: .5;
   }
   &::after {
     content: "";

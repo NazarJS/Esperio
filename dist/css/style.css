@@ -483,7 +483,7 @@
 .info-review-wrapper {
   position: absolute;
   text-align: left;
-  top: 126px;
+  top: 106px;
   left: 387px;
 }
 
@@ -973,8 +973,8 @@ textarea {
   opacity: 0.5;
 }
 
-.ui-arrow:hover::after {
-  left: 12px;
+.ui-arrow:hover {
+  opacity: 0.5;
 }
 
 .ui-arrow::after {
@@ -1641,7 +1641,9 @@ select {
 }
 
 .product-link {
-  margin-right: 102px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 163px;
+  flex: 0 0 163px;
   font-weight: 400;
   font-size: 0.875rem;
   color: #4B3D32;
@@ -1677,10 +1679,9 @@ select {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  width: 100%;
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+  -ms-flex: 0 0 calc(100% - 163px);
+  flex: 0 0 calc(100% - 163px);
 }
 
 .product-items {
@@ -1705,6 +1706,13 @@ select {
 }
 
 .product-items .slick-arrow {
+  display: block;
+  width: 100%;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: center;
   background: #4B3D32;
   border: none;
   font-family: "Open Sans", sans-serif;
@@ -1720,10 +1728,6 @@ select {
 .product-items .slick-next {
   position: absolute;
   bottom: 0;
-}
-
-.product-items .slick-next .product-items .slick-prev {
-  width: 100%;
 }
 
 .product-items .slick-arrow i {
@@ -1749,7 +1753,7 @@ select {
 }
 
 .product-items .slick-next i {
-  margin: 2px auto;
+  margin: 0 auto 4px;
 }
 
 .product-items .slick-next .down {
@@ -1825,7 +1829,7 @@ select {
   top: -2px;
 }
 
-.product-info-color .color-section .color input:checked ~ .checkmark:after {
+.product-info-color .color-section .color input:checked ~ .checkmark::after {
   display: block;
   width: 16px;
   height: 16px;
@@ -1833,7 +1837,7 @@ select {
   left: 3px;
 }
 
-.product-info-color .color-section .color:nth-child(2) .checkmark:after {
+.product-info-color .color-section .color .checkmark:after {
   content: "";
   position: absolute;
   width: 20px;
@@ -1989,6 +1993,22 @@ select {
 .product .ui-title {
   margin-bottom: 28px;
   line-height: 1.1;
+}
+
+.color_vanilnyj .checkmark:after {
+  background: #f3e5ab;
+}
+
+.color_goluboj .checkmark:after {
+  background: #80a6ff;
+}
+
+.color_rozovyj .checkmark:after {
+  background: #ffc0cb;
+}
+
+.color_fialkovyj .checkmark:after {
+  background: #ea8df7;
 }
 
 .page-404 .header-404 {
@@ -3885,12 +3905,6 @@ body {
   }
 }
 
-@media (max-width: 1150px) {
-  .product-link {
-    margin-right: 82px;
-  }
-}
-
 @media (max-width: 1024px) {
   .top-screen-slide-content {
     max-width: 100%;
@@ -3973,6 +3987,12 @@ body {
 
   .product-link {
     display: none;
+  }
+
+  .product-slider {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 
   .search-page .product-link {
