@@ -2306,6 +2306,10 @@ select {
   font-weight: 300;
 }
 
+.main-catalog-card-link.ui-arrow::after {
+  top: 0;
+}
+
 .main-catalog-btn {
   display: none;
   width: 200px;

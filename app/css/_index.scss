@@ -286,6 +286,12 @@
     &-link {
       font-size: rem(12px);
       font-weight: 300;
+
+      &.ui-arrow {
+        &::after {
+          top: 0;
+        }
+      }
     }
   }
   &-btn {
